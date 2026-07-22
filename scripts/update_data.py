@@ -13,7 +13,7 @@ de https://www.football-data.org/client/register
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 
@@ -57,18 +57,33 @@ def update_standings():
 
 
 def update_results():
-    data = fetch(f"competitions/{COMPETITION}/matches?status=FINISHED,LIVE,IN_PLAY")
-    matches = data.get("matches", [])[-10:]  # últimos 10 partidos
+    # Usamos un rango de fechas en vez de filtrar por estado: así seguimos
+    # mostrando partidos aunque sea pretemporada (sin partidos "FINISHED"
+    # recientes) o aunque cambie la temporada activa en la API.
+    today = datetime.now(timezone.utc).date()
+    date_from = (today - timedelta(days=21)).isoformat()
+    date_to = (today + timedelta(days=10)).isoformat()
+    data = fetch(f"competitions/{COMPETITION}/matches?dateFrom={date_from}&dateTo={date_to}")
+    all_matches = data.get("matches", [])
+    print(f"La API devolvió {len(all_matches)} partidos en el rango {date_from} a {date_to}")
+
+    all_matches.sort(key=lambda m: m["utcDate"])
+    played_or_live = [m for m in all_matches if m["status"] in ("FINISHED", "IN_PLAY", "LIVE")][-10:]
+    remaining_slots = max(0, 10 - len(played_or_live))
+    upcoming = [m for m in all_matches if m["status"] == "SCHEDULED"][:remaining_slots]
+    matches = played_or_live + upcoming
+
     out_matches = []
     for m in matches:
         home_score = m["score"]["fullTime"]["home"]
         away_score = m["score"]["fullTime"]["away"]
-        status_map = {
-            "FINISHED": "FINALIZADO",
-            "IN_PLAY": "EN JUEGO",
-            "LIVE": "EN JUEGO",
-            "SCHEDULED": "PROGRAMADO",
-        }
+        if m["status"] == "SCHEDULED":
+            match_date = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00"))
+            status_text = match_date.strftime("%d/%m %H:%M")
+        elif m["status"] in ("IN_PLAY", "LIVE"):
+            status_text = "EN JUEGO"
+        else:
+            status_text = "FINALIZADO"
         out_matches.append({
             "competition": "LaLiga",
             "home": m["homeTeam"]["name"],
@@ -77,7 +92,7 @@ def update_results():
             "awayScore": away_score,
             "homeWin": home_score is not None and away_score is not None and home_score > away_score,
             "awayWin": home_score is not None and away_score is not None and away_score > home_score,
-            "status": status_map.get(m["status"], m["status"]),
+            "status": status_text,
         })
     out = {
         "matches": out_matches,
@@ -88,9 +103,11 @@ def update_results():
 
 def update_scorers():
     data = fetch(f"competitions/{COMPETITION}/scorers?limit=10")
+    raw_scorers = data.get("scorers", [])
+    print(f"La API devolvió {len(raw_scorers)} goleadores")
     scorers = [
         {"name": s["player"]["name"], "goals": s["goals"]}
-        for s in data.get("scorers", [])
+        for s in raw_scorers
     ]
     out = {
         "scorers": scorers,
