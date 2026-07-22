@@ -1,1 +1,186 @@
-{"competition": null, "table": [], "lastUpdated": null}
+{
+  "competition": "Ligue 1",
+  "table": [
+    {
+      "position": 1,
+      "club": "Lille OSC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Le Mans FC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Olympique de Marseille",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "FC Lorient",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Stade Brestois 29",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Racing Club de Lens",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Stade Rennais FC 1901",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Angers SCO",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "AJ Auxerre",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Le Havre AC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "RC Strasbourg Alsace",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "OGC Nice",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Paris Saint-Germain FC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Toulouse FC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Olympique Lyonnais",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Paris FC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "AS Monaco FC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "ES Troyes AC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    }
+  ],
+  "lastUpdated": "2026-07-22T10:25:08.799142+00:00"
+}

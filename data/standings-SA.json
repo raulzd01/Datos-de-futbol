@@ -1,1 +1,206 @@
-{"competition": null, "table": [], "lastUpdated": null}
+{
+  "competition": "Serie A",
+  "table": [
+    {
+      "position": 1,
+      "club": "AC Monza",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Torino FC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "AC Milan",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Udinese Calcio",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Como 1907",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Genoa CFC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Bologna FC 1909",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Parma Calcio 1913",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Cagliari Calcio",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "AS Roma",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "US Lecce",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Venezia FC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "US Sassuolo Calcio",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "FC Internazionale Milano",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "SSC Napoli",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Atalanta BC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Juventus FC",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "Frosinone Calcio",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "SS Lazio",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 1,
+      "club": "ACF Fiorentina",
+      "played": 0,
+      "goalDiff": 0,
+      "points": 0,
+      "avgGoalsFor": 0,
+      "formIndex": null,
+      "formLabel": null
+    }
+  ],
+  "lastUpdated": "2026-07-22T10:24:46.734868+00:00"
+}

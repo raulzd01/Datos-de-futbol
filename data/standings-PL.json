@@ -1,1 +1,206 @@
-{"competition": null, "table": [], "lastUpdated": null}
+{
+  "competition": "Premier League",
+  "table": [
+    {
+      "position": 1,
+      "club": "Arsenal FC",
+      "played": 38,
+      "goalDiff": 44,
+      "points": 85,
+      "avgGoalsFor": 1.87,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 2,
+      "club": "Manchester City FC",
+      "played": 38,
+      "goalDiff": 42,
+      "points": 78,
+      "avgGoalsFor": 2.03,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 3,
+      "club": "Manchester United FC",
+      "played": 38,
+      "goalDiff": 19,
+      "points": 71,
+      "avgGoalsFor": 1.82,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 4,
+      "club": "Aston Villa FC",
+      "played": 38,
+      "goalDiff": 7,
+      "points": 65,
+      "avgGoalsFor": 1.47,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 5,
+      "club": "Liverpool FC",
+      "played": 38,
+      "goalDiff": 10,
+      "points": 60,
+      "avgGoalsFor": 1.66,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 6,
+      "club": "AFC Bournemouth",
+      "played": 38,
+      "goalDiff": 4,
+      "points": 57,
+      "avgGoalsFor": 1.53,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 7,
+      "club": "Sunderland AFC",
+      "played": 38,
+      "goalDiff": -6,
+      "points": 54,
+      "avgGoalsFor": 1.11,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 8,
+      "club": "Brighton & Hove Albion FC",
+      "played": 38,
+      "goalDiff": 6,
+      "points": 53,
+      "avgGoalsFor": 1.37,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 9,
+      "club": "Brentford FC",
+      "played": 38,
+      "goalDiff": 3,
+      "points": 53,
+      "avgGoalsFor": 1.45,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 10,
+      "club": "Chelsea FC",
+      "played": 38,
+      "goalDiff": 6,
+      "points": 52,
+      "avgGoalsFor": 1.53,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 11,
+      "club": "Fulham FC",
+      "played": 38,
+      "goalDiff": -4,
+      "points": 52,
+      "avgGoalsFor": 1.24,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 12,
+      "club": "Newcastle United FC",
+      "played": 38,
+      "goalDiff": -2,
+      "points": 49,
+      "avgGoalsFor": 1.39,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 13,
+      "club": "Everton FC",
+      "played": 38,
+      "goalDiff": -3,
+      "points": 49,
+      "avgGoalsFor": 1.24,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 14,
+      "club": "Leeds United FC",
+      "played": 38,
+      "goalDiff": -7,
+      "points": 47,
+      "avgGoalsFor": 1.29,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 15,
+      "club": "Crystal Palace FC",
+      "played": 38,
+      "goalDiff": -10,
+      "points": 45,
+      "avgGoalsFor": 1.08,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 16,
+      "club": "Nottingham Forest FC",
+      "played": 38,
+      "goalDiff": -3,
+      "points": 44,
+      "avgGoalsFor": 1.26,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 17,
+      "club": "Tottenham Hotspur FC",
+      "played": 38,
+      "goalDiff": -9,
+      "points": 41,
+      "avgGoalsFor": 1.26,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 18,
+      "club": "West Ham United FC",
+      "played": 38,
+      "goalDiff": -19,
+      "points": 39,
+      "avgGoalsFor": 1.21,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 19,
+      "club": "Burnley FC",
+      "played": 38,
+      "goalDiff": -37,
+      "points": 22,
+      "avgGoalsFor": 1.0,
+      "formIndex": null,
+      "formLabel": null
+    },
+    {
+      "position": 20,
+      "club": "Wolverhampton Wanderers FC",
+      "played": 38,
+      "goalDiff": -41,
+      "points": 20,
+      "avgGoalsFor": 0.71,
+      "formIndex": null,
+      "formLabel": null
+    }
+  ],
+  "lastUpdated": "2026-07-22T10:24:24.859903+00:00"
+}
