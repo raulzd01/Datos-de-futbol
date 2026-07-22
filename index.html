@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DatosDeFutbol.com — Resultados, clasificación y estadísticas de fútbol</title>
+<meta name="description" content="Resultados, clasificación y estadísticas de LaLiga actualizados cada jornada. Análisis y datos de fútbol.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+
+<header>
+  <a class="logo" href="index.html"><span class="d1">DATOS</span><span class="d2">DEFUTBOL</span></a>
+  <nav>
+    <a href="clasificacion.html">Clasificación</a>
+    <a href="articulos.html">Análisis</a>
+  </nav>
+</header>
+
+<div class="scoreboard">
+  <div class="scoreboard-label">
+    <div class="live-dot"></div>
+    <span>Últimos resultados</span>
+  </div>
+  <div class="ticker" id="ticker">
+    <div class="ticker-empty">Cargando resultados…</div>
+  </div>
+</div>
+
+<main>
+  <div class="col-main">
+
+    <section>
+      <div class="section-head">
+        <h2>Clasificación LaLiga</h2>
+        <span class="auto-tag" id="last-updated">actualizado automáticamente</span>
+      </div>
+      <table class="standings">
+        <thead>
+          <tr><th class="num">#</th><th>Club</th><th class="num">PJ</th><th class="num">DG</th><th class="num">Pts</th></tr>
+        </thead>
+        <tbody id="standings-body">
+          <tr><td colspan="5" class="loading-msg">Cargando clasificación…</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="ad-slot big">ESPACIO ANUNCIO — 728×250 (AdSense)</div>
+
+    <section>
+      <div class="section-head">
+        <h2>Resumen de jornada</h2>
+        <a class="more" href="articulos.html">Ver todos →</a>
+      </div>
+      <!-- Estos artículos se añaden a mano, uno por <a class="article">.
+           Copia y pega un bloque para añadir uno nuevo (ver README). -->
+      <a class="article" href="articulos/ejemplo-articulo.html">
+        <div class="thumb">2-1</div>
+        <div>
+          <div class="eyebrow">LaLiga · Jornada</div>
+          <h3>Título del análisis o resumen del partido</h3>
+          <p>Resumen corto de 1-2 líneas que invite a hacer clic.</p>
+        </div>
+      </a>
+    </section>
+
+  </div>
+
+  <aside class="col-side">
+    <div class="ad-slot small">ANUNCIO — 300×100</div>
+
+    <section>
+      <div class="section-head">
+        <h2>Máximos goleadores</h2>
+        <span class="auto-tag">auto</span>
+      </div>
+      <ul class="top-scorers" id="topscorers-list">
+        <li class="loading-msg">Cargando…</li>
+      </ul>
+    </section>
+
+    <div class="ad-slot big">ESPACIO ANUNCIO — 300×250 (AdSense)</div>
+  </aside>
+</main>
+
+<footer>
+  <strong>DatosDeFutbol.com</strong> — Estadísticas, resultados y análisis de fútbol actualizados cada jornada.
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

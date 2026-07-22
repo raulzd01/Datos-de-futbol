@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clasificación LaLiga — DatosDeFutbol.com</title>
+<meta name="description" content="Clasificación completa y actualizada de LaLiga: puntos, diferencia de goles y partidos jugados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html"><span class="d1">DATOS</span><span class="d2">DEFUTBOL</span></a>
+  <nav>
+    <a href="clasificacion.html">Clasificación</a>
+    <a href="articulos.html">Análisis</a>
+  </nav>
+</header>
+
+<main style="grid-template-columns:1fr;max-width:760px;">
+  <section>
+    <div class="section-head">
+      <h2>Clasificación completa — LaLiga</h2>
+      <span class="auto-tag" id="last-updated">actualizado automáticamente</span>
+    </div>
+    <table class="standings">
+      <thead>
+        <tr><th class="num">#</th><th>Club</th><th class="num">PJ</th><th class="num">DG</th><th class="num">Pts</th></tr>
+      </thead>
+      <tbody id="standings-body">
+        <tr><td colspan="5" class="loading-msg">Cargando clasificación…</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="ad-slot big">ESPACIO ANUNCIO — 728×250 (AdSense)</div>
+</main>
+
+<footer>
+  <strong>DatosDeFutbol.com</strong> — Estadísticas, resultados y análisis de fútbol actualizados cada jornada.
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  // Esta página solo necesita la tabla, reutilizamos la misma función.
+  document.addEventListener('DOMContentLoaded', async () => {
+    const res = await fetch('data/standings.json?t=' + Date.now());
+    const data = await res.json();
+    renderStandings(data.table);
+    const el = document.getElementById('last-updated');
+    if (data.lastUpdated) el.textContent = 'Actualizado: ' + new Date(data.lastUpdated).toLocaleString('es-ES');
+  });
+</script>
+</body>
+</html>

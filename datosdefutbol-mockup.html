@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DatosDeFutbol.com — Maqueta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch-dark:#0B3D2E;
+    --pitch:#155C3E;
+    --grass:#3C8C5D;
+    --chalk:#F5F3EA;
+    --ink:#12181B;
+    --amber:#F2B705;
+    --line:#DAD5C4;
+    --gray:#6B7168;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--chalk);
+    color:var(--ink);
+    font-family:'Source Sans 3',sans-serif;
+    line-height:1.5;
+  }
+  .display{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:0.02em;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+
+  /* Top bar */
+  header{
+    background:var(--pitch-dark);
+    color:var(--chalk);
+    padding:16px 32px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:3px solid var(--amber);
+  }
+  .logo{
+    display:flex;
+    align-items:baseline;
+    gap:2px;
+  }
+  .logo .d1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;letter-spacing:0.01em;}
+  .logo .d2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;color:var(--amber);}
+  nav{display:flex;gap:28px;font-size:14px;font-weight:600;letter-spacing:0.03em;}
+  nav a{color:var(--chalk);text-decoration:none;opacity:0.85;}
+  nav a:hover{opacity:1;color:var(--amber);}
+
+  /* Scoreboard hero - the signature element */
+  .scoreboard{
+    background:
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 40px),
+      linear-gradient(180deg, var(--pitch) 0%, var(--pitch-dark) 100%);
+    padding:0;
+    overflow:hidden;
+  }
+  .scoreboard-label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 32px 0;
+  }
+  .live-dot{
+    width:8px;height:8px;border-radius:50%;background:#FF4D4D;
+    box-shadow:0 0 0 0 rgba(255,77,77,0.6);
+    animation:pulse 1.6s infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(255,77,77,0.5);}
+    70%{box-shadow:0 0 0 6px rgba(255,77,77,0);}
+    100%{box-shadow:0 0 0 0 rgba(255,77,77,0);}
+  }
+  .scoreboard-label span{
+    color:var(--chalk);
+    font-size:12px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    font-weight:600;
+    opacity:0.75;
+  }
+  .ticker{
+    display:flex;
+    gap:0;
+    padding:18px 0 26px;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  .ticker::-webkit-scrollbar{display:none;}
+  .match{
+    flex:0 0 auto;
+    min-width:200px;
+    padding:0 28px;
+    border-right:1px solid rgba(255,255,255,0.12);
+    color:var(--chalk);
+  }
+  .match:first-child{padding-left:32px;}
+  .match .comp{
+    font-size:10px;
+    letter-spacing:0.1em;
+    color:var(--amber);
+    font-weight:600;
+    margin-bottom:8px;
+    text-transform:uppercase;
+  }
+  .match .teams{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .team-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+  }
+  .team-name{font-size:15px;font-weight:500;}
+  .team-name.win{font-weight:700;}
+  .score{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:18px;
+    font-weight:600;
+    color:var(--amber);
+  }
+  .match .status{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:rgba(245,243,234,0.5);
+    margin-top:8px;
+  }
+
+  /* Main content grid */
+  main{
+    max-width:1160px;
+    margin:0 auto;
+    padding:40px 32px 80px;
+    display:grid;
+    grid-template-columns:1fr 320px;
+    gap:40px;
+  }
+  @media (max-width:860px){
+    main{grid-template-columns:1fr;}
+  }
+
+  section{margin-bottom:44px;}
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:10px;
+    margin-bottom:20px;
+  }
+  .section-head h2{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:800;
+    font-size:24px;
+    letter-spacing:0.01em;
+  }
+  .section-head .auto-tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--gray);
+    letter-spacing:0.06em;
+  }
+  .section-head a.more{
+    font-size:13px;
+    font-weight:600;
+    color:var(--pitch);
+    text-decoration:none;
+  }
+
+  /* Standings table */
+  table.standings{
+    width:100%;
+    border-collapse:collapse;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+  }
+  table.standings th{
+    text-align:left;
+    font-size:10px;
+    letter-spacing:0.08em;
+    color:var(--gray);
+    text-transform:uppercase;
+    padding:0 8px 10px;
+    font-weight:600;
+  }
+  table.standings th.num, table.standings td.num{text-align:center;}
+  table.standings td{
+    padding:9px 8px;
+    border-top:1px solid var(--line);
+  }
+  table.standings tr.top4 td:first-child{border-left:3px solid var(--grass);padding-left:5px;}
+  table.standings tr.relegation td:first-child{border-left:3px solid #C4462B;padding-left:5px;}
+  table.standings .pos{color:var(--gray);width:24px;}
+  table.standings .club{font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:14px;}
+  table.standings .pts{font-weight:700;color:var(--pitch-dark);}
+
+  /* Article cards */
+  .article{
+    display:grid;
+    grid-template-columns:88px 1fr;
+    gap:16px;
+    padding:16px 0;
+    border-top:1px solid var(--line);
+  }
+  .article:first-child{border-top:none;}
+  .article .thumb{
+    width:88px;height:88px;
+    background:linear-gradient(135deg,var(--pitch) 0%, var(--grass) 100%);
+    border-radius:4px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--chalk);
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:800;
+    font-size:22px;
+  }
+  .article .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    color:var(--gray);
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    margin-bottom:4px;
+  }
+  .article h3{
+    font-size:16px;
+    font-weight:700;
+    line-height:1.3;
+    margin-bottom:4px;
+  }
+  .article p{font-size:13px;color:var(--gray);}
+
+  /* Sidebar */
+  .ad-slot{
+    background:repeating-linear-gradient(45deg, #EDEAE0 0 10px, #E5E1D3 10px 20px);
+    border:1px dashed var(--gray);
+    border-radius:4px;
+    padding:20px;
+    text-align:center;
+    color:var(--gray);
+    font-size:12px;
+    font-family:'IBM Plex Mono',monospace;
+    letter-spacing:0.04em;
+    margin-bottom:24px;
+  }
+  .ad-slot.big{min-height:250px;display:flex;align-items:center;justify-content:center;}
+  .ad-slot.small{min-height:100px;display:flex;align-items:center;justify-content:center;}
+
+  .top-scorers{list-style:none;}
+  .top-scorers li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+    border-top:1px solid var(--line);
+    font-size:14px;
+  }
+  .top-scorers li:first-child{border-top:none;}
+  .top-scorers .rank{
+    font-family:'IBM Plex Mono',monospace;
+    color:var(--gray);
+    font-size:12px;
+    width:20px;
+  }
+  .top-scorers .goals{
+    font-family:'IBM Plex Mono',monospace;
+    font-weight:700;
+    color:var(--pitch-dark);
+  }
+
+  footer{
+    background:var(--pitch-dark);
+    color:rgba(245,243,234,0.6);
+    padding:28px 32px;
+    text-align:center;
+    font-size:12px;
+  }
+  footer strong{color:var(--chalk);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span class="d1">DATOS</span><span class="d2">DEFUTBOL</span></div>
+  <nav>
+    <a href="#">Resultados</a>
+    <a href="#">Clasificación</a>
+    <a href="#">Estadísticas</a>
+    <a href="#">Análisis</a>
+  </nav>
+</header>
+
+<div class="scoreboard">
+  <div class="scoreboard-label">
+    <div class="live-dot"></div>
+    <span>Jornada 24 — En directo y últimos resultados</span>
+  </div>
+  <div class="ticker">
+    <div class="match">
+      <div class="comp">LaLiga</div>
+      <div class="teams">
+        <div class="team-row"><span class="team-name win">Real Madrid</span><span class="score">2</span></div>
+        <div class="team-row"><span class="team-name">Betis</span><span class="score">1</span></div>
+      </div>
+      <div class="status">FINALIZADO</div>
+    </div>
+    <div class="match">
+      <div class="comp">LaLiga</div>
+      <div class="teams">
+        <div class="team-row"><span class="team-name">Sevilla</span><span class="score">1</span></div>
+        <div class="team-row"><span class="team-name win">Barcelona</span><span class="score">3</span></div>
+      </div>
+      <div class="status">FINALIZADO</div>
+    </div>
+    <div class="match">
+      <div class="comp">LaLiga</div>
+      <div class="teams">
+        <div class="team-row"><span class="team-name">Atlético</span><span class="score">1</span></div>
+        <div class="team-row"><span class="team-name">Villarreal</span><span class="score">1</span></div>
+      </div>
+      <div class="status">78' — EN JUEGO</div>
+    </div>
+    <div class="match">
+      <div class="comp">Premier League</div>
+      <div class="teams">
+        <div class="team-row"><span class="team-name win">Arsenal</span><span class="score">2</span></div>
+        <div class="team-row"><span class="team-name">Chelsea</span><span class="score">0</span></div>
+      </div>
+      <div class="status">FINALIZADO</div>
+    </div>
+    <div class="match">
+      <div class="comp">Serie A</div>
+      <div class="teams">
+        <div class="team-row"><span class="team-name">Milan</span><span class="score">—</span></div>
+        <div class="team-row"><span class="team-name">Inter</span><span class="score">—</span></div>
+      </div>
+      <div class="status">HOY 21:00</div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="col-main">
+
+    <section>
+      <div class="section-head">
+        <h2>Clasificación LaLiga</h2>
+        <span class="auto-tag">actualizado automáticamente</span>
+      </div>
+      <table class="standings">
+        <thead>
+          <tr><th class="num">#</th><th>Club</th><th class="num">PJ</th><th class="num">DG</th><th class="num">Pts</th></tr>
+        </thead>
+        <tbody>
+          <tr class="top4"><td class="pos num">1</td><td class="club">Real Madrid</td><td class="num">24</td><td class="num">+32</td><td class="num pts">58</td></tr>
+          <tr class="top4"><td class="pos num">2</td><td class="club">Barcelona</td><td class="num">24</td><td class="num">+28</td><td class="num pts">55</td></tr>
+          <tr class="top4"><td class="pos num">3</td><td class="club">Atlético Madrid</td><td class="num">24</td><td class="num">+19</td><td class="num pts">49</td></tr>
+          <tr class="top4"><td class="pos num">4</td><td class="club">Athletic Club</td><td class="num">24</td><td class="num">+14</td><td class="num pts">44</td></tr>
+          <tr><td class="pos num">5</td><td class="club">Villarreal</td><td class="num">24</td><td class="num">+9</td><td class="num pts">41</td></tr>
+          <tr><td class="pos num">6</td><td class="club">Betis</td><td class="num">24</td><td class="num">+4</td><td class="num pts">38</td></tr>
+          <tr class="relegation"><td class="pos num">18</td><td class="club">Las Palmas</td><td class="num">24</td><td class="num">-19</td><td class="num pts">18</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="ad-slot big">ESPACIO ANUNCIO — 728×250 (AdSense)</div>
+
+    <section>
+      <div class="section-head">
+        <h2>Resumen de jornada</h2>
+        <a class="more" href="#">Ver todos →</a>
+      </div>
+      <div class="article">
+        <div class="thumb">2-1</div>
+        <div>
+          <div class="eyebrow">LaLiga · Jornada 24</div>
+          <h3>El Madrid remonta al Betis con un doblete en los últimos 15 minutos</h3>
+          <p>Repaso completo del partido, goleadores y las claves tácticas del triunfo blanco en el Bernabéu.</p>
+        </div>
+      </div>
+      <div class="article">
+        <div class="thumb">1-3</div>
+        <div>
+          <div class="eyebrow">LaLiga · Jornada 24</div>
+          <h3>Un Barcelona sólido golea en Sánchez-Pizjuán y aprieta la lucha por el título</h3>
+          <p>Análisis del partido y estadísticas de posesión y disparos a puerta de ambos equipos.</p>
+        </div>
+      </div>
+      <div class="article">
+        <div class="thumb">·</div>
+        <div>
+          <div class="eyebrow">Análisis</div>
+          <h3>¿Por qué la defensa del Atlético lleva 4 jornadas sin encajar más de un gol?</h3>
+          <p>Un vistazo a los datos defensivos que explican el mejor tramo de la temporada del conjunto rojiblanco.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <aside class="col-side">
+    <div class="ad-slot small">ANUNCIO — 300×100</div>
+
+    <section>
+      <div class="section-head">
+        <h2>Máximos goleadores</h2>
+        <span class="auto-tag">auto</span>
+      </div>
+      <ul class="top-scorers">
+        <li><span class="rank">1</span><span>Kylian Mbappé</span><span class="goals">19</span></li>
+        <li><span class="rank">2</span><span>Robert Lewandowski</span><span class="goals">17</span></li>
+        <li><span class="rank">3</span><span>Ante Budimir</span><span class="goals">14</span></li>
+        <li><span class="rank">4</span><span>Alexander Sørloth</span><span class="goals">13</span></li>
+        <li><span class="rank">5</span><span>Ayoze Pérez</span><span class="goals">12</span></li>
+      </ul>
+    </section>
+
+    <div class="ad-slot big">ESPACIO ANUNCIO — 300×250 (AdSense)</div>
+  </aside>
+</main>
+
+<footer>
+  <strong>DatosDeFutbol.com</strong> — Estadísticas, resultados y análisis de fútbol actualizados cada jornada.
+</footer>
+
+</body>
+</html>
