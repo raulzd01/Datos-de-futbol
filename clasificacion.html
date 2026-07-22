@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clasificación LaLiga — DatosDeFutbol.com</title>
-<meta name="description" content="Clasificación completa y actualizada de LaLiga: puntos, diferencia de goles y partidos jugados.">
+<title>Clasificación — DatosDeFutbol.com</title>
+<meta name="description" content="Clasificación completa y actualizada de LaLiga, Premier League, Serie A y Ligue 1, con Índice de Forma propio y media de goles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-page="clasificacion">
 
 <header>
   <a class="logo" href="index.html"><span class="d1">DATOS</span><span class="d2">DEFUTBOL</span></a>
@@ -19,18 +19,39 @@
   </nav>
 </header>
 
+<div class="scoreboard" style="padding-bottom:4px;">
+  <div class="league-tabs" id="league-tabs" style="padding:18px 32px;"></div>
+</div>
+
 <main style="grid-template-columns:1fr;max-width:760px;">
   <section>
     <div class="section-head">
-      <h2>Clasificación completa — LaLiga</h2>
+      <h2>Clasificación completa</h2>
       <span class="auto-tag" id="last-updated">actualizado automáticamente</span>
     </div>
     <table class="standings">
       <thead>
-        <tr><th class="num">#</th><th>Club</th><th class="num">PJ</th><th class="num">DG</th><th class="num">Pts</th></tr>
+        <tr><th class="num">#</th><th>Club</th><th class="num">PJ</th><th class="num">DG</th><th class="num">Pts</th><th class="num">Media goles</th></tr>
       </thead>
       <tbody id="standings-body">
-        <tr><td colspan="5" class="loading-msg">Cargando clasificación…</td></tr>
+        <tr><td colspan="6" class="loading-msg">Cargando clasificación…</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Índice de Forma DDF</h2>
+      <span class="auto-tag">exclusivo · calculado por nosotros</span>
+    </div>
+    <p style="font-size:13px;color:var(--gray);margin-bottom:16px;">
+      Puntuación de 0 a 100 calculada a partir de los últimos partidos de cada equipo,
+      dando más peso a los resultados más recientes. No es un dato oficial: es nuestra
+      propia fórmula para detectar rachas antes de que se note en la clasificación.
+    </p>
+    <table class="form-index">
+      <tbody id="form-index-body">
+        <tr><td class="loading-msg">Calculando…</td></tr>
       </tbody>
     </table>
   </section>
@@ -43,15 +64,5 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
-<script>
-  // Esta página solo necesita la tabla, reutilizamos la misma función.
-  document.addEventListener('DOMContentLoaded', async () => {
-    const res = await fetch('data/standings.json?t=' + Date.now());
-    const data = await res.json();
-    renderStandings(data.table);
-    const el = document.getElementById('last-updated');
-    if (data.lastUpdated) el.textContent = 'Actualizado: ' + new Date(data.lastUpdated).toLocaleString('es-ES');
-  });
-</script>
 </body>
 </html>

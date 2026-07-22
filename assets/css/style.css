@@ -111,3 +111,26 @@ footer strong{color:var(--chalk);}
 footer a{color:var(--amber);text-decoration:none;}
 
 .loading-msg{color:var(--gray);font-family:'IBM Plex Mono',monospace;font-size:12px;padding:16px 0;}
+
+.league-tabs{display:flex;gap:8px;padding:14px 32px 0;flex-wrap:wrap;}
+.league-tab{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  color:var(--chalk);
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  letter-spacing:0.03em;
+  padding:6px 14px;
+  border-radius:20px;
+  cursor:pointer;
+  transition:background 0.15s;
+}
+.league-tab:hover{background:rgba(255,255,255,0.16);}
+.league-tab.active{background:var(--amber);color:var(--pitch-dark);border-color:var(--amber);font-weight:600;}
+
+table.form-index{width:100%;border-collapse:collapse;font-size:14px;}
+table.form-index td{padding:9px 8px;border-top:1px solid var(--line);}
+table.form-index tr:first-child td{border-top:none;}
+table.form-index .club{font-weight:600;}
+table.form-index .pts{font-family:'IBM Plex Mono',monospace;font-weight:700;color:var(--pitch-dark);width:40px;}
+table.standings td.mono{font-family:'IBM Plex Mono',monospace;}
