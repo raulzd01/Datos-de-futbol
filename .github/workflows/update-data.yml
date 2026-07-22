@@ -1,0 +1,33 @@
+name: Actualizar datos de fútbol
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ejecutar script de actualización
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: python scripts/update_data.py
+
+      - name: Guardar los cambios en el repositorio
+        run: |
+          git config user.name "Robot DatosDeFutbol"
+          git config user.email "actions@github.com"
+          git add data/*.json
+          git diff --quiet --cached || git commit -m "Actualización automática de datos"
+          git push
