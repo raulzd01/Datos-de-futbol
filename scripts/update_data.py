@@ -138,16 +138,22 @@ def pick_working_season(code):
     llamada.
     """
     seasons = get_available_seasons(code)
+    MAX_ATTEMPTS = 3  # no tiene sentido seguir probando temporadas muy antiguas
+    attempts = 0
     for season in seasons:
+        if attempts >= MAX_ATTEMPTS:
+            break
         year = season["id"]  # football-data.org usa el año de inicio como id
+        attempts += 1
         try:
             data = fetch(f"competitions/{code}/standings?season={year}")
         except HTTPError as e:
-            if e.code == 404:
-                # La API ni siquiera tiene creado el recurso para esta
-                # temporada (pasa con temporadas futuras que aún no han
-                # arrancado de verdad). Probamos con la anterior.
-                print(f"[{code}] Temporada {year} sin recurso en la API (404), probando la anterior...")
+            if e.code in (400, 403, 404):
+                # 404: la API no tiene creado el recurso para esta temporada
+                #      (típico de temporadas futuras que aún no arrancaron).
+                # 400/403: el plan gratuito no permite acceder a esta
+                #      temporada (restricción de suscripción, no un bug).
+                print(f"[{code}] Temporada {year} no accesible (HTTP {e.code}), probando la anterior...")
                 continue
             raise
         table = data["standings"][0]["table"]
@@ -155,11 +161,12 @@ def pick_working_season(code):
         if total_played > 0:
             return year, table
         print(f"[{code}] Temporada {year} sin partidos jugados aún, probando la anterior...")
-    # Si ninguna tiene partidos (caso raro, ej. pretemporada total), nos
-    # quedamos con la más reciente aunque esté vacía.
-    year = seasons[0]["id"]
-    data = fetch(f"competitions/{code}/standings?season={year}")
-    return year, data["standings"][0]["table"]
+
+    raise RuntimeError(
+        f"[{code}] No se ha encontrado ninguna temporada utilizable en los "
+        f"últimos {MAX_ATTEMPTS} intentos (ni por falta de partidos ni por "
+        f"restricciones del plan gratuito de la API)."
+    )
 
 
 def update_standings(code, name, season_year, table):
@@ -292,19 +299,33 @@ if __name__ == "__main__":
     write_competition_list()
 
     seasons_by_competition = load_existing_seasons_index()
+    failed_competitions = []
 
     for code, name in COMPETITIONS.items():
         print(f"--- Actualizando {name} ({code}) ---")
+        try:
+            working_year, table = pick_working_season(code)
+            print(f"[{name}] Usando temporada {working_year}")
 
-        working_year, table = pick_working_season(code)
-        print(f"[{name}] Usando temporada {working_year}")
+            update_standings(code, name, working_year, table)
+            update_matches(code, name, working_year)
+            update_scorers(code, name, working_year)
 
-        update_standings(code, name, working_year, table)
-        update_matches(code, name, working_year)
-        update_scorers(code, name, working_year)
-
-        existing_years = set(seasons_by_competition.get(code, []))
-        existing_years.add(working_year)
-        seasons_by_competition[code] = sorted(existing_years, reverse=True)
+            existing_years = set(seasons_by_competition.get(code, []))
+            existing_years.add(working_year)
+            seasons_by_competition[code] = sorted(existing_years, reverse=True)
+        except Exception as e:
+            # Si una liga falla (temporada bloqueada, error de la API...),
+            # que no tumbe la actualización de las demás. Se deja tal cual
+            # estaba esa liga y seguimos con la siguiente.
+            print(f"[{name}] ERROR, se deja sin actualizar esta vez: {e}", file=sys.stderr)
+            failed_competitions.append(name)
 
     write_json("seasons.json", seasons_by_competition)
+
+    if failed_competitions:
+        # Aviso en los logs, pero salimos con código 0 a propósito: si
+        # saliéramos con error, GitHub Actions no ejecutaría el siguiente
+        # paso (guardar cambios en git) y se perderían también los datos
+        # de las ligas que SÍ se actualizaron bien.
+        print(f"Terminado con avisos. Ligas no actualizadas: {', '.join(failed_competitions)}", file=sys.stderr)
