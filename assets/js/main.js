@@ -106,12 +106,14 @@ function renderCalendar(matches, code, season) {
         const d = new Date(m.date);
         const dateLabel = isNaN(d) ? '' : d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' });
         const href = `partido.html?code=${code}&season=${season}&id=${m.id}`;
+        // El nombre del equipo enlaza a su ficha; el resto de la fila
+        // sigue llevando al detalle del partido.
         return `
           <a class="match-row match-row-link" href="${href}">
             <span class="matchday">${dateLabel}</span>
-            <span class="team-name ${m.homeWin ? 'win' : ''}">${m.home}</span>
+            <span class="team-name ${m.homeWin ? 'win' : ''}" data-team-link="${encodeURIComponent(m.home)}">${m.home}</span>
             <span class="score">${m.homeScore ?? '—'} - ${m.awayScore ?? '—'}</span>
-            <span class="team-name ${m.awayWin ? 'win' : ''}">${m.away}</span>
+            <span class="team-name ${m.awayWin ? 'win' : ''}" data-team-link="${encodeURIComponent(m.away)}">${m.away}</span>
             <span class="status">${m.status}</span>
           </a>
         `;
@@ -144,23 +146,26 @@ function initMatchdaySelector() {
   });
 }
 
-function renderStandings(rows) {
+function renderStandings(rows, code, season) {
   const el = document.getElementById('standings-body');
   if (!el) return;
   if (!rows || rows.length === 0) {
     el.innerHTML = '<tr><td colspan="6" class="loading-msg">Clasificación no disponible todavía.</td></tr>';
     return;
   }
-  el.innerHTML = rows.map(r => `
+  el.innerHTML = rows.map(r => {
+    const teamHref = `equipo.html?code=${code}&season=${season}&team=${encodeURIComponent(r.club)}`;
+    return `
     <tr class="${r.position <= 4 ? 'top4' : ''} ${r.position >= rows.length - 2 ? 'relegation' : ''}">
       <td class="pos num">${r.position}</td>
-      <td class="club">${r.club}</td>
+      <td class="club"><a href="${teamHref}">${r.club}</a></td>
       <td class="num">${r.played}</td>
       <td class="num">${r.goalDiff > 0 ? '+' : ''}${r.goalDiff}</td>
       <td class="num pts">${r.points}</td>
       <td class="num mono">${r.avgGoalsFor ?? '—'}</td>
     </tr>
-  `).join('');
+  `;
+  }).join('');
 }
 
 // Calcula el récord (victorias-empates-derrotas) de un equipo en sus
@@ -190,7 +195,7 @@ function formatRecord(record) {
   return `${record.w}V ${record.d}E ${record.l}D`;
 }
 
-function renderFormIndex(rows, matches) {
+function renderFormIndex(rows, matches, code, season) {
   const el = document.getElementById('form-index-body');
   if (!el) return;
   const withForm = (rows || []).filter(r => r.formIndex !== null && r.formIndex !== undefined);
@@ -202,9 +207,10 @@ function renderFormIndex(rows, matches) {
   el.innerHTML = sorted.map(r => {
     const record5 = computeTeamRecord(matches, r.club, 5);
     const record10 = computeTeamRecord(matches, r.club, 10);
+    const teamHref = `equipo.html?code=${code}&season=${season}&team=${encodeURIComponent(r.club)}`;
     return `
     <tr>
-      <td class="club">${r.club}</td>
+      <td class="club"><a href="${teamHref}">${r.club}</a></td>
       <td class="num pts">${r.formIndex}</td>
       <td>${r.formLabel}</td>
       <td class="num mono">${formatRecord(record5)}</td>
@@ -284,8 +290,8 @@ async function loadLeagueData(code, season) {
   renderTicker(matches?.matches);
   renderMatchList(matches?.matches);
   renderCalendar(matches?.matches, code, suffix);
-  renderStandings(standings?.table);
-  renderFormIndex(standings?.table, matches?.matches);
+  renderStandings(standings?.table, code, suffix);
+  renderFormIndex(standings?.table, matches?.matches, code, suffix);
   renderScorers(scorers?.scorers);
 
   const updatedEl = document.getElementById('last-updated');
@@ -314,6 +320,45 @@ async function initHome() {
   loadLeagueData(currentLeague, currentSeason);
 }
 
+// --- Helpers SEO: meta description y JSON-LD dinámicos ---------------------
+// Estas páginas se pintan con JS (no hay servidor que genere HTML distinto
+// por partido/equipo), así que en cuanto tenemos los datos reales,
+// actualizamos <title>, <meta name="description"> e inyectamos JSON-LD.
+// Google ejecuta el JS antes de indexar, así que esto sí cuenta para SEO,
+// pero para redes sociales (Facebook/WhatsApp/Twitter, que NO ejecutan JS)
+// no sustituye tener Open Graph estático — eso requeriría generar un
+// archivo .html por partido en el propio robot (mejora de Fase 2).
+function setMetaDescription(text) {
+  let el = document.querySelector('meta[name="description"]');
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute('name', 'description');
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', text);
+}
+
+function setJsonLd(id, data) {
+  let el = document.getElementById(id);
+  if (!el) {
+    el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.id = id;
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(data);
+}
+
+function setCanonical(url) {
+  let el = document.querySelector('link[rel="canonical"]');
+  if (!el) {
+    el = document.createElement('link');
+    el.setAttribute('rel', 'canonical');
+    document.head.appendChild(el);
+  }
+  el.setAttribute('href', url);
+}
+
 // --- Página de detalle de un partido (partido.html) ------------------------
 function getQueryParams() {
   return new URLSearchParams(window.location.search);
@@ -330,22 +375,62 @@ function renderMatchDetail(match, allMatches, code, season) {
 
   const d = new Date(match.date);
   const dateLabel = isNaN(d) ? '' : d.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const homeHref = `equipo.html?code=${code}&season=${season}&team=${encodeURIComponent(match.home)}`;
+  const awayHref = `equipo.html?code=${code}&season=${season}&team=${encodeURIComponent(match.away)}`;
 
   el.innerHTML = `
     <div class="match-detail-card">
       <div class="match-detail-meta">${match.matchday ? 'Jornada ' + match.matchday : ''} · ${dateLabel}</div>
       <div class="match-detail-teams">
         <div class="match-detail-team">
-          <span class="team-name ${match.homeWin ? 'win' : ''}">${match.home}</span>
+          <a href="${homeHref}" class="team-name ${match.homeWin ? 'win' : ''}">${match.home}</a>
         </div>
         <div class="match-detail-score">${match.homeScore ?? '—'} - ${match.awayScore ?? '—'}</div>
         <div class="match-detail-team">
-          <span class="team-name ${match.awayWin ? 'win' : ''}">${match.away}</span>
+          <a href="${awayHref}" class="team-name ${match.awayWin ? 'win' : ''}">${match.away}</a>
         </div>
       </div>
       <div class="match-detail-status">${match.status}</div>
     </div>
   `;
+
+  // --- SEO dinámico: título, descripción, canonical y JSON-LD ---------------
+  const isPlayed = match.status === 'FINALIZADO';
+  const scoreText = isPlayed ? `${match.homeScore}-${match.awayScore}` : dateLabel;
+  const seoDescription = isPlayed
+    ? `Resultado: ${match.home} ${match.homeScore}-${match.awayScore} ${match.away}. ${match.matchday ? 'Jornada ' + match.matchday + '. ' : ''}Consulta el detalle completo del partido en DatosDeFutbol.com.`
+    : `${match.home} vs ${match.away}: horario, jornada y previa. ${match.matchday ? 'Jornada ' + match.matchday + '. ' : ''}Sigue el resultado en directo en DatosDeFutbol.com.`;
+  setMetaDescription(seoDescription);
+
+  const canonicalUrl = `https://datosdefutbol.com/partido.html?code=${code}&season=${season}&id=${match.id}`;
+  setCanonical(canonicalUrl);
+
+  setJsonLd('ld-sportsevent', {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    "name": `${match.home} vs ${match.away}`,
+    "startDate": match.date,
+    "eventStatus": isPlayed ? "https://schema.org/EventCompleted" : "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "homeTeam": { "@type": "SportsTeam", "name": match.home },
+    "awayTeam": { "@type": "SportsTeam", "name": match.away },
+    ...(isPlayed ? {
+      "result": {
+        "@type": "SportsEvent",
+        "name": `${match.home} ${match.homeScore}-${match.awayScore} ${match.away}`
+      }
+    } : {})
+  });
+
+  setJsonLd('ld-breadcrumb', {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://datosdefutbol.com/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Calendario", "item": "https://datosdefutbol.com/calendario.html" },
+      { "@type": "ListItem", "position": 3, "name": `${match.home} vs ${match.away}`, "item": canonicalUrl }
+    ]
+  });
 
   // Otros partidos de la misma jornada, para poder navegar sin volver atrás.
   const othersEl = document.getElementById('matchday-others');
@@ -389,11 +474,131 @@ async function initMatchPage() {
   renderMatchDetail(match, data?.matches, code, season);
 }
 
+// El HTML no permite anidar <a> dentro de <a> (cada fila de calendario ya
+// es un enlace al partido), así que el nombre de equipo se marca con
+// data-team-link y navegamos a su ficha por delegación, deteniendo el
+// click para que no dispare también el enlace del partido.
+function initTeamLinkDelegation() {
+  document.addEventListener('click', (e) => {
+    const target = e.target.closest('[data-team-link]');
+    if (!target) return;
+    const parentLink = target.closest('.match-row-link');
+    const code = getQueryParams().get('code') || currentLeague;
+    const season = getQueryParams().get('season') || currentSeason || 'latest';
+    e.preventDefault();
+    if (parentLink) e.stopPropagation();
+    window.location.href = `equipo.html?code=${code}&season=${season}&team=${target.dataset.teamLink}`;
+  });
+}
+
+// --- Página de ficha de equipo (equipo.html) --------------------------------
+// No hay una API de "detalle de equipo": esta página se construye del todo
+// a partir de los mismos matches-{code}-{season}.json y standings-{code}-
+// {season}.json que ya usan calendario.html y clasificacion.html. Cero
+// llamadas nuevas, cero coste añadido de API.
+function renderTeamMatchRow(m, teamName, code, season) {
+  const d = new Date(m.date);
+  const dateLabel = isNaN(d) ? '' : d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' });
+  const isHome = m.home === teamName;
+  const rival = isHome ? m.away : m.home;
+  const href = `partido.html?code=${code}&season=${season}&id=${m.id}`;
+  return `
+    <a class="match-row match-row-link" href="${href}">
+      <span class="matchday">${dateLabel}</span>
+      <span class="team-name">${isHome ? 'vs' : '@'} ${rival}</span>
+      <span class="score">${m.homeScore ?? '—'} - ${m.awayScore ?? '—'}</span>
+      <span class="status">${m.status}</span>
+    </a>
+  `;
+}
+
+function renderTeamPage(teamName, standingsRow, matches, code, season) {
+  const el = document.getElementById('team-detail');
+  if (!el) return;
+
+  if (!standingsRow && (!matches || matches.length === 0)) {
+    el.innerHTML = '<div class="loading-msg">No hemos encontrado datos de este equipo para esta temporada.</div>';
+    return;
+  }
+
+  const played = (matches || []).filter(m => m.status === 'FINALIZADO').sort((a, b) => new Date(b.date) - new Date(a.date));
+  const upcoming = (matches || []).filter(m => m.status !== 'FINALIZADO').sort((a, b) => new Date(a.date) - new Date(b.date));
+  const lastMatches = played.slice(0, 5);
+  const nextMatch = upcoming[0];
+  const record10 = computeTeamRecord(matches, teamName, 10);
+
+  el.innerHTML = `
+    <div class="match-detail-card">
+      <div class="match-detail-meta">${standingsRow ? 'Posición ' + standingsRow.position + ' · ' + standingsRow.points + ' pts' : ''}</div>
+      <h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;margin:4px 0 8px;">${teamName}</h1>
+      ${standingsRow ? `<div class="match-detail-status">${standingsRow.played} PJ · DG ${standingsRow.goalDiff > 0 ? '+' : ''}${standingsRow.goalDiff} · ${standingsRow.avgGoalsFor ?? '—'} goles/partido de media${standingsRow.formLabel ? ' · ' + standingsRow.formLabel : ''}</div>` : ''}
+    </div>
+
+    ${nextMatch ? `
+      <h4 class="section-subtitle">Próximo partido</h4>
+      ${renderTeamMatchRow(nextMatch, teamName, code, season)}
+    ` : ''}
+
+    ${record10 ? `<p style="font-size:13px;color:var(--gray);margin:16px 0 4px;">Últimos ${record10.played} partidos: <strong>${formatRecord(record10)}</strong></p>` : ''}
+
+    <h4 class="section-subtitle">Últimos resultados</h4>
+    ${lastMatches.length ? lastMatches.map(m => renderTeamMatchRow(m, teamName, code, season)).join('') : '<div class="loading-msg">Sin partidos jugados todavía esta temporada.</div>'}
+  `;
+
+  document.title = `${teamName} — resultados, calendario y clasificación — DatosDeFutbol.com`;
+  setMetaDescription(`${teamName}: resultados, próximo partido, últimos 10 partidos y posición en la clasificación. Datos actualizados cada jornada en DatosDeFutbol.com.`);
+  const canonicalUrl = `https://datosdefutbol.com/equipo.html?code=${code}&season=${season}&team=${encodeURIComponent(teamName)}`;
+  setCanonical(canonicalUrl);
+
+  setJsonLd('ld-team', {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": teamName,
+    "url": canonicalUrl
+  });
+
+  setJsonLd('ld-breadcrumb', {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://datosdefutbol.com/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "Clasificación", "item": "https://datosdefutbol.com/clasificacion.html" },
+      { "@type": "ListItem", "position": 3, "name": teamName, "item": canonicalUrl }
+    ]
+  });
+}
+
+async function initTeamPage() {
+  const params = getQueryParams();
+  const code = params.get('code');
+  const season = params.get('season');
+  const teamName = params.get('team') ? decodeURIComponent(params.get('team')) : null;
+  const el = document.getElementById('team-detail');
+
+  if (!code || !season || !teamName) {
+    if (el) el.innerHTML = '<div class="loading-msg">Falta información en el enlace para mostrar este equipo.</div>';
+    return;
+  }
+
+  const suffix = season === 'latest' ? 'latest' : season;
+  const [matchesData, standingsData] = await Promise.all([
+    loadJSON(`data/matches-${code}-${suffix}.json`),
+    loadJSON(`data/standings-${code}-${suffix}.json`),
+  ]);
+  const teamMatches = (matchesData?.matches || []).filter(m => m.home === teamName || m.away === teamName);
+  const standingsRow = (standingsData?.table || []).find(r => r.club === teamName);
+  renderTeamPage(teamName, standingsRow, teamMatches, code, suffix);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  initTeamLinkDelegation();
   if (document.body.dataset.page === 'home' || document.body.dataset.page === 'clasificacion' || document.body.dataset.page === 'calendario') {
     initHome();
   }
   if (document.body.dataset.page === 'partido') {
     initMatchPage();
+  }
+  if (document.body.dataset.page === 'equipo') {
+    initTeamPage();
   }
 });

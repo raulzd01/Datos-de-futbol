@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calendario de partidos — DatosDeFutbol.com</title>
-<meta name="description" content="Calendario completo de LaLiga, Premier League, Serie A y Ligue 1, jornada a jornada, con enlace al detalle de cada partido.">
+<title>Ficha de equipo — DatosDeFutbol.com</title>
+<meta name="description" content="Resultados, próximo partido y posición en la clasificación de un equipo de LaLiga, Premier League, Serie A o Ligue 1.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -15,7 +15,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/favicon-180.png">
 </head>
-<body data-page="calendario">
+<body data-page="equipo">
 
 <header>
   <a class="logo" href="index.html"><span class="d1">DATOS</span><span class="d2">DEFUTBOL</span></a>
@@ -26,35 +26,19 @@
   </nav>
 </header>
 
-<div class="scoreboard" style="padding-bottom:4px;">
-  <div class="league-tabs" id="league-tabs" style="padding:18px 32px;"></div>
-  <select class="season-selector" id="season-selector" style="display:none;margin:0 32px 12px;"></select>
-  <select class="season-selector" id="matchday-selector" style="margin:0 32px 12px;"></select>
-</div>
-
-<main style="grid-template-columns:1fr;max-width:760px;">
+<main style="grid-template-columns:1fr;max-width:640px;">
   <section>
-    <div class="section-head">
-      <h2>Calendario completo</h2>
-      <span class="auto-tag" id="last-updated">actualizado automáticamente</span>
-    </div>
-    <p style="font-size:13px;color:var(--gray);margin-bottom:16px;">
-      Toca cualquier partido para ver su detalle.
-    </p>
-    <div id="calendar-body">
-      <div class="loading-msg">Cargando calendario…</div>
+    <a href="clasificacion.html" class="back-link">← Volver a la clasificación</a>
+    <div id="team-detail" style="margin-top:16px;">
+      <div class="loading-msg">Cargando equipo…</div>
     </div>
   </section>
 
-  <div class="ad-slot big">ESPACIO ANUNCIO — 728×250 (AdSense)</div>
+  <div class="ad-slot big">ESPACIO ANUNCIO — 300×250 (AdSense)</div>
 </main>
 
 <footer>
   <strong>DatosDeFutbol.com</strong> — Estadísticas, resultados y análisis de fútbol actualizados cada jornada.
-  <div style="margin-top:8px;">
-     <a href="aviso-legal.html">Aviso Legal</a> ·
-     <a href="privacidad.html">Privacidad</a>
-   </div>
 </footer>
 
 <script src="assets/js/main.js?v=5"></script></body>
