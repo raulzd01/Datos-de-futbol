@@ -21,6 +21,7 @@
 
 <div class="scoreboard" style="padding-bottom:4px;">
   <div class="league-tabs" id="league-tabs" style="padding:18px 32px;"></div>
+  <select class="season-selector" id="season-selector" style="display:none;margin:0 32px 12px;"></select>
 </div>
 
 <main style="grid-template-columns:1fr;max-width:760px;">
@@ -54,6 +55,16 @@
         <tr><td class="loading-msg">Calculando…</td></tr>
       </tbody>
     </table>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Partido a partido</h2>
+      <span class="auto-tag">temporada completa</span>
+    </div>
+    <div id="match-list-body">
+      <div class="loading-msg">Cargando partidos…</div>
+    </div>
   </section>
 
   <div class="ad-slot big">ESPACIO ANUNCIO — 728×250 (AdSense)</div>
