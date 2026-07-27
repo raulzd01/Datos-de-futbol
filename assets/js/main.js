@@ -94,8 +94,13 @@ function renderCalendar(matches, code, season) {
     currentGroup.matches.push(m);
   }
 
-  el.innerHTML = groups.map(g => `
-    <div class="matchday-group">
+  // La "jornada actual" es la primera que todavía tiene algún partido sin
+  // terminar. Si ya se jugó toda la temporada, nos quedamos en la última.
+  let currentIndex = groups.findIndex(g => g.matches.some(m => m.status !== 'FINALIZADO'));
+  if (currentIndex === -1) currentIndex = groups.length - 1;
+
+  el.innerHTML = groups.map((g, i) => `
+    <div class="matchday-group" id="jornada-group-${i}">
       <h4 class="matchday-title">${g.label}</h4>
       ${g.matches.map(m => {
         const d = new Date(m.date);
@@ -113,6 +118,30 @@ function renderCalendar(matches, code, season) {
       }).join('')}
     </div>
   `).join('');
+
+  renderMatchdaySelector(groups, currentIndex);
+
+  const target = document.getElementById(`jornada-group-${currentIndex}`);
+  if (target) target.scrollIntoView({ block: 'start' });
+}
+
+// Desplegable para saltar directamente a una jornada, sin tener que
+// desplazarse manualmente por todo el calendario.
+function renderMatchdaySelector(groups, currentIndex) {
+  const el = document.getElementById('matchday-selector');
+  if (!el) return;
+  el.innerHTML = groups.map((g, i) => `
+    <option value="${i}" ${i === currentIndex ? 'selected' : ''}>${g.label}</option>
+  `).join('');
+}
+
+function initMatchdaySelector() {
+  const el = document.getElementById('matchday-selector');
+  if (!el) return;
+  el.addEventListener('change', () => {
+    const target = document.getElementById(`jornada-group-${el.value}`);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 }
 
 function renderStandings(rows) {
@@ -248,6 +277,7 @@ async function initHome() {
   currentSeason = (seasonsIndex[currentLeague] && seasonsIndex[currentLeague][0]) ?? null;
   renderSeasonSelector();
   initSeasonSelector();
+  initMatchdaySelector();
   loadLeagueData(currentLeague, currentSeason);
 }
 
@@ -292,7 +322,7 @@ function renderMatchDetail(match, allMatches, code, season) {
       othersEl.innerHTML = '';
     } else {
       othersEl.innerHTML = `
-        <h4 class="matchday-title">Más partidos de esta jornada</h4>
+        <h4 class="section-subtitle">Más partidos de esta jornada</h4>
         ${others.map(m => `
           <a class="match-row match-row-link" href="partido.html?code=${code}&season=${season}&id=${m.id}">
             <span class="matchday"></span>
