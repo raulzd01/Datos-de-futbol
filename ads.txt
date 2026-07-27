@@ -1,0 +1,8 @@
+# Este archivo es obligatorio para Google AdSense (evita el fraude de
+# inventario publicitario). Cuando Google te dé tu ID de editor
+# (algo como "pub-1234567890123456", SIN "ca-" delante), sustituye la
+# línea de abajo. Lo encuentras en tu cuenta de AdSense en
+# Cuenta > Información de la cuenta > ID de editor.
+#
+# Formato exacto, no cambies nada más que el número:
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

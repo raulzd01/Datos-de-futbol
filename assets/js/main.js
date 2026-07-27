@@ -684,9 +684,63 @@ function applyNavIcons() {
   });
 }
 
+// --- AdSense + consentimiento de cookies ------------------------------------
+// UN SOLO SITIO para pegar el ID de cliente cuando Google apruebe la cuenta:
+// cambia null por tu "ca-pub-XXXXXXXXXXXXXXXX" y ya está — no hace falta
+// tocar el <head> de cada página. Mientras sea null, no se carga ningún
+// script de Google (no hay nada que consentir todavía).
+const ADSENSE_CLIENT_ID = null; // ej: "ca-pub-1234567890123456"
+
+function getCookieConsent() {
+  try { return localStorage.getItem('ddf_cookie_consent'); } catch (e) { return null; }
+}
+function setCookieConsent(value) {
+  try { localStorage.setItem('ddf_cookie_consent', value); } catch (e) { /* Safari privado, etc. */ }
+}
+
+function loadAdSenseScript() {
+  if (!ADSENSE_CLIENT_ID) return; // todavía no hay cuenta aprobada
+  if (document.querySelector('script[data-adsense]')) return; // ya cargado
+  const script = document.createElement('script');
+  script.async = true;
+  script.dataset.adsense = 'true';
+  script.crossOrigin = 'anonymous';
+  script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`;
+  document.head.appendChild(script);
+}
+
+function initCookieBanner() {
+  const consent = getCookieConsent();
+  if (consent === 'accepted') { loadAdSenseScript(); return; }
+  if (consent === 'rejected') return; // el usuario ya decidió que no
+
+  const base = window.location.pathname.includes('/articulos/') ? '../' : '';
+  const banner = document.createElement('div');
+  banner.id = 'cookie-banner';
+  banner.innerHTML = `
+    <p>Usamos cookies técnicas necesarias para el sitio y, si las aceptas, cookies de publicidad (Google AdSense) para poder mantener DatosDeFutbol.com gratis. Más info en la <a href="${base}privacidad.html">Política de Privacidad</a>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-reject" type="button">Rechazar</button>
+      <button class="cookie-accept" type="button">Aceptar</button>
+    </div>
+  `;
+  document.body.appendChild(banner);
+
+  banner.querySelector('.cookie-accept').addEventListener('click', () => {
+    setCookieConsent('accepted');
+    loadAdSenseScript();
+    banner.remove();
+  });
+  banner.querySelector('.cookie-reject').addEventListener('click', () => {
+    setCookieConsent('rejected');
+    banner.remove();
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   applyHeaderIcons();
   applyNavIcons();
+  initCookieBanner();
   initTeamLinkDelegation();
   if (document.body.dataset.page === 'home' || document.body.dataset.page === 'clasificacion' || document.body.dataset.page === 'calendario') {
     initHome();

@@ -229,6 +229,46 @@ section.card{
 }
 section.card .section-head{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px;}
 
+/* --- Banner de cookies ---------------------------------------------------
+   Aparece en la primera visita, se queda hasta que el usuario decide, y
+   bloquea la carga de AdSense hasta que se acepta. Esto es justo lo que
+   la política de privacidad dice que pasa — antes no existía. */
+#cookie-banner{
+  position:fixed;
+  left:0;right:0;bottom:0;
+  z-index:9999;
+  background:var(--pitch-dark);
+  color:var(--chalk);
+  padding:18px 24px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+  border-top:3px solid var(--amber);
+  box-shadow:0 -4px 16px rgba(0,0,0,0.2);
+}
+#cookie-banner p{flex:1 1 280px;font-size:13px;line-height:1.5;margin:0;}
+#cookie-banner p a{color:var(--amber);text-decoration:underline;}
+#cookie-banner .cookie-actions{display:flex;gap:10px;flex:0 0 auto;}
+#cookie-banner button{
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:700;
+  font-size:13px;
+  padding:10px 18px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+}
+#cookie-banner .cookie-accept{background:var(--amber);color:var(--pitch-dark);}
+#cookie-banner .cookie-reject{background:transparent;color:var(--chalk);border:1px solid rgba(245,243,234,0.4);}
+#cookie-banner .cookie-accept:hover{filter:brightness(1.08);}
+#cookie-banner .cookie-reject:hover{border-color:var(--chalk);}
+@media (max-width:520px){
+  #cookie-banner{padding:16px;}
+  #cookie-banner .cookie-actions{width:100%;}
+  #cookie-banner button{flex:1;}
+}
+
 .league-tabs{display:flex;gap:8px;padding:14px 32px 0;flex-wrap:wrap;}
 .league-tab{
   background:rgba(255,255,255,0.08);
