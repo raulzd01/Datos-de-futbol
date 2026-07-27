@@ -167,16 +167,18 @@ table.standings td.mono{font-family:'IBM Plex Mono',monospace;}
 .match-row .score{font-family:'IBM Plex Mono',monospace;font-weight:700;text-align:center;}
 .match-row .status{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gray);text-align:right;}
 
-/* --- Calendario: agrupación por jornada --- */
-.matchday-group{margin-bottom:18px;}
+/* --- Calendario: agrupación por jornada ---
+   La jornada es un dato importante para el lector, así que la destacamos
+   con la misma tipografía de los títulos del sitio (Barlow Condensed),
+   en vez de la monospace pequeña que usábamos antes. */
+.matchday-group{margin-bottom:22px;}
 .matchday-title{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:11px;
-  letter-spacing:0.08em;
-  text-transform:uppercase;
-  color:var(--gray);
-  margin:0 0 4px;
-  padding-top:10px;
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700;
+  font-size:17px;
+  color:var(--pitch-dark);
+  margin:0 0 6px;
+  padding-top:14px;
   border-top:1px solid var(--line);
 }
 .matchday-group:first-child .matchday-title{border-top:none;padding-top:0;}
@@ -189,6 +191,26 @@ table.standings td.mono{font-family:'IBM Plex Mono',monospace;}
 }
 .match-row-link:hover{background:rgba(11,61,46,0.05);}
 
+/* Textos secundarios de navegación (enlaces "volver", "más partidos"...):
+   tipografía de texto normal, no monospace, para un tono más editorial. */
+.section-subtitle{
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:600;
+  font-size:14px;
+  color:var(--pitch-dark);
+  margin:0 0 8px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+}
+.back-link{
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:600;
+  font-size:14px;
+  color:var(--pitch);
+  text-decoration:none;
+}
+.back-link:hover{text-decoration:underline;}
+
 /* --- Ficha de detalle de partido --- */
 .match-detail-card{
   background:var(--pitch-dark);
@@ -197,6 +219,43 @@ table.standings td.mono{font-family:'IBM Plex Mono',monospace;}
   padding:28px 20px;
   text-align:center;
 }
+/* La jornada y la fecha son el dato de contexto más importante de esta
+   ficha, así que van en el mismo estilo de título que el resto del sitio,
+   en ámbar, no como una etiqueta pequeña y apagada. */
+.match-detail-meta{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700;
+  font-size:17px;
+  letter-spacing:0.02em;
+  color:var(--amber);
+  text-transform:capitalize;
+  margin-bottom:18px;
+}
+.match-detail-teams{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+}
+.match-detail-team{flex:1;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;}
+.match-detail-team .team-name.win{color:var(--amber);}
+.match-detail-score{
+  font-family:'IBM Plex Mono',monospace;
+  font-weight:700;
+  font-size:32px;
+  color:var(--amber);
+  min-width:90px;
+}
+.match-detail-status{
+  margin-top:16px;
+  font-family:'Source Sans 3',sans-serif;
+  font-weight:600;
+  font-size:12px;
+  letter-spacing:0.03em;
+  color:rgba(245,243,234,0.75);
+}
+
+
 .match-detail-meta{
   font-family:'IBM Plex Mono',monospace;
   font-size:12px;
