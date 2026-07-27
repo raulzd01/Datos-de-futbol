@@ -134,3 +134,35 @@ table.form-index tr:first-child td{border-top:none;}
 table.form-index .club{font-weight:600;}
 table.form-index .pts{font-family:'IBM Plex Mono',monospace;font-weight:700;color:var(--pitch-dark);width:40px;}
 table.standings td.mono{font-family:'IBM Plex Mono',monospace;}
+
+/* --- Selector de temporada --- */
+.season-selector{
+  margin:10px 32px 4px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  color:var(--chalk);
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  letter-spacing:0.03em;
+  padding:6px 12px;
+  border-radius:20px;
+  cursor:pointer;
+}
+.season-selector option{background:var(--pitch-dark);color:var(--chalk);}
+
+/* --- Lista de partidos (partido a partido) --- */
+.match-row{
+  display:grid;
+  grid-template-columns:34px 1fr 74px 1fr 90px;
+  align-items:center;
+  gap:10px;
+  padding:9px 4px;
+  border-top:1px solid var(--line);
+  font-size:13px;
+}
+.match-row:first-child{border-top:none;}
+.match-row .matchday{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gray);}
+.match-row .team-name{font-weight:500;}
+.match-row .team-name.win{font-weight:700;color:var(--pitch-dark);}
+.match-row .score{font-family:'IBM Plex Mono',monospace;font-weight:700;text-align:center;}
+.match-row .status{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gray);text-align:right;}
