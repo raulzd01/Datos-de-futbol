@@ -20,6 +20,9 @@ const ICONS = {
 function iconSpan(name){
   return `<span class="icon">${ICONS[name] || ''}</span>`;
 }
+function iconChip(name, ghost){
+  return `<span class="icon-chip${ghost ? ' ghost' : ''}">${iconSpan(name)}</span>`;
+}
 
 // --- Escudo de equipo con respaldo de iniciales -----------------------------
 // La API gratuita de football-data.org sí ofrece el escudo real (campo
@@ -587,17 +590,17 @@ function renderTeamPage(teamName, standingsRow, matches, code, season, teamCrest
 
     <div class="stat-grid">
       ${standingsRow ? `
-        <div class="stat-card">${iconSpan('trophy')}<span class="stat-value">${standingsRow.position}º</span><span class="stat-label">Posición</span></div>
-        <div class="stat-card">${iconSpan('chart')}<span class="stat-value">${standingsRow.points}</span><span class="stat-label">Puntos</span></div>
-        <div class="stat-card">${iconSpan('calendar')}<span class="stat-value">${standingsRow.played}</span><span class="stat-label">Jugados</span></div>
-        <div class="stat-card">${iconSpan('updown')}<span class="stat-value">${standingsRow.goalDiff > 0 ? '+' : ''}${standingsRow.goalDiff}</span><span class="stat-label">Dif. de gol</span></div>
-        <div class="stat-card">${iconSpan('ball')}<span class="stat-value">${standingsRow.avgGoalsFor ?? '—'}</span><span class="stat-label">Goles/partido</span></div>
-        <div class="stat-card">${iconSpan('flame')}<span class="stat-value" style="font-size:15px;">${standingsRow.formLabel ?? '—'}</span><span class="stat-label">Racha</span></div>
+        <div class="stat-card">${iconChip('trophy')}<span class="stat-value">${standingsRow.position}º</span><span class="stat-label">Posición</span></div>
+        <div class="stat-card">${iconChip('chart')}<span class="stat-value">${standingsRow.points}</span><span class="stat-label">Puntos</span></div>
+        <div class="stat-card">${iconChip('calendar')}<span class="stat-value">${standingsRow.played}</span><span class="stat-label">Jugados</span></div>
+        <div class="stat-card">${iconChip('updown')}<span class="stat-value">${standingsRow.goalDiff > 0 ? '+' : ''}${standingsRow.goalDiff}</span><span class="stat-label">Dif. de gol</span></div>
+        <div class="stat-card">${iconChip('ball')}<span class="stat-value">${standingsRow.avgGoalsFor ?? '—'}</span><span class="stat-label">Goles/partido</span></div>
+        <div class="stat-card">${iconChip('flame')}<span class="stat-value" style="font-size:15px;">${standingsRow.formLabel ?? '—'}</span><span class="stat-label">Racha</span></div>
       ` : '<p class="loading-msg">Sin datos de clasificación todavía para esta temporada.</p>'}
     </div>
 
     ${nextMatch ? `
-      <h4 class="section-subtitle">${iconSpan('calendar')} Próximo partido</h4>
+      <h4 class="section-subtitle">${iconChip('calendar')} Próximo partido</h4>
       ${renderTeamMatchRow(nextMatch, teamName, code, season)}
     ` : ''}
 
@@ -662,14 +665,28 @@ async function initTeamPage() {
 function applyHeaderIcons() {
   document.querySelectorAll('h2[data-icon]').forEach(h2 => {
     const name = h2.dataset.icon;
-    if (ICONS[name] && !h2.querySelector('.icon')) {
-      h2.insertAdjacentHTML('afterbegin', iconSpan(name));
+    if (ICONS[name] && !h2.querySelector('.icon-chip')) {
+      h2.insertAdjacentHTML('afterbegin', iconChip(name));
+    }
+  });
+}
+
+// Iconos del menú principal (Clasificación, Calendario, Análisis): mismo
+// patrón de icon-chip que en las cabeceras, pero en tono "ghost" (fondo
+// translúcido) porque aquí van sobre el verde oscuro del header, no sobre
+// una cajita blanca.
+function applyNavIcons() {
+  document.querySelectorAll('nav a[data-icon]').forEach(a => {
+    const name = a.dataset.icon;
+    if (ICONS[name] && !a.querySelector('.icon-chip')) {
+      a.insertAdjacentHTML('afterbegin', iconChip(name));
     }
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   applyHeaderIcons();
+  applyNavIcons();
   initTeamLinkDelegation();
   if (document.body.dataset.page === 'home' || document.body.dataset.page === 'clasificacion' || document.body.dataset.page === 'calendario') {
     initHome();

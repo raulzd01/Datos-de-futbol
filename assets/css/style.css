@@ -40,8 +40,9 @@ header{
 .logo .d1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;letter-spacing:0.01em;color:var(--chalk);}
 .logo .d2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;color:var(--amber);}
 nav{display:flex;gap:28px;font-size:14px;font-weight:600;letter-spacing:0.03em;flex-wrap:wrap;}
-nav a{color:var(--chalk);text-decoration:none;opacity:0.85;}
+nav a{display:inline-flex;align-items:center;gap:8px;color:var(--chalk);text-decoration:none;opacity:0.85;transition:opacity 0.15s,color 0.15s;}
 nav a:hover{opacity:1;color:var(--amber);}
+nav a:hover .icon-chip{transform:translateY(-1px);}
 
 .scoreboard{
   background:
@@ -131,8 +132,30 @@ footer a{color:var(--amber);text-decoration:none;}
   vertical-align:-0.15em;
 }
 .icon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
-.section-head h2{display:flex;align-items:center;gap:9px;}
-.section-head h2 .icon{width:0.82em;height:0.82em;color:var(--pitch);}
+
+/* --- Icon chip: el icono metido en una cajita de color -----------------
+   Es el elemento que se repite en el menú y en cada cabecera de sección,
+   para que actúe como firma visual reconocible del sitio, en vez de un
+   trazo suelto flotando junto al texto. */
+.icon-chip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:26px;
+  height:26px;
+  border-radius:8px;
+  background:var(--amber);
+  color:var(--pitch-dark);
+  flex:0 0 auto;
+  transition:transform 0.15s;
+}
+.icon-chip .icon{width:15px;height:15px;}
+.icon-chip svg{stroke-width:2.1;}
+.icon-chip.ghost{background:rgba(255,255,255,0.12);color:var(--amber);}
+
+.section-head h2{display:flex;align-items:center;gap:11px;}
+.section-head h2 .icon-chip{width:30px;height:30px;border-radius:9px;}
+.section-head h2 .icon-chip .icon{width:17px;height:17px;}
 
 /* --- Escudo / avatar de equipo ----------------------------------------
    Si en el futuro añadimos el crest real de la API, se pinta como <img>;
@@ -172,7 +195,8 @@ footer a{color:var(--amber);text-decoration:none;}
   padding:14px 12px;
   text-align:center;
 }
-.stat-card .icon{width:18px;height:18px;color:var(--pitch);margin-bottom:6px;}
+.stat-card .icon-chip{width:30px;height:30px;border-radius:9px;margin:0 auto 8px;}
+.stat-card .icon-chip .icon{width:16px;height:16px;}
 .stat-card .stat-value{
   display:block;
   font-family:'Barlow Condensed',sans-serif;
@@ -297,7 +321,12 @@ table.standings td.mono{font-family:'IBM Plex Mono',monospace;}
   margin:0 0 8px;
   padding-top:14px;
   border-top:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
+.section-subtitle .icon-chip{width:22px;height:22px;border-radius:7px;}
+.section-subtitle .icon-chip .icon{width:12px;height:12px;}
 .back-link{
   font-family:'Source Sans 3',sans-serif;
   font-weight:600;
