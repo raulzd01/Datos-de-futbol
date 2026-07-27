@@ -6,7 +6,7 @@
   --ink:#12181B;
   --amber:#F2B705;
   --line:#DAD5C4;
-  --gray:#6B7168;
+  --gray:#43473C;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 body{
@@ -61,8 +61,8 @@ nav a:hover{opacity:1;color:var(--amber);}
 .team-name{font-size:15px;font-weight:500;}
 .team-name.win{font-weight:700;}
 .score{font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:600;color:var(--amber);}
-.match .status{font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(245,243,234,0.5);margin-top:8px;}
-.ticker-empty{color:rgba(245,243,234,0.6);padding:24px 32px;font-family:'IBM Plex Mono',monospace;font-size:13px;}
+.match .status{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;color:rgba(245,243,234,0.78);margin-top:8px;}
+.ticker-empty{color:rgba(245,243,234,0.8);padding:24px 32px;font-family:'IBM Plex Mono',monospace;font-size:13px;}
 
 main{max-width:1160px;margin:0 auto;padding:40px 32px 80px;display:grid;grid-template-columns:1fr 320px;gap:40px;}
 @media (max-width:860px){main{grid-template-columns:1fr;}}
@@ -164,11 +164,11 @@ table.standings td.mono{font-family:'IBM Plex Mono',monospace;}
   font-size:13px;
 }
 .match-row:first-child{border-top:none;}
-.match-row .matchday{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gray);}
+.match-row .matchday{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:var(--gray);}
 .match-row .team-name{font-weight:500;}
 .match-row .team-name.win{font-weight:700;color:var(--pitch-dark);}
 .match-row .score{font-family:'IBM Plex Mono',monospace;font-weight:700;text-align:center;}
-.match-row .status{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gray);text-align:right;}
+.match-row .status{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:var(--gray);text-align:right;}
 
 /* --- Calendario: agrupación por jornada ---
    La jornada es un dato importante para el lector, así que la destacamos
@@ -253,38 +253,7 @@ table.standings td.mono{font-family:'IBM Plex Mono',monospace;}
   margin-top:16px;
   font-family:'Source Sans 3',sans-serif;
   font-weight:600;
-  font-size:12px;
-  letter-spacing:0.03em;
-  color:rgba(245,243,234,0.75);
-}
-
-
-.match-detail-meta{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:12px;
-  color:rgba(245,243,234,0.65);
-  text-transform:capitalize;
-  margin-bottom:16px;
-}
-.match-detail-teams{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:20px;
-}
-.match-detail-team{flex:1;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;}
-.match-detail-team .team-name.win{color:var(--amber);}
-.match-detail-score{
-  font-family:'IBM Plex Mono',monospace;
-  font-weight:700;
-  font-size:32px;
-  color:var(--amber);
-  min-width:90px;
-}
-.match-detail-status{
-  margin-top:16px;
-  font-family:'IBM Plex Mono',monospace;
-  font-size:11px;
-  letter-spacing:0.05em;
-  color:rgba(245,243,234,0.65);
+  font-size:13px;
+  letter-spacing:0.02em;
+  color:rgba(245,243,234,0.92);
 }
