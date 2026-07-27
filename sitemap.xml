@@ -41,6 +41,20 @@
   <!-- Artículos individuales: añade uno por cada publicación real. -->
 
   <url>
+    <loc>https://datosdefutbol.com/articulos/nuevas-reglas-futbol-2026-27.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://datosdefutbol.com/articulos/fichajes-laliga-2026-27.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://datosdefutbol.com/articulos/calendario-laliga-2026-27.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
