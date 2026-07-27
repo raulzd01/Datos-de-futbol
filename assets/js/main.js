@@ -72,7 +72,50 @@ function renderMatchList(matches) {
   `).join('');
 }
 
-function renderStandings(rows) {
+// --- Calendario (jornada a jornada, agrupado por fecha) --------------------
+function renderCalendar(matches, code, season) {
+  const el = document.getElementById('calendar-body');
+  if (!el) return; // esta sección solo existe en calendario.html
+  if (!matches || matches.length === 0) {
+    el.innerHTML = '<div class="loading-msg">No hay partidos para esta temporada todavía.</div>';
+    return;
+  }
+  const sorted = [...matches].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  // Agrupamos por jornada manteniendo el orden de aparición.
+  const groups = [];
+  let currentGroup = null;
+  for (const m of sorted) {
+    const label = m.matchday ? `Jornada ${m.matchday}` : 'Sin jornada asignada';
+    if (!currentGroup || currentGroup.label !== label) {
+      currentGroup = { label, matches: [] };
+      groups.push(currentGroup);
+    }
+    currentGroup.matches.push(m);
+  }
+
+  el.innerHTML = groups.map(g => `
+    <div class="matchday-group">
+      <h4 class="matchday-title">${g.label}</h4>
+      ${g.matches.map(m => {
+        const d = new Date(m.date);
+        const dateLabel = isNaN(d) ? '' : d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' });
+        const href = `partido.html?code=${code}&season=${season}&id=${m.id}`;
+        return `
+          <a class="match-row match-row-link" href="${href}">
+            <span class="matchday">${dateLabel}</span>
+            <span class="team-name ${m.homeWin ? 'win' : ''}">${m.home}</span>
+            <span class="score">${m.homeScore ?? '—'} - ${m.awayScore ?? '—'}</span>
+            <span class="team-name ${m.awayWin ? 'win' : ''}">${m.away}</span>
+            <span class="status">${m.status}</span>
+          </a>
+        `;
+      }).join('')}
+    </div>
+  `).join('');
+}
+
+
   const el = document.getElementById('standings-body');
   if (!el) return;
   if (!rows || rows.length === 0) {
@@ -178,6 +221,7 @@ async function loadLeagueData(code, season) {
   ]);
   renderTicker(matches?.matches);
   renderMatchList(matches?.matches);
+  renderCalendar(matches?.matches, code, suffix);
   renderStandings(standings?.table);
   renderFormIndex(standings?.table);
   renderScorers(scorers?.scorers);
@@ -207,8 +251,86 @@ async function initHome() {
   loadLeagueData(currentLeague, currentSeason);
 }
 
+// --- Página de detalle de un partido (partido.html) ------------------------
+function getQueryParams() {
+  return new URLSearchParams(window.location.search);
+}
+
+function renderMatchDetail(match, allMatches, code, season) {
+  const el = document.getElementById('match-detail');
+  if (!el) return;
+
+  if (!match) {
+    el.innerHTML = '<div class="loading-msg">No hemos encontrado ese partido. Puede que el enlace esté mal o que la temporada aún no tenga datos.</div>';
+    return;
+  }
+
+  const d = new Date(match.date);
+  const dateLabel = isNaN(d) ? '' : d.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+
+  el.innerHTML = `
+    <div class="match-detail-card">
+      <div class="match-detail-meta">${match.matchday ? 'Jornada ' + match.matchday : ''} · ${dateLabel}</div>
+      <div class="match-detail-teams">
+        <div class="match-detail-team">
+          <span class="team-name ${match.homeWin ? 'win' : ''}">${match.home}</span>
+        </div>
+        <div class="match-detail-score">${match.homeScore ?? '—'} - ${match.awayScore ?? '—'}</div>
+        <div class="match-detail-team">
+          <span class="team-name ${match.awayWin ? 'win' : ''}">${match.away}</span>
+        </div>
+      </div>
+      <div class="match-detail-status">${match.status}</div>
+    </div>
+  `;
+
+  // Otros partidos de la misma jornada, para poder navegar sin volver atrás.
+  const othersEl = document.getElementById('matchday-others');
+  if (othersEl && allMatches) {
+    const others = allMatches.filter(m => m.matchday === match.matchday && m.id !== match.id);
+    if (others.length === 0) {
+      othersEl.innerHTML = '';
+    } else {
+      othersEl.innerHTML = `
+        <h4 class="matchday-title">Más partidos de esta jornada</h4>
+        ${others.map(m => `
+          <a class="match-row match-row-link" href="partido.html?code=${code}&season=${season}&id=${m.id}">
+            <span class="matchday"></span>
+            <span class="team-name ${m.homeWin ? 'win' : ''}">${m.home}</span>
+            <span class="score">${m.homeScore ?? '—'} - ${m.awayScore ?? '—'}</span>
+            <span class="team-name ${m.awayWin ? 'win' : ''}">${m.away}</span>
+            <span class="status">${m.status}</span>
+          </a>
+        `).join('')}
+      `;
+    }
+  }
+
+  document.title = `${match.home} ${match.homeScore ?? ''}-${match.awayScore ?? ''} ${match.away} — DatosDeFutbol.com`;
+}
+
+async function initMatchPage() {
+  const params = getQueryParams();
+  const code = params.get('code');
+  const season = params.get('season');
+  const id = params.get('id');
+  const el = document.getElementById('match-detail');
+
+  if (!code || !season || !id) {
+    if (el) el.innerHTML = '<div class="loading-msg">Falta información en el enlace para mostrar este partido.</div>';
+    return;
+  }
+
+  const data = await loadJSON(`data/matches-${code}-${season}.json`);
+  const match = data?.matches?.find(m => String(m.id) === String(id));
+  renderMatchDetail(match, data?.matches, code, season);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.body.dataset.page === 'home' || document.body.dataset.page === 'clasificacion') {
+  if (document.body.dataset.page === 'home' || document.body.dataset.page === 'clasificacion' || document.body.dataset.page === 'calendario') {
     initHome();
+  }
+  if (document.body.dataset.page === 'partido') {
+    initMatchPage();
   }
 });
