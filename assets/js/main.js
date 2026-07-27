@@ -115,7 +115,7 @@ function renderCalendar(matches, code, season) {
   `).join('');
 }
 
-
+function renderStandings(rows) {
   const el = document.getElementById('standings-body');
   if (!el) return;
   if (!rows || rows.length === 0) {
