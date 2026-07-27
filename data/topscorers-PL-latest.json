@@ -1,0 +1,47 @@
+{
+  "competition": "Premier League",
+  "season": 2025,
+  "scorers": [
+    {
+      "name": "Erling Haaland",
+      "goals": 27
+    },
+    {
+      "name": "Thiago",
+      "goals": 22
+    },
+    {
+      "name": "Antoine Semenyo",
+      "goals": 17
+    },
+    {
+      "name": "Ollie Watkins",
+      "goals": 16
+    },
+    {
+      "name": "João Pedro",
+      "goals": 15
+    },
+    {
+      "name": "Morgan Gibbs-White",
+      "goals": 15
+    },
+    {
+      "name": "Viktor Gyökeres",
+      "goals": 14
+    },
+    {
+      "name": "Dominic Calvert-Lewin",
+      "goals": 14
+    },
+    {
+      "name": "Danny Welbeck",
+      "goals": 13
+    },
+    {
+      "name": "Eli Kroupi",
+      "goals": 13
+    }
+  ],
+  "lastUpdated": "2026-07-27T11:45:41.602222+00:00"
+}

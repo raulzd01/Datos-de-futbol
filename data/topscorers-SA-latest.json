@@ -1,0 +1,47 @@
+{
+  "competition": "Serie A",
+  "season": 2025,
+  "scorers": [
+    {
+      "name": "Lautaro Martínez",
+      "goals": 17
+    },
+    {
+      "name": "Anastasios Douvikas",
+      "goals": 14
+    },
+    {
+      "name": "Donyell Malen",
+      "goals": 14
+    },
+    {
+      "name": "Marcus Thuram-Ulien",
+      "goals": 13
+    },
+    {
+      "name": "Rasmus Højlund",
+      "goals": 13
+    },
+    {
+      "name": "Nico Paz",
+      "goals": 12
+    },
+    {
+      "name": "Giovanni Simeone",
+      "goals": 11
+    },
+    {
+      "name": "Scott McTominay",
+      "goals": 10
+    },
+    {
+      "name": "Federico Bonazzoli",
+      "goals": 10
+    },
+    {
+      "name": "Gianluca Scamacca",
+      "goals": 10
+    }
+  ],
+  "lastUpdated": "2026-07-27T11:46:19.329756+00:00"
+}

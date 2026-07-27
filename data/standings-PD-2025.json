@@ -1,0 +1,207 @@
+{
+  "competition": "LaLiga",
+  "season": 2025,
+  "table": [
+    {
+      "position": 1,
+      "club": "FC Barcelona",
+      "played": 38,
+      "goalDiff": 59,
+      "points": 94,
+      "avgGoalsFor": 2.5,
+      "formIndex": 73,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
+      "club": "Real Madrid CF",
+      "played": 38,
+      "goalDiff": 42,
+      "points": 86,
+      "avgGoalsFor": 2.03,
+      "formIndex": 73,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 3,
+      "club": "Villarreal CF",
+      "played": 38,
+      "goalDiff": 26,
+      "points": 72,
+      "avgGoalsFor": 1.89,
+      "formIndex": 49,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 4,
+      "club": "Club Atlético de Madrid",
+      "played": 38,
+      "goalDiff": 18,
+      "points": 69,
+      "avgGoalsFor": 1.63,
+      "formIndex": 67,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 5,
+      "club": "Real Betis Balompié",
+      "played": 38,
+      "goalDiff": 11,
+      "points": 60,
+      "avgGoalsFor": 1.55,
+      "formIndex": 69,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 6,
+      "club": "RC Celta de Vigo",
+      "played": 38,
+      "goalDiff": 5,
+      "points": 54,
+      "avgGoalsFor": 1.39,
+      "formIndex": 71,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 7,
+      "club": "Getafe CF",
+      "played": 38,
+      "goalDiff": -6,
+      "points": 51,
+      "avgGoalsFor": 0.84,
+      "formIndex": 36,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 8,
+      "club": "Rayo Vallecano de Madrid",
+      "played": 38,
+      "goalDiff": -3,
+      "points": 50,
+      "avgGoalsFor": 1.08,
+      "formIndex": 69,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 9,
+      "club": "Valencia CF",
+      "played": 38,
+      "goalDiff": -9,
+      "points": 49,
+      "avgGoalsFor": 1.21,
+      "formIndex": 53,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 10,
+      "club": "Real Sociedad de Fútbol",
+      "played": 38,
+      "goalDiff": -2,
+      "points": 46,
+      "avgGoalsFor": 1.55,
+      "formIndex": 18,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 11,
+      "club": "RCD Espanyol de Barcelona",
+      "played": 38,
+      "goalDiff": -12,
+      "points": 46,
+      "avgGoalsFor": 1.13,
+      "formIndex": 36,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 12,
+      "club": "Athletic Club",
+      "played": 38,
+      "goalDiff": -15,
+      "points": 45,
+      "avgGoalsFor": 1.13,
+      "formIndex": 38,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 13,
+      "club": "Elche CF",
+      "played": 38,
+      "goalDiff": -8,
+      "points": 43,
+      "avgGoalsFor": 1.29,
+      "formIndex": 24,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 14,
+      "club": "Deportivo Alavés",
+      "played": 38,
+      "goalDiff": -12,
+      "points": 43,
+      "avgGoalsFor": 1.16,
+      "formIndex": 42,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 15,
+      "club": "Sevilla FC",
+      "played": 38,
+      "goalDiff": -14,
+      "points": 43,
+      "avgGoalsFor": 1.21,
+      "formIndex": 80,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 16,
+      "club": "CA Osasuna",
+      "played": 38,
+      "goalDiff": -6,
+      "points": 42,
+      "avgGoalsFor": 1.16,
+      "formIndex": 0,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 17,
+      "club": "RCD Mallorca",
+      "played": 38,
+      "goalDiff": -10,
+      "points": 42,
+      "avgGoalsFor": 1.24,
+      "formIndex": 49,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 18,
+      "club": "Levante UD",
+      "played": 38,
+      "goalDiff": -14,
+      "points": 42,
+      "avgGoalsFor": 1.24,
+      "formIndex": 60,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 19,
+      "club": "Girona FC",
+      "played": 38,
+      "goalDiff": -16,
+      "points": 41,
+      "avgGoalsFor": 1.03,
+      "formIndex": 18,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 20,
+      "club": "Real Oviedo",
+      "played": 38,
+      "goalDiff": -34,
+      "points": 29,
+      "avgGoalsFor": 0.68,
+      "formIndex": 9,
+      "formLabel": "❄️ Bajón"
+    }
+  ],
+  "lastUpdated": "2026-07-27T11:44:46.241483+00:00"
+}

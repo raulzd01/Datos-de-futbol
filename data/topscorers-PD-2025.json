@@ -1,0 +1,47 @@
+{
+  "competition": "LaLiga",
+  "season": 2025,
+  "scorers": [
+    {
+      "name": "Kylian Mbappé",
+      "goals": 25
+    },
+    {
+      "name": "Vedat Muriqi",
+      "goals": 23
+    },
+    {
+      "name": "Ante Budimir",
+      "goals": 17
+    },
+    {
+      "name": "Ferrán Torres",
+      "goals": 16
+    },
+    {
+      "name": "Lamine Yamal",
+      "goals": 16
+    },
+    {
+      "name": "Vinicius Junior",
+      "goals": 16
+    },
+    {
+      "name": "Borja Iglesias",
+      "goals": 15
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "goals": 15
+    },
+    {
+      "name": "Toni Martínez",
+      "goals": 14
+    },
+    {
+      "name": "Robert Lewandowski",
+      "goals": 14
+    }
+  ],
+  "lastUpdated": "2026-07-27T11:45:03.386919+00:00"
+}

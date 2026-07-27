@@ -1,0 +1,47 @@
+{
+  "competition": "Ligue 1",
+  "season": 2025,
+  "scorers": [
+    {
+      "name": "Esteban Lepaul",
+      "goals": 21
+    },
+    {
+      "name": "Joaquín Panichelli",
+      "goals": 16
+    },
+    {
+      "name": "Mason Greenwood",
+      "goals": 16
+    },
+    {
+      "name": "Lassine Sinayoko",
+      "goals": 13
+    },
+    {
+      "name": "Folarin Balogun",
+      "goals": 13
+    },
+    {
+      "name": "Wesley Saïd",
+      "goals": 12
+    },
+    {
+      "name": "Odsonne Edouard",
+      "goals": 12
+    },
+    {
+      "name": "Corentin Tolisso",
+      "goals": 11
+    },
+    {
+      "name": "Florian Thauvin",
+      "goals": 11
+    },
+    {
+      "name": "Bradley Barcola",
+      "goals": 11
+    }
+  ],
+  "lastUpdated": "2026-07-27T11:46:56.358684+00:00"
+}
