@@ -31,15 +31,13 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Artículos individuales: añade uno por cada publicación real.
-       Ejemplo (descomenta y edita cuando publiques el primero real):
+  <!-- Artículos individuales: añade uno por cada publicación real. -->
 
   <url>
-    <loc>https://datosdefutbol.com/articulos/nombre-del-articulo.html</loc>
+    <loc>https://datosdefutbol.com/articulos/calendario-laliga-2026-27.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  -->
 
 </urlset>
