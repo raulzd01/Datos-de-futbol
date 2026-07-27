@@ -129,6 +129,9 @@ footer a{color:var(--amber);text-decoration:none;}
 .league-tab.active{background:var(--amber);color:var(--pitch-dark);border-color:var(--amber);font-weight:600;}
 
 table.form-index{width:100%;border-collapse:collapse;font-size:14px;}
+table.form-index th{text-align:left;font-size:10px;letter-spacing:0.08em;color:var(--gray);text-transform:uppercase;padding:0 8px 10px;font-weight:600;}
+table.form-index th.num, table.form-index td.num{text-align:center;}
+table.form-index td.mono{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--gray);}
 table.form-index td{padding:9px 8px;border-top:1px solid var(--line);}
 table.form-index tr:first-child td{border-top:none;}
 table.form-index .club{font-weight:600;}

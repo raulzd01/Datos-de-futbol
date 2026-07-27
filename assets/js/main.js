@@ -163,22 +163,55 @@ function renderStandings(rows) {
   `).join('');
 }
 
-function renderFormIndex(rows) {
+// Calcula el récord (victorias-empates-derrotas) de un equipo en sus
+// últimos N partidos jugados, usando el historial completo de la
+// temporada que ya tenemos cargado (no depende de la API externa).
+function computeTeamRecord(matches, teamName, n) {
+  if (!matches) return null;
+  const played = matches
+    .filter(m => (m.home === teamName || m.away === teamName) && m.status === 'FINALIZADO')
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, n);
+  if (played.length === 0) return null;
+  let w = 0, d = 0, l = 0;
+  for (const m of played) {
+    const isHome = m.home === teamName;
+    const won = isHome ? m.homeWin : m.awayWin;
+    const lost = isHome ? m.awayWin : m.homeWin;
+    if (won) w++;
+    else if (lost) l++;
+    else d++;
+  }
+  return { w, d, l, played: played.length };
+}
+
+function formatRecord(record) {
+  if (!record) return '—';
+  return `${record.w}V ${record.d}E ${record.l}D`;
+}
+
+function renderFormIndex(rows, matches) {
   const el = document.getElementById('form-index-body');
   if (!el) return;
   const withForm = (rows || []).filter(r => r.formIndex !== null && r.formIndex !== undefined);
   if (withForm.length === 0) {
-    el.innerHTML = '<tr><td colspan="3" class="loading-msg">Todavía no hay suficiente historial esta temporada para calcular el Índice de Forma.</td></tr>';
+    el.innerHTML = '<tr><td colspan="5" class="loading-msg">Todavía no hay suficiente historial esta temporada para calcular el Índice de Forma.</td></tr>';
     return;
   }
   const sorted = [...withForm].sort((a, b) => b.formIndex - a.formIndex);
-  el.innerHTML = sorted.map(r => `
+  el.innerHTML = sorted.map(r => {
+    const record5 = computeTeamRecord(matches, r.club, 5);
+    const record10 = computeTeamRecord(matches, r.club, 10);
+    return `
     <tr>
       <td class="club">${r.club}</td>
       <td class="num pts">${r.formIndex}</td>
       <td>${r.formLabel}</td>
+      <td class="num mono">${formatRecord(record5)}</td>
+      <td class="num mono">${formatRecord(record10)}</td>
     </tr>
-  `).join('');
+  `;
+  }).join('');
 }
 
 function renderScorers(list) {
@@ -252,7 +285,7 @@ async function loadLeagueData(code, season) {
   renderMatchList(matches?.matches);
   renderCalendar(matches?.matches, code, suffix);
   renderStandings(standings?.table);
-  renderFormIndex(standings?.table);
+  renderFormIndex(standings?.table, matches?.matches);
   renderScorers(scorers?.scorers);
 
   const updatedEl = document.getElementById('last-updated');
