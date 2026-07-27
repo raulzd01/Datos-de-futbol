@@ -685,11 +685,15 @@ function applyNavIcons() {
 }
 
 // --- AdSense + consentimiento de cookies ------------------------------------
-// UN SOLO SITIO para pegar el ID de cliente cuando Google apruebe la cuenta:
-// cambia null por tu "ca-pub-XXXXXXXXXXXXXXXX" y ya está — no hace falta
-// tocar el <head> de cada página. Mientras sea null, no se carga ningún
-// script de Google (no hay nada que consentir todavía).
-const ADSENSE_CLIENT_ID = null; // ej: "ca-pub-1234567890123456"
+// El script base de AdSense (adsbygoogle.js) ya está puesto de forma fija
+// en el <head> de cada página — Google exige que esté ahí, sin condiciones,
+// para poder verificar el sitio. Cargar ese script por sí solo no muestra
+// ningún anuncio todavía (no hay unidades de anuncio creadas). El banner de
+// cookies de aquí abajo sigue siendo necesario para cuando se añadan
+// unidades de anuncio reales: ADS_READY se pondrá a true en ese momento, y
+// solo entonces se pedirán anuncios (personalizados si hay consentimiento,
+// no personalizados si no lo hay).
+const ADS_READY = false; // pásalo a true cuando crees tu primera unidad de anuncio
 
 function getCookieConsent() {
   try { return localStorage.getItem('ddf_cookie_consent'); } catch (e) { return null; }
@@ -698,21 +702,18 @@ function setCookieConsent(value) {
   try { localStorage.setItem('ddf_cookie_consent', value); } catch (e) { /* Safari privado, etc. */ }
 }
 
-function loadAdSenseScript() {
-  if (!ADSENSE_CLIENT_ID) return; // todavía no hay cuenta aprobada
-  if (document.querySelector('script[data-adsense]')) return; // ya cargado
-  const script = document.createElement('script');
-  script.async = true;
-  script.dataset.adsense = 'true';
-  script.crossOrigin = 'anonymous';
-  script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`;
-  document.head.appendChild(script);
+function requestAds(personalized) {
+  if (!ADS_READY) return;
+  window.adsbygoogle = window.adsbygoogle || [];
+  document.querySelectorAll('ins.adsbygoogle:not([data-ad-status])').forEach(() => {
+    window.adsbygoogle.push(personalized ? {} : { params: { npa: '1' } });
+  });
 }
 
 function initCookieBanner() {
   const consent = getCookieConsent();
-  if (consent === 'accepted') { loadAdSenseScript(); return; }
-  if (consent === 'rejected') return; // el usuario ya decidió que no
+  if (consent === 'accepted') { requestAds(true); return; }
+  if (consent === 'rejected') { requestAds(false); return; }
 
   const base = window.location.pathname.includes('/articulos/') ? '../' : '';
   const banner = document.createElement('div');
@@ -728,11 +729,12 @@ function initCookieBanner() {
 
   banner.querySelector('.cookie-accept').addEventListener('click', () => {
     setCookieConsent('accepted');
-    loadAdSenseScript();
+    requestAds(true);
     banner.remove();
   });
   banner.querySelector('.cookie-reject').addEventListener('click', () => {
     setCookieConsent('rejected');
+    requestAds(false);
     banner.remove();
   });
 }
