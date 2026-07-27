@@ -185,6 +185,7 @@ def update_standings(code, name, season_year, table):
         rows.append({
             "position": row["position"],
             "club": row["team"]["name"],
+            "crest": row["team"].get("crest"),
             "played": played,
             "goalDiff": row["goalDifference"],
             "points": row["points"],
@@ -233,6 +234,8 @@ def update_matches(code, name, season_year):
             "date": m["utcDate"],
             "home": m["homeTeam"]["name"],
             "away": m["awayTeam"]["name"],
+            "homeCrest": m["homeTeam"].get("crest"),
+            "awayCrest": m["awayTeam"].get("crest"),
             "homeScore": home_score,
             "awayScore": away_score,
             "homeWin": home_score is not None and away_score is not None and home_score > away_score,

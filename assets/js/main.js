@@ -6,6 +6,58 @@ let currentLeague = 'PD';   // liga que se muestra al entrar
 let currentSeason = null;   // año de inicio de temporada seleccionado (ej. 2025)
 let seasonsIndex = {};      // { PD: [2026, 2025, ...], PL: [...], ... } — data/seasons.json
 
+// --- Iconos SVG (trazo simple, heredan color con currentColor) -------------
+const ICONS = {
+  trophy: '<svg viewBox="0 0 24 24"><path d="M7 4h10v4a5 5 0 0 1-10 0V4Z"/><path d="M7 5H4a3 3 0 0 0 3 5"/><path d="M17 5h3a3 3 0 0 1-3 5"/><path d="M12 13v4"/><path d="M9 21h6"/><path d="M10 17h4v4h-4z"/></svg>',
+  calendar: '<svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>',
+  chart: '<svg viewBox="0 0 24 24"><path d="M4 20V10"/><path d="M11 20V4"/><path d="M18 20v-7"/><path d="M2.5 20.5h19"/></svg>',
+  ball: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m12 8 3.6 2.6-1.4 4.2h-4.4L8.4 10.6Z"/><path d="M12 3.5v4.5"/><path d="m5 8 2.2 1.3"/><path d="m19 8-2.2 1.3"/><path d="m8.6 19 1-3.2"/><path d="m15.4 19-1-3.2"/></svg>',
+  updown: '<svg viewBox="0 0 24 24"><path d="M8 4 4.5 8h7Z"/><path d="M16 20 19.5 16h-7Z"/><path d="M8 4v16"/><path d="M16 4v16"/></svg>',
+  flame: '<svg viewBox="0 0 24 24"><path d="M12 2.5c1 3-3.5 4.5-3.5 8a3.5 3.5 0 0 0 7 0c0-1.2-.6-2-1.2-2.8.8 3-1.3 3.8-1.3 1.3 0-2-3-3.6-1-6.5Z"/><path d="M8 14a4 4 0 0 0 8 0c0-1.7-.7-2.8-1.5-3.8"/></svg>',
+  doc: '<svg viewBox="0 0 24 24"><path d="M6 3.5h9l3 3v14H6Z"/><path d="M14.5 3.5V7h3.5"/><path d="M8.5 12h7"/><path d="M8.5 15.5h7"/><path d="M8.5 8.5h3"/></svg>',
+};
+
+function iconSpan(name){
+  return `<span class="icon">${ICONS[name] || ''}</span>`;
+}
+
+// --- Escudo de equipo con respaldo de iniciales -----------------------------
+// La API gratuita de football-data.org sí ofrece el escudo real (campo
+// "crest"), pero de momento el robot solo guarda nombre y resultado. En
+// cuanto se guarde también el crest en data/*.json, esta misma función
+// empieza a pintar el escudo real sin tocar nada más: basta con pasar la
+// URL como segundo argumento. Mientras tanto (o si la imagen falla al
+// cargar), se ve un círculo de color con las iniciales del club.
+const TEAM_STOPWORDS = new Set(['FC','CF','UD','RC','RCD','SD','CD','AD','CA','SC','AS','de','De','Real','Club','Deportivo','Atlético','Atletico','Sporting']);
+function teamInitials(name){
+  if (!name) return '?';
+  const words = name.split(' ').filter(w => w && !TEAM_STOPWORDS.has(w));
+  const source = words.length ? words : name.split(' ');
+  if (source.length === 1) return source[0].slice(0, 2).toUpperCase();
+  return (source[0][0] + source[1][0]).toUpperCase();
+}
+function teamColor(name){
+  const colors = ['var(--badge-1)','var(--badge-2)','var(--badge-3)','var(--badge-4)','var(--badge-5)'];
+  let hash = 0;
+  for (let i = 0; i < (name || '').length; i++) hash = (hash * 31 + name.charCodeAt(i)) >>> 0;
+  return colors[hash % colors.length];
+}
+function teamBadgeInner(name, crestUrl) {
+  if (crestUrl) {
+    const safeName = name.replace(/'/g, "\\'");
+    return `<img src="${crestUrl}" alt="" loading="lazy" onerror="this.parentElement.style.background=teamColor('${safeName}');this.parentElement.textContent='${teamInitials(name)}';">`;
+  }
+  return teamInitials(name);
+}
+function teamBadge(name, crestUrl, size) {
+  const style = size ? `width:${size}px;height:${size}px;font-size:${Math.round(size * 0.42)}px;` : '';
+  const bg = crestUrl ? '' : `background:${teamColor(name)};`;
+  return `<span class="team-badge" style="${style}${bg}">${teamBadgeInner(name, crestUrl)}</span>`;
+}
+function teamWithBadge(name, crestUrl, size, extraClass) {
+  return `<span class="team-with-badge">${teamBadge(name, crestUrl, size)}<span class="${extraClass || ''}">${name}</span></span>`;
+}
+
 async function loadJSON(path) {
   try {
     const res = await fetch(path + '?t=' + Date.now()); // evita caché vieja
@@ -43,8 +95,8 @@ function renderTicker(matches) {
     <div class="match">
       <div class="comp">${m.competition ?? ''}</div>
       <div class="teams">
-        <div class="team-row"><span class="team-name ${m.homeWin ? 'win' : ''}">${m.home}</span><span class="score">${m.homeScore ?? '—'}</span></div>
-        <div class="team-row"><span class="team-name ${m.awayWin ? 'win' : ''}">${m.away}</span><span class="score">${m.awayScore ?? '—'}</span></div>
+        <div class="team-row">${teamWithBadge(m.home, m.homeCrest, 18, 'team-name ' + (m.homeWin ? 'win' : ''))}<span class="score">${m.homeScore ?? '—'}</span></div>
+        <div class="team-row">${teamWithBadge(m.away, m.awayCrest, 18, 'team-name ' + (m.awayWin ? 'win' : ''))}<span class="score">${m.awayScore ?? '—'}</span></div>
       </div>
       <div class="status">${m.status}</div>
     </div>
@@ -64,9 +116,9 @@ function renderMatchList(matches) {
   el.innerHTML = sorted.map(m => `
     <div class="match-row">
       <span class="matchday">${m.matchday ? 'J' + m.matchday : ''}</span>
-      <span class="team-name ${m.homeWin ? 'win' : ''}">${m.home}</span>
+      <span class="team-with-badge">${teamBadge(m.home, m.homeCrest, 18)}<span class="team-name ${m.homeWin ? 'win' : ''}">${m.home}</span></span>
       <span class="score">${m.homeScore ?? '—'} - ${m.awayScore ?? '—'}</span>
-      <span class="team-name ${m.awayWin ? 'win' : ''}">${m.away}</span>
+      <span class="team-with-badge">${teamBadge(m.away, m.awayCrest, 18)}<span class="team-name ${m.awayWin ? 'win' : ''}">${m.away}</span></span>
       <span class="status">${m.status}</span>
     </div>
   `).join('');
@@ -111,9 +163,9 @@ function renderCalendar(matches, code, season) {
         return `
           <a class="match-row match-row-link" href="${href}">
             <span class="matchday">${dateLabel}</span>
-            <span class="team-name ${m.homeWin ? 'win' : ''}" data-team-link="${encodeURIComponent(m.home)}">${m.home}</span>
+            <span class="team-with-badge" data-team-link="${encodeURIComponent(m.home)}">${teamBadge(m.home, m.homeCrest, 18)}<span class="team-name ${m.homeWin ? 'win' : ''}">${m.home}</span></span>
             <span class="score">${m.homeScore ?? '—'} - ${m.awayScore ?? '—'}</span>
-            <span class="team-name ${m.awayWin ? 'win' : ''}" data-team-link="${encodeURIComponent(m.away)}">${m.away}</span>
+            <span class="team-with-badge" data-team-link="${encodeURIComponent(m.away)}">${teamBadge(m.away, m.awayCrest, 18)}<span class="team-name ${m.awayWin ? 'win' : ''}">${m.away}</span></span>
             <span class="status">${m.status}</span>
           </a>
         `;
@@ -158,7 +210,7 @@ function renderStandings(rows, code, season) {
     return `
     <tr class="${r.position <= 4 ? 'top4' : ''} ${r.position >= rows.length - 2 ? 'relegation' : ''}">
       <td class="pos num">${r.position}</td>
-      <td class="club"><a href="${teamHref}">${r.club}</a></td>
+      <td class="club"><a href="${teamHref}" class="team-with-badge">${teamBadge(r.club, r.crest, 20)}<span>${r.club}</span></a></td>
       <td class="num">${r.played}</td>
       <td class="num">${r.goalDiff > 0 ? '+' : ''}${r.goalDiff}</td>
       <td class="num pts">${r.points}</td>
@@ -210,7 +262,7 @@ function renderFormIndex(rows, matches, code, season) {
     const teamHref = `equipo.html?code=${code}&season=${season}&team=${encodeURIComponent(r.club)}`;
     return `
     <tr>
-      <td class="club"><a href="${teamHref}">${r.club}</a></td>
+      <td class="club"><a href="${teamHref}" class="team-with-badge">${teamBadge(r.club, r.crest, 20)}<span>${r.club}</span></a></td>
       <td class="num pts">${r.formIndex}</td>
       <td>${r.formLabel}</td>
       <td class="num mono">${formatRecord(record5)}</td>
@@ -383,11 +435,11 @@ function renderMatchDetail(match, allMatches, code, season) {
       <div class="match-detail-meta">${match.matchday ? 'Jornada ' + match.matchday : ''} · ${dateLabel}</div>
       <div class="match-detail-teams">
         <div class="match-detail-team">
-          <a href="${homeHref}" class="team-name ${match.homeWin ? 'win' : ''}">${match.home}</a>
+          <a href="${homeHref}" class="team-with-badge">${teamBadge(match.home, match.homeCrest, 44)}<span class="team-name ${match.homeWin ? 'win' : ''}">${match.home}</span></a>
         </div>
         <div class="match-detail-score">${match.homeScore ?? '—'} - ${match.awayScore ?? '—'}</div>
         <div class="match-detail-team">
-          <a href="${awayHref}" class="team-name ${match.awayWin ? 'win' : ''}">${match.away}</a>
+          <a href="${awayHref}" class="team-with-badge">${teamBadge(match.away, match.awayCrest, 44)}<span class="team-name ${match.awayWin ? 'win' : ''}">${match.away}</span></a>
         </div>
       </div>
       <div class="match-detail-status">${match.status}</div>
@@ -512,7 +564,7 @@ function renderTeamMatchRow(m, teamName, code, season) {
   `;
 }
 
-function renderTeamPage(teamName, standingsRow, matches, code, season) {
+function renderTeamPage(teamName, standingsRow, matches, code, season, teamCrest) {
   const el = document.getElementById('team-detail');
   if (!el) return;
 
@@ -529,13 +581,23 @@ function renderTeamPage(teamName, standingsRow, matches, code, season) {
 
   el.innerHTML = `
     <div class="match-detail-card">
-      <div class="match-detail-meta">${standingsRow ? 'Posición ' + standingsRow.position + ' · ' + standingsRow.points + ' pts' : ''}</div>
-      <h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;margin:4px 0 8px;">${teamName}</h1>
-      ${standingsRow ? `<div class="match-detail-status">${standingsRow.played} PJ · DG ${standingsRow.goalDiff > 0 ? '+' : ''}${standingsRow.goalDiff} · ${standingsRow.avgGoalsFor ?? '—'} goles/partido de media${standingsRow.formLabel ? ' · ' + standingsRow.formLabel : ''}</div>` : ''}
+      ${teamBadge(teamName, teamCrest, 56)}
+      <h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;margin:10px 0 0;">${teamName}</h1>
+    </div>
+
+    <div class="stat-grid">
+      ${standingsRow ? `
+        <div class="stat-card">${iconSpan('trophy')}<span class="stat-value">${standingsRow.position}º</span><span class="stat-label">Posición</span></div>
+        <div class="stat-card">${iconSpan('chart')}<span class="stat-value">${standingsRow.points}</span><span class="stat-label">Puntos</span></div>
+        <div class="stat-card">${iconSpan('calendar')}<span class="stat-value">${standingsRow.played}</span><span class="stat-label">Jugados</span></div>
+        <div class="stat-card">${iconSpan('updown')}<span class="stat-value">${standingsRow.goalDiff > 0 ? '+' : ''}${standingsRow.goalDiff}</span><span class="stat-label">Dif. de gol</span></div>
+        <div class="stat-card">${iconSpan('ball')}<span class="stat-value">${standingsRow.avgGoalsFor ?? '—'}</span><span class="stat-label">Goles/partido</span></div>
+        <div class="stat-card">${iconSpan('flame')}<span class="stat-value" style="font-size:15px;">${standingsRow.formLabel ?? '—'}</span><span class="stat-label">Racha</span></div>
+      ` : '<p class="loading-msg">Sin datos de clasificación todavía para esta temporada.</p>'}
     </div>
 
     ${nextMatch ? `
-      <h4 class="section-subtitle">Próximo partido</h4>
+      <h4 class="section-subtitle">${iconSpan('calendar')} Próximo partido</h4>
       ${renderTeamMatchRow(nextMatch, teamName, code, season)}
     ` : ''}
 
@@ -587,10 +649,27 @@ async function initTeamPage() {
   ]);
   const teamMatches = (matchesData?.matches || []).filter(m => m.home === teamName || m.away === teamName);
   const standingsRow = (standingsData?.table || []).find(r => r.club === teamName);
-  renderTeamPage(teamName, standingsRow, teamMatches, code, suffix);
+  const teamCrest = standingsRow?.crest
+    || teamMatches.find(m => m.home === teamName)?.homeCrest
+    || teamMatches.find(m => m.away === teamName)?.awayCrest
+    || null;
+  renderTeamPage(teamName, standingsRow, teamMatches, code, suffix, teamCrest);
+}
+
+// Los <h2> de cabecera de sección llevan un atributo data-icon en el HTML
+// estático (ej. data-icon="trophy"); aquí se les antepone el SVG real.
+// Así el SVG vive en un solo sitio (ICONS) y el HTML se mantiene legible.
+function applyHeaderIcons() {
+  document.querySelectorAll('h2[data-icon]').forEach(h2 => {
+    const name = h2.dataset.icon;
+    if (ICONS[name] && !h2.querySelector('.icon')) {
+      h2.insertAdjacentHTML('afterbegin', iconSpan(name));
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  applyHeaderIcons();
   initTeamLinkDelegation();
   if (document.body.dataset.page === 'home' || document.body.dataset.page === 'clasificacion' || document.body.dataset.page === 'calendario') {
     initHome();
