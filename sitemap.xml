@@ -25,6 +25,13 @@
   </url>
 
   <url>
+    <loc>https://datosdefutbol.com/calendario.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://datosdefutbol.com/articulos.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,6 +45,22 @@
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- Páginas legales: importantes para que Google (y AdSense) las vea indexadas. -->
+
+  <url>
+    <loc>https://datosdefutbol.com/aviso-legal.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://datosdefutbol.com/privacidad.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
