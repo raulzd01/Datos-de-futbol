@@ -166,3 +166,63 @@ table.standings td.mono{font-family:'IBM Plex Mono',monospace;}
 .match-row .team-name.win{font-weight:700;color:var(--pitch-dark);}
 .match-row .score{font-family:'IBM Plex Mono',monospace;font-weight:700;text-align:center;}
 .match-row .status{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gray);text-align:right;}
+
+/* --- Calendario: agrupación por jornada --- */
+.matchday-group{margin-bottom:18px;}
+.matchday-title{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--gray);
+  margin:0 0 4px;
+  padding-top:10px;
+  border-top:1px solid var(--line);
+}
+.matchday-group:first-child .matchday-title{border-top:none;padding-top:0;}
+
+.match-row-link{
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
+  transition:background 0.12s;
+}
+.match-row-link:hover{background:rgba(11,61,46,0.05);}
+
+/* --- Ficha de detalle de partido --- */
+.match-detail-card{
+  background:var(--pitch-dark);
+  color:var(--chalk);
+  border-radius:14px;
+  padding:28px 20px;
+  text-align:center;
+}
+.match-detail-meta{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  color:rgba(245,243,234,0.65);
+  text-transform:capitalize;
+  margin-bottom:16px;
+}
+.match-detail-teams{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+}
+.match-detail-team{flex:1;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;}
+.match-detail-team .team-name.win{color:var(--amber);}
+.match-detail-score{
+  font-family:'IBM Plex Mono',monospace;
+  font-weight:700;
+  font-size:32px;
+  color:var(--amber);
+  min-width:90px;
+}
+.match-detail-status{
+  margin-top:16px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.05em;
+  color:rgba(245,243,234,0.65);
+}
