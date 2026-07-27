@@ -8,6 +8,67 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<!--
+  Datos estructurados (Schema.org / JSON-LD).
+
+  IMPORTANTE - honestidad con Google: schema.org no tiene un tipo oficial
+  para "tabla de clasificación deportiva", así que NO inventamos uno.
+  Lo que sí ayuda de verdad y es 100% correcto usar:
+
+    1. WebSite — identifica la marca del sitio. Puede hacer que aparezca
+       tu logo/nombre correctamente en resultados de búsqueda.
+    2. Organization — igual, para la marca DatosDeFutbol.com.
+    3. BreadcrumbList — la ruta de navegación (Inicio > Clasificación).
+       Ayuda a Google a mostrar breadcrumbs en el resultado de búsqueda
+       en vez de solo la URL pelada.
+
+  Pega esto dentro de <head>, justo antes de </head>, en index.html y
+  clasificacion.html. En clasificacion.html cambia el BreadcrumbList
+  (ya viene ajustado para esa página más abajo, en el segundo bloque).
+-->
+
+<!-- ============ PARA index.html ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "DatosDeFutbol.com",
+  "url": "https://datosdefutbol.com/",
+  "description": "Resultados, clasificación y estadísticas de fútbol de LaLiga, Premier League, Serie A y Ligue 1, actualizados cada día, con el Índice de Forma DDF propio."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DatosDeFutbol.com",
+  "url": "https://datosdefutbol.com/"
+}
+</script>
+
+<!-- ============ PARA clasificacion.html (además de los dos de arriba) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://datosdefutbol.com/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Clasificación",
+      "item": "https://datosdefutbol.com/clasificacion.html"
+    }
+  ]
+}
+</script>
+
 </head>
 <body data-page="home">
 
