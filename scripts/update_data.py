@@ -118,10 +118,16 @@ def get_available_seasons(code):
     """
     Consulta la info de la competición y devuelve la lista de temporadas
     disponibles, ordenadas de más reciente a más antigua. Cada elemento
-    es un dict con al menos "id" (año de inicio) y "startDate".
+    es un dict con "year" (año de inicio, sacado de startDate) y "startDate".
+
+    OJO: el campo "id" que devuelve la API es un identificador interno
+    de su base de datos (ej. 2518), NO el año de la temporada. El año
+    hay que sacarlo de "startDate" (ej. "2025-08-15" -> 2025).
     """
     data = fetch(f"competitions/{code}")
     seasons = data.get("seasons", [])
+    for s in seasons:
+        s["year"] = int(s["startDate"][:4])
     seasons_sorted = sorted(seasons, key=lambda s: s["startDate"], reverse=True)
     return seasons_sorted
 
@@ -143,7 +149,7 @@ def pick_working_season(code):
     for season in seasons:
         if attempts >= MAX_ATTEMPTS:
             break
-        year = season["id"]  # football-data.org usa el año de inicio como id
+        year = season["year"]  # año de inicio, sacado de startDate
         attempts += 1
         try:
             data = fetch(f"competitions/{code}/standings?season={year}")
@@ -222,6 +228,7 @@ def update_matches(code, name, season_year):
         else:
             status_text = m["status"]
         out_matches.append({
+            "id": m["id"],
             "matchday": m.get("matchday"),
             "date": m["utcDate"],
             "home": m["homeTeam"]["name"],
