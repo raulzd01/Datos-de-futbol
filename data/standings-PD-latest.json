@@ -5,6 +5,7 @@
     {
       "position": 1,
       "club": "FC Barcelona",
+      "crest": "https://crests.football-data.org/81.png",
       "played": 38,
       "goalDiff": 59,
       "points": 94,
@@ -15,6 +16,7 @@
     {
       "position": 2,
       "club": "Real Madrid CF",
+      "crest": "https://crests.football-data.org/86.png",
       "played": 38,
       "goalDiff": 42,
       "points": 86,
@@ -25,6 +27,7 @@
     {
       "position": 3,
       "club": "Villarreal CF",
+      "crest": "https://crests.football-data.org/94.png",
       "played": 38,
       "goalDiff": 26,
       "points": 72,
@@ -35,6 +38,7 @@
     {
       "position": 4,
       "club": "Club Atlético de Madrid",
+      "crest": "https://crests.football-data.org/78.png",
       "played": 38,
       "goalDiff": 18,
       "points": 69,
@@ -45,6 +49,7 @@
     {
       "position": 5,
       "club": "Real Betis Balompié",
+      "crest": "https://crests.football-data.org/90.png",
       "played": 38,
       "goalDiff": 11,
       "points": 60,
@@ -55,6 +60,7 @@
     {
       "position": 6,
       "club": "RC Celta de Vigo",
+      "crest": "https://crests.football-data.org/558.png",
       "played": 38,
       "goalDiff": 5,
       "points": 54,
@@ -65,6 +71,7 @@
     {
       "position": 7,
       "club": "Getafe CF",
+      "crest": "https://crests.football-data.org/82.png",
       "played": 38,
       "goalDiff": -6,
       "points": 51,
@@ -75,6 +82,7 @@
     {
       "position": 8,
       "club": "Rayo Vallecano de Madrid",
+      "crest": "https://crests.football-data.org/87.png",
       "played": 38,
       "goalDiff": -3,
       "points": 50,
@@ -85,6 +93,7 @@
     {
       "position": 9,
       "club": "Valencia CF",
+      "crest": "https://crests.football-data.org/95.png",
       "played": 38,
       "goalDiff": -9,
       "points": 49,
@@ -95,6 +104,7 @@
     {
       "position": 10,
       "club": "Real Sociedad de Fútbol",
+      "crest": "https://crests.football-data.org/92.png",
       "played": 38,
       "goalDiff": -2,
       "points": 46,
@@ -105,6 +115,7 @@
     {
       "position": 11,
       "club": "RCD Espanyol de Barcelona",
+      "crest": "https://crests.football-data.org/80.png",
       "played": 38,
       "goalDiff": -12,
       "points": 46,
@@ -115,6 +126,7 @@
     {
       "position": 12,
       "club": "Athletic Club",
+      "crest": "https://crests.football-data.org/77.png",
       "played": 38,
       "goalDiff": -15,
       "points": 45,
@@ -125,6 +137,7 @@
     {
       "position": 13,
       "club": "Elche CF",
+      "crest": "https://crests.football-data.org/285.png",
       "played": 38,
       "goalDiff": -8,
       "points": 43,
@@ -135,6 +148,7 @@
     {
       "position": 14,
       "club": "Deportivo Alavés",
+      "crest": "https://crests.football-data.org/263.png",
       "played": 38,
       "goalDiff": -12,
       "points": 43,
@@ -145,6 +159,7 @@
     {
       "position": 15,
       "club": "Sevilla FC",
+      "crest": "https://crests.football-data.org/559.png",
       "played": 38,
       "goalDiff": -14,
       "points": 43,
@@ -155,6 +170,7 @@
     {
       "position": 16,
       "club": "CA Osasuna",
+      "crest": "https://crests.football-data.org/79.png",
       "played": 38,
       "goalDiff": -6,
       "points": 42,
@@ -165,6 +181,7 @@
     {
       "position": 17,
       "club": "RCD Mallorca",
+      "crest": "https://crests.football-data.org/89.png",
       "played": 38,
       "goalDiff": -10,
       "points": 42,
@@ -175,6 +192,7 @@
     {
       "position": 18,
       "club": "Levante UD",
+      "crest": "https://crests.football-data.org/88.png",
       "played": 38,
       "goalDiff": -14,
       "points": 42,
@@ -185,6 +203,7 @@
     {
       "position": 19,
       "club": "Girona FC",
+      "crest": "https://crests.football-data.org/298.png",
       "played": 38,
       "goalDiff": -16,
       "points": 41,
@@ -195,6 +214,7 @@
     {
       "position": 20,
       "club": "Real Oviedo",
+      "crest": "https://crests.football-data.org/1048.png",
       "played": 38,
       "goalDiff": -34,
       "points": 29,
@@ -203,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-07-27T16:25:23.474995+00:00"
+  "lastUpdated": "2026-07-28T09:40:09.714603+00:00"
 }

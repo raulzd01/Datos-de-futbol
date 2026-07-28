@@ -5,6 +5,7 @@
     {
       "position": 1,
       "club": "Paris Saint-Germain FC",
+      "crest": "https://crests.football-data.org/524.png",
       "played": 34,
       "goalDiff": 45,
       "points": 76,
@@ -15,6 +16,7 @@
     {
       "position": 2,
       "club": "Racing Club de Lens",
+      "crest": "https://crests.football-data.org/546.png",
       "played": 34,
       "goalDiff": 31,
       "points": 70,
@@ -25,6 +27,7 @@
     {
       "position": 3,
       "club": "Lille OSC",
+      "crest": "https://crests.football-data.org/521.png",
       "played": 34,
       "goalDiff": 15,
       "points": 61,
@@ -35,6 +38,7 @@
     {
       "position": 4,
       "club": "Olympique Lyonnais",
+      "crest": "https://crests.football-data.org/523.png",
       "played": 34,
       "goalDiff": 13,
       "points": 60,
@@ -45,6 +49,7 @@
     {
       "position": 5,
       "club": "Olympique de Marseille",
+      "crest": "https://crests.football-data.org/516.png",
       "played": 34,
       "goalDiff": 18,
       "points": 59,
@@ -55,6 +60,7 @@
     {
       "position": 6,
       "club": "Stade Rennais FC 1901",
+      "crest": "https://crests.football-data.org/529.png",
       "played": 34,
       "goalDiff": 9,
       "points": 59,
@@ -65,6 +71,7 @@
     {
       "position": 7,
       "club": "AS Monaco FC",
+      "crest": "https://crests.football-data.org/548.png",
       "played": 34,
       "goalDiff": 6,
       "points": 54,
@@ -75,6 +82,7 @@
     {
       "position": 8,
       "club": "RC Strasbourg Alsace",
+      "crest": "https://crests.football-data.org/576.png",
       "played": 34,
       "goalDiff": 11,
       "points": 53,
@@ -85,6 +93,7 @@
     {
       "position": 9,
       "club": "FC Lorient",
+      "crest": "https://crests.football-data.org/525.png",
       "played": 34,
       "goalDiff": -3,
       "points": 45,
@@ -95,6 +104,7 @@
     {
       "position": 10,
       "club": "Toulouse FC",
+      "crest": "https://crests.football-data.org/511.png",
       "played": 33,
       "goalDiff": 1,
       "points": 44,
@@ -105,6 +115,7 @@
     {
       "position": 11,
       "club": "Paris FC",
+      "crest": "https://crests.football-data.org/1045.png",
       "played": 34,
       "goalDiff": -3,
       "points": 44,
@@ -115,6 +126,7 @@
     {
       "position": 12,
       "club": "Stade Brestois 29",
+      "crest": "https://crests.football-data.org/512.png",
       "played": 34,
       "goalDiff": -12,
       "points": 39,
@@ -125,6 +137,7 @@
     {
       "position": 13,
       "club": "Angers SCO",
+      "crest": "https://crests.football-data.org/532.png",
       "played": 34,
       "goalDiff": -19,
       "points": 36,
@@ -135,6 +148,7 @@
     {
       "position": 14,
       "club": "Le Havre AC",
+      "crest": "https://crests.football-data.org/533.png",
       "played": 34,
       "goalDiff": -12,
       "points": 35,
@@ -145,6 +159,7 @@
     {
       "position": 15,
       "club": "AJ Auxerre",
+      "crest": "https://crests.football-data.org/519.png",
       "played": 34,
       "goalDiff": -10,
       "points": 34,
@@ -155,6 +170,7 @@
     {
       "position": 16,
       "club": "OGC Nice",
+      "crest": "https://crests.football-data.org/522.png",
       "played": 34,
       "goalDiff": -23,
       "points": 32,
@@ -165,6 +181,7 @@
     {
       "position": 17,
       "club": "FC Nantes",
+      "crest": "https://crests.football-data.org/543.png",
       "played": 33,
       "goalDiff": -23,
       "points": 23,
@@ -175,6 +192,7 @@
     {
       "position": 18,
       "club": "FC Metz",
+      "crest": "https://crests.football-data.org/545.png",
       "played": 34,
       "goalDiff": -44,
       "points": 17,
@@ -183,5 +201,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-07-27T16:19:16.197038+00:00"
+  "lastUpdated": "2026-07-28T09:42:07.048974+00:00"
 }
