@@ -38,11 +38,11 @@
       "away": "Villarreal CF",
       "homeCrest": "https://crests.football-data.org/5335.png",
       "awayCrest": "https://crests.football-data.org/94.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564632,
@@ -52,11 +52,11 @@
       "away": "Levante UD",
       "homeCrest": "https://crests.football-data.org/80.png",
       "awayCrest": "https://crests.football-data.org/88.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564635,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-16T07:36:37.710420+00:00"
+  "lastUpdated": "2026-08-17T07:56:05.666996+00:00"
 }

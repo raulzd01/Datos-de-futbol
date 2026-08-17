@@ -3,6 +3,10 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Roberto Fernández",
+      "goals": 2
+    },
+    {
       "name": "Nahuel Tenaglia",
       "goals": 1
     },
@@ -25,7 +29,19 @@
     {
       "name": "Peque",
       "goals": 1
+    },
+    {
+      "name": "Andrés Martín",
+      "goals": 1
+    },
+    {
+      "name": "Sergio Martínez",
+      "goals": 1
+    },
+    {
+      "name": "Pape Gueye",
+      "goals": 1
     }
   ],
-  "lastUpdated": "2026-08-16T07:36:44.866723+00:00"
+  "lastUpdated": "2026-08-17T07:56:12.712691+00:00"
 }
