@@ -61,23 +61,23 @@
       "position": 6,
       "club": "RC Deportivo La Coruña",
       "crest": "https://crests.football-data.org/560.png",
-      "played": 0,
+      "played": 1,
       "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
+      "points": 1,
+      "avgGoalsFor": 1.0,
+      "formIndex": 33,
+      "formLabel": "➖ Irregular"
     },
     {
       "position": 7,
       "club": "Elche CF",
       "crest": "https://crests.football-data.org/285.png",
-      "played": 0,
+      "played": 1,
       "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
+      "points": 1,
+      "avgGoalsFor": 1.0,
+      "formIndex": 33,
+      "formLabel": "➖ Irregular"
     },
     {
       "position": 8,
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-17T07:55:58.379915+00:00"
+  "lastUpdated": "2026-08-18T07:44:12.065124+00:00"
 }

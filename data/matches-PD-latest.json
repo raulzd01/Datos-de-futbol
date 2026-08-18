@@ -66,11 +66,11 @@
       "away": "Elche CF",
       "homeCrest": "https://crests.football-data.org/560.png",
       "awayCrest": "https://crests.football-data.org/285.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564628,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-17T07:56:05.666996+00:00"
+  "lastUpdated": "2026-08-18T07:44:19.560130+00:00"
 }
