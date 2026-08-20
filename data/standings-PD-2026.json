@@ -26,6 +26,17 @@
     },
     {
       "position": 3,
+      "club": "Club Atlético de Madrid",
+      "crest": "https://crests.football-data.org/78.png",
+      "played": 1,
+      "goalDiff": 2,
+      "points": 3,
+      "avgGoalsFor": 2.0,
+      "formIndex": 100,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 4,
       "club": "Sevilla FC",
       "crest": "https://crests.football-data.org/559.png",
       "played": 1,
@@ -36,7 +47,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "Real Racing Club de Santander",
       "crest": "https://crests.football-data.org/5335.png",
       "played": 1,
@@ -47,7 +58,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 5,
+      "position": 6,
       "club": "Villarreal CF",
       "crest": "https://crests.football-data.org/94.png",
       "played": 1,
@@ -58,7 +69,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 6,
+      "position": 7,
       "club": "RC Deportivo La Coruña",
       "crest": "https://crests.football-data.org/560.png",
       "played": 1,
@@ -69,7 +80,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 7,
+      "position": 8,
       "club": "Elche CF",
       "crest": "https://crests.football-data.org/285.png",
       "played": 1,
@@ -80,29 +91,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 8,
-      "club": "Club Atlético de Madrid",
-      "crest": "https://crests.football-data.org/78.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
       "position": 9,
-      "club": "Málaga CF",
-      "crest": "https://crests.football-data.org/84.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
-      "position": 10,
       "club": "Real Betis Balompié",
       "crest": "https://crests.football-data.org/90.png",
       "played": 0,
@@ -113,7 +102,7 @@
       "formLabel": null
     },
     {
-      "position": 11,
+      "position": 10,
       "club": "Real Sociedad de Fútbol",
       "crest": "https://crests.football-data.org/92.png",
       "played": 0,
@@ -124,7 +113,7 @@
       "formLabel": null
     },
     {
-      "position": 12,
+      "position": 11,
       "club": "Athletic Club",
       "crest": "https://crests.football-data.org/77.png",
       "played": 0,
@@ -135,7 +124,7 @@
       "formLabel": null
     },
     {
-      "position": 13,
+      "position": 12,
       "club": "Valencia CF",
       "crest": "https://crests.football-data.org/95.png",
       "played": 0,
@@ -146,7 +135,7 @@
       "formLabel": null
     },
     {
-      "position": 14,
+      "position": 13,
       "club": "RC Celta de Vigo",
       "crest": "https://crests.football-data.org/558.png",
       "played": 0,
@@ -157,7 +146,7 @@
       "formLabel": null
     },
     {
-      "position": 15,
+      "position": 14,
       "club": "Real Madrid CF",
       "crest": "https://crests.football-data.org/86.png",
       "played": 0,
@@ -168,7 +157,7 @@
       "formLabel": null
     },
     {
-      "position": 16,
+      "position": 15,
       "club": "FC Barcelona",
       "crest": "https://crests.football-data.org/81.png",
       "played": 0,
@@ -179,7 +168,7 @@
       "formLabel": null
     },
     {
-      "position": 17,
+      "position": 16,
       "club": "CA Osasuna",
       "crest": "https://crests.football-data.org/79.png",
       "played": 0,
@@ -190,13 +179,24 @@
       "formLabel": null
     },
     {
-      "position": 18,
+      "position": 17,
       "club": "Rayo Vallecano de Madrid",
       "crest": "https://crests.football-data.org/87.png",
       "played": 1,
       "goalDiff": -1,
       "points": 0,
       "avgGoalsFor": 1.0,
+      "formIndex": 0,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 18,
+      "club": "Málaga CF",
+      "crest": "https://crests.football-data.org/84.png",
+      "played": 1,
+      "goalDiff": -2,
+      "points": 0,
+      "avgGoalsFor": 0.0,
       "formIndex": 0,
       "formLabel": "❄️ Bajón"
     },
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-19T07:44:10.311509+00:00"
+  "lastUpdated": "2026-08-20T07:46:59.390065+00:00"
 }

@@ -80,11 +80,11 @@
       "away": "Málaga CF",
       "homeCrest": "https://crests.football-data.org/78.png",
       "awayCrest": "https://crests.football-data.org/84.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564638,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-19T07:44:18.243246+00:00"
+  "lastUpdated": "2026-08-20T07:47:06.729983+00:00"
 }
