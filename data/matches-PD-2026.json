@@ -94,11 +94,11 @@
       "away": "Deportivo Alavés",
       "homeCrest": "https://crests.football-data.org/87.png",
       "awayCrest": "https://crests.football-data.org/263.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564647,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-20T07:47:06.729983+00:00"
+  "lastUpdated": "2026-08-21T07:48:53.718848+00:00"
 }
