@@ -108,11 +108,11 @@
       "away": "Real Sociedad de Fútbol",
       "homeCrest": "https://crests.football-data.org/90.png",
       "awayCrest": "https://crests.football-data.org/92.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564641,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-21T07:48:53.718848+00:00"
+  "lastUpdated": "2026-08-22T07:36:45.251437+00:00"
 }
