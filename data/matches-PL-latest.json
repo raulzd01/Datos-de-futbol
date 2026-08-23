@@ -24,11 +24,11 @@
       "away": "Manchester United FC",
       "homeCrest": "https://crests.football-data.org/322.png",
       "awayCrest": "https://crests.football-data.org/66.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560544,
@@ -38,11 +38,11 @@
       "away": "Sunderland AFC",
       "homeCrest": "https://crests.football-data.org/349.png",
       "awayCrest": "https://crests.football-data.org/71.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560545,
@@ -52,11 +52,11 @@
       "away": "Leeds United FC",
       "homeCrest": "https://crests.football-data.org/351.png",
       "awayCrest": "https://crests.football-data.org/341.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 560546,
@@ -66,11 +66,11 @@
       "away": "Crystal Palace FC",
       "homeCrest": "https://crests.football-data.org/62.png",
       "awayCrest": "https://crests.football-data.org/354.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560547,
@@ -80,11 +80,11 @@
       "away": "Tottenham Hotspur FC",
       "homeCrest": "https://crests.football-data.org/402.png",
       "awayCrest": "https://crests.football-data.org/73.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560548,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-08-22T07:37:14.956195+00:00"
+  "lastUpdated": "2026-08-23T07:39:06.112339+00:00"
 }

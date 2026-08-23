@@ -24,11 +24,11 @@
       "away": "AJ Auxerre",
       "homeCrest": "https://crests.football-data.org/546.png",
       "awayCrest": "https://crests.football-data.org/519.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 5,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559711,
@@ -38,11 +38,11 @@
       "away": "Stade Brestois 29",
       "homeCrest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
       "awayCrest": "https://crests.football-data.org/512.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559714,
@@ -52,11 +52,11 @@
       "away": "Paris FC",
       "homeCrest": "https://crests.football-data.org/531.png",
       "awayCrest": "https://crests.football-data.org/1045.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559716,
@@ -66,11 +66,11 @@
       "away": "FC Lorient",
       "homeCrest": "https://crests.football-data.org/522.png",
       "awayCrest": "https://crests.football-data.org/525.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559718,
@@ -80,11 +80,11 @@
       "away": "Olympique Lyonnais",
       "homeCrest": "https://crests.football-data.org/511.png",
       "awayCrest": "https://crests.football-data.org/523.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 559717,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-22T07:38:30.853888+00:00"
+  "lastUpdated": "2026-08-23T07:40:04.835893+00:00"
 }

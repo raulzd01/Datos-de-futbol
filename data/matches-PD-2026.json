@@ -122,11 +122,11 @@
       "away": "Sevilla FC",
       "homeCrest": "https://crests.football-data.org/77.png",
       "awayCrest": "https://crests.football-data.org/559.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564643,
@@ -136,11 +136,11 @@
       "away": "RC Celta de Vigo",
       "homeCrest": "https://crests.football-data.org/95.png",
       "awayCrest": "https://crests.football-data.org/558.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564645,
@@ -150,11 +150,11 @@
       "away": "Real Madrid CF",
       "homeCrest": "https://crests.football-data.org/80.png",
       "awayCrest": "https://crests.football-data.org/86.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564646,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-22T07:36:45.251437+00:00"
+  "lastUpdated": "2026-08-23T07:38:37.700387+00:00"
 }
