@@ -94,11 +94,11 @@
       "away": "Lille OSC",
       "homeCrest": "https://crests.football-data.org/532.png",
       "awayCrest": "https://crests.football-data.org/521.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 559719,
@@ -108,11 +108,11 @@
       "away": "AS Monaco FC",
       "homeCrest": "https://crests.football-data.org/533.png",
       "awayCrest": "https://crests.football-data.org/548.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 559713,
@@ -122,11 +122,11 @@
       "away": "Stade Rennais FC 1901",
       "homeCrest": "https://crests.football-data.org/524.png",
       "awayCrest": "https://crests.football-data.org/529.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559702,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-23T07:40:04.835893+00:00"
+  "lastUpdated": "2026-08-24T08:01:59.775619+00:00"
 }

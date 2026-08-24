@@ -4,6 +4,17 @@
   "table": [
     {
       "position": 1,
+      "club": "Brighton & Hove Albion FC",
+      "crest": "https://crests.football-data.org/397.png",
+      "played": 1,
+      "goalDiff": 4,
+      "points": 3,
+      "avgGoalsFor": 4.0,
+      "formIndex": 100,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
       "club": "Arsenal FC",
       "crest": "https://crests.football-data.org/57.png",
       "played": 1,
@@ -14,7 +25,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 2,
+      "position": 3,
       "club": "Brentford FC",
       "crest": "https://crests.football-data.org/402.png",
       "played": 1,
@@ -25,7 +36,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 3,
+      "position": 4,
       "club": "Hull City AFC",
       "crest": "https://crests.football-data.org/322.png",
       "played": 1,
@@ -36,7 +47,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "Everton FC",
       "crest": "https://crests.football-data.org/62.png",
       "played": 1,
@@ -47,7 +58,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 5,
+      "position": 6,
       "club": "Ipswich Town FC",
       "crest": "https://crests.football-data.org/349.png",
       "played": 1,
@@ -58,7 +69,18 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 6,
+      "position": 7,
+      "club": "Manchester City FC",
+      "crest": "https://crests.football-data.org/65.png",
+      "played": 1,
+      "goalDiff": 1,
+      "points": 3,
+      "avgGoalsFor": 2.0,
+      "formIndex": 100,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 8,
       "club": "Leeds United FC",
       "crest": "https://crests.football-data.org/341.png",
       "played": 1,
@@ -69,73 +91,29 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 7,
-      "club": "Manchester City FC",
-      "crest": "https://crests.football-data.org/65.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
-      "position": 8,
-      "club": "AFC Bournemouth",
-      "crest": "https://crests.football-data.org/bournemouth.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
       "position": 9,
-      "club": "Brighton & Hove Albion FC",
-      "crest": "https://crests.football-data.org/397.png",
-      "played": 0,
+      "club": "Newcastle United FC",
+      "crest": "https://crests.football-data.org/67.png",
+      "played": 1,
       "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
+      "points": 1,
+      "avgGoalsFor": 2.0,
+      "formIndex": 33,
+      "formLabel": "➖ Irregular"
     },
     {
       "position": 10,
-      "club": "Aston Villa FC",
-      "crest": "https://crests.football-data.org/58.png",
-      "played": 0,
+      "club": "Liverpool FC",
+      "crest": "https://crests.football-data.org/64.png",
+      "played": 1,
       "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
+      "points": 1,
+      "avgGoalsFor": 2.0,
+      "formIndex": 33,
+      "formLabel": "➖ Irregular"
     },
     {
       "position": 11,
-      "club": "Newcastle United FC",
-      "crest": "https://crests.football-data.org/67.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
-      "position": 12,
-      "club": "Liverpool FC",
-      "crest": "https://crests.football-data.org/64.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
-      "position": 13,
       "club": "Fulham FC",
       "crest": "https://crests.football-data.org/63.png",
       "played": 0,
@@ -146,7 +124,7 @@
       "formLabel": null
     },
     {
-      "position": 14,
+      "position": 12,
       "club": "Chelsea FC",
       "crest": "https://crests.football-data.org/61.png",
       "played": 0,
@@ -157,7 +135,7 @@
       "formLabel": null
     },
     {
-      "position": 15,
+      "position": 13,
       "club": "Sunderland AFC",
       "crest": "https://crests.football-data.org/71.png",
       "played": 1,
@@ -168,7 +146,18 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 16,
+      "position": 14,
+      "club": "AFC Bournemouth",
+      "crest": "https://crests.football-data.org/bournemouth.png",
+      "played": 1,
+      "goalDiff": -1,
+      "points": 0,
+      "avgGoalsFor": 1.0,
+      "formIndex": 0,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 15,
       "club": "Nottingham Forest FC",
       "crest": "https://crests.football-data.org/351.png",
       "played": 1,
@@ -179,7 +168,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 17,
+      "position": 16,
       "club": "Manchester United FC",
       "crest": "https://crests.football-data.org/66.png",
       "played": 1,
@@ -190,7 +179,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 18,
+      "position": 17,
       "club": "Crystal Palace FC",
       "crest": "https://crests.football-data.org/354.png",
       "played": 1,
@@ -201,7 +190,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 19,
+      "position": 18,
       "club": "Coventry City FC",
       "crest": "https://crests.football-data.org/1076.png",
       "played": 1,
@@ -212,7 +201,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 20,
+      "position": 19,
       "club": "Tottenham Hotspur FC",
       "crest": "https://crests.football-data.org/73.png",
       "played": 1,
@@ -221,7 +210,18 @@
       "avgGoalsFor": 0.0,
       "formIndex": 0,
       "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 20,
+      "club": "Aston Villa FC",
+      "crest": "https://crests.football-data.org/58.png",
+      "played": 1,
+      "goalDiff": -4,
+      "points": 0,
+      "avgGoalsFor": 0.0,
+      "formIndex": 0,
+      "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-23T07:38:58.677172+00:00"
+  "lastUpdated": "2026-08-24T08:00:53.095449+00:00"
 }
