@@ -4,6 +4,17 @@
   "table": [
     {
       "position": 1,
+      "club": "AS Roma",
+      "crest": "https://crests.football-data.org/100.png",
+      "played": 1,
+      "goalDiff": 4,
+      "points": 3,
+      "avgGoalsFor": 4.0,
+      "formIndex": 100,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
       "club": "FC Internazionale Milano",
       "crest": "https://crests.football-data.org/108.png",
       "played": 1,
@@ -14,7 +25,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 2,
+      "position": 3,
       "club": "SSC Napoli",
       "crest": "https://crests.football-data.org/113.png",
       "played": 1,
@@ -25,7 +36,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 3,
+      "position": 4,
       "club": "US Lecce",
       "crest": "https://crests.football-data.org/5890.png",
       "played": 1,
@@ -36,7 +47,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "Atalanta BC",
       "crest": "https://crests.football-data.org/102.png",
       "played": 1,
@@ -47,7 +58,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 5,
+      "position": 6,
       "club": "AC Milan",
       "crest": "https://crests.football-data.org/98.png",
       "played": 1,
@@ -58,7 +69,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 6,
+      "position": 7,
       "club": "Cagliari Calcio",
       "crest": "https://crests.football-data.org/104.png",
       "played": 1,
@@ -69,7 +80,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 7,
+      "position": 8,
       "club": "Juventus FC",
       "crest": "https://crests.football-data.org/109.png",
       "played": 1,
@@ -80,7 +91,18 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 8,
+      "position": 9,
+      "club": "SS Lazio",
+      "crest": "https://crests.football-data.org/110.png",
+      "played": 1,
+      "goalDiff": 1,
+      "points": 3,
+      "avgGoalsFor": 1.0,
+      "formIndex": 100,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 10,
       "club": "Udinese Calcio",
       "crest": "https://crests.football-data.org/115.png",
       "played": 1,
@@ -91,7 +113,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 9,
+      "position": 11,
       "club": "Como 1907",
       "crest": "https://crests.football-data.org/7397.png",
       "played": 1,
@@ -102,51 +124,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 10,
-      "club": "Bologna FC 1909",
-      "crest": "https://crests.football-data.org/103.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
-      "position": 11,
-      "club": "SS Lazio",
-      "crest": "https://crests.football-data.org/110.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
       "position": 12,
-      "club": "AS Roma",
-      "crest": "https://crests.football-data.org/100.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
-      "position": 13,
-      "club": "ACF Fiorentina",
-      "crest": "https://crests.football-data.org/99.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
-      "position": 14,
       "club": "US Sassuolo Calcio",
       "crest": "https://crests.football-data.org/471.png",
       "played": 1,
@@ -157,7 +135,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 15,
+      "position": 13,
       "club": "Torino FC",
       "crest": "https://crests.football-data.org/586.png",
       "played": 1,
@@ -168,7 +146,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 16,
+      "position": 14,
       "club": "Parma Calcio 1913",
       "crest": "https://crests.football-data.org/112.png",
       "played": 1,
@@ -179,7 +157,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 17,
+      "position": 15,
       "club": "Frosinone Calcio",
       "crest": "https://crests.football-data.org/470.png",
       "played": 1,
@@ -190,7 +168,18 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 18,
+      "position": 16,
+      "club": "Bologna FC 1909",
+      "crest": "https://crests.football-data.org/103.png",
+      "played": 1,
+      "goalDiff": -1,
+      "points": 0,
+      "avgGoalsFor": 0.0,
+      "formIndex": 0,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 17,
       "club": "Genoa CFC",
       "crest": "https://crests.football-data.org/107.png",
       "played": 1,
@@ -201,7 +190,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 19,
+      "position": 18,
       "club": "Venezia FC",
       "crest": "https://crests.football-data.org/454.png",
       "played": 1,
@@ -212,7 +201,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 20,
+      "position": 19,
       "club": "AC Monza",
       "crest": "https://crests.football-data.org/5911.png",
       "played": 1,
@@ -221,7 +210,18 @@
       "avgGoalsFor": 1.0,
       "formIndex": 0,
       "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 20,
+      "club": "ACF Fiorentina",
+      "crest": "https://crests.football-data.org/99.png",
+      "played": 1,
+      "goalDiff": -4,
+      "points": 0,
+      "avgGoalsFor": 0.0,
+      "formIndex": 0,
+      "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-24T08:01:22.985481+00:00"
+  "lastUpdated": "2026-08-25T07:50:50.080858+00:00"
 }

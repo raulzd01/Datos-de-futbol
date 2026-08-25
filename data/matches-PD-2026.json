@@ -206,11 +206,11 @@
       "away": "Levante UD",
       "homeCrest": "https://crests.football-data.org/79.png",
       "awayCrest": "https://crests.football-data.org/88.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564640,
@@ -220,11 +220,11 @@
       "away": "RC Deportivo La Coruña",
       "homeCrest": "https://crests.football-data.org/84.png",
       "awayCrest": "https://crests.football-data.org/560.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564637,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-24T08:00:31.182489+00:00"
+  "lastUpdated": "2026-08-25T07:49:54.852979+00:00"
 }

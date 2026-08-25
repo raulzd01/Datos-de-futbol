@@ -136,11 +136,11 @@
       "away": "Chelsea FC",
       "homeCrest": "https://crests.football-data.org/63.png",
       "awayCrest": "https://crests.football-data.org/61.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 560555,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-08-24T08:01:01.143435+00:00"
+  "lastUpdated": "2026-08-25T07:50:29.137925+00:00"
 }

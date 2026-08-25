@@ -59,6 +59,17 @@
     },
     {
       "position": 6,
+      "club": "Chelsea FC",
+      "crest": "https://crests.football-data.org/61.png",
+      "played": 1,
+      "goalDiff": 1,
+      "points": 3,
+      "avgGoalsFor": 3.0,
+      "formIndex": 100,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 7,
       "club": "Ipswich Town FC",
       "crest": "https://crests.football-data.org/349.png",
       "played": 1,
@@ -69,7 +80,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 7,
+      "position": 8,
       "club": "Manchester City FC",
       "crest": "https://crests.football-data.org/65.png",
       "played": 1,
@@ -80,7 +91,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 8,
+      "position": 9,
       "club": "Leeds United FC",
       "crest": "https://crests.football-data.org/341.png",
       "played": 1,
@@ -91,7 +102,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 9,
+      "position": 10,
       "club": "Newcastle United FC",
       "crest": "https://crests.football-data.org/67.png",
       "played": 1,
@@ -102,7 +113,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 10,
+      "position": 11,
       "club": "Liverpool FC",
       "crest": "https://crests.football-data.org/64.png",
       "played": 1,
@@ -113,26 +124,15 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 11,
+      "position": 12,
       "club": "Fulham FC",
       "crest": "https://crests.football-data.org/63.png",
-      "played": 0,
-      "goalDiff": 0,
+      "played": 1,
+      "goalDiff": -1,
       "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
-      "position": 12,
-      "club": "Chelsea FC",
-      "crest": "https://crests.football-data.org/61.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
+      "avgGoalsFor": 2.0,
+      "formIndex": 0,
+      "formLabel": "❄️ Bajón"
     },
     {
       "position": 13,
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-24T08:00:53.095449+00:00"
+  "lastUpdated": "2026-08-25T07:50:21.707798+00:00"
 }

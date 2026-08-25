@@ -122,11 +122,11 @@
       "away": "SS Lazio",
       "homeCrest": "https://crests.football-data.org/103.png",
       "awayCrest": "https://crests.football-data.org/110.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 558638,
@@ -136,11 +136,11 @@
       "away": "ACF Fiorentina",
       "homeCrest": "https://crests.football-data.org/100.png",
       "awayCrest": "https://crests.football-data.org/99.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 4,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558625,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-24T08:01:30.746677+00:00"
+  "lastUpdated": "2026-08-25T07:50:57.441686+00:00"
 }

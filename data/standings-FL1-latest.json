@@ -81,8 +81,8 @@
     },
     {
       "position": 8,
-      "club": "Paris Saint-Germain FC",
-      "crest": "https://crests.football-data.org/524.png",
+      "club": "Stade Rennais FC 1901",
+      "crest": "https://crests.football-data.org/529.png",
       "played": 1,
       "goalDiff": 0,
       "points": 1,
@@ -92,8 +92,8 @@
     },
     {
       "position": 9,
-      "club": "Stade Rennais FC 1901",
-      "crest": "https://crests.football-data.org/529.png",
+      "club": "Paris Saint-Germain FC",
+      "crest": "https://crests.football-data.org/524.png",
       "played": 1,
       "goalDiff": 0,
       "points": 1,
@@ -201,5 +201,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-24T08:01:52.197051+00:00"
+  "lastUpdated": "2026-08-25T07:51:18.484182+00:00"
 }

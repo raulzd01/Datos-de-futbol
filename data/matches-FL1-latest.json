@@ -118,10 +118,10 @@
       "id": 559713,
       "matchday": 1,
       "date": "2026-08-23T18:45:00Z",
-      "home": "Paris Saint-Germain FC",
-      "away": "Stade Rennais FC 1901",
-      "homeCrest": "https://crests.football-data.org/524.png",
-      "awayCrest": "https://crests.football-data.org/529.png",
+      "home": "Stade Rennais FC 1901",
+      "away": "Paris Saint-Germain FC",
+      "homeCrest": "https://crests.football-data.org/529.png",
+      "awayCrest": "https://crests.football-data.org/524.png",
       "homeScore": 2,
       "awayScore": 2,
       "homeWin": false,
@@ -2792,10 +2792,10 @@
       "id": 559514,
       "matchday": 23,
       "date": "2027-03-06T00:00:00Z",
-      "home": "Stade Rennais FC 1901",
-      "away": "Paris Saint-Germain FC",
-      "homeCrest": "https://crests.football-data.org/529.png",
-      "awayCrest": "https://crests.football-data.org/524.png",
+      "home": "Paris Saint-Germain FC",
+      "away": "Stade Rennais FC 1901",
+      "homeCrest": "https://crests.football-data.org/524.png",
+      "awayCrest": "https://crests.football-data.org/529.png",
       "homeScore": null,
       "awayScore": null,
       "homeWin": false,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-24T08:01:59.775619+00:00"
+  "lastUpdated": "2026-08-25T07:51:25.773748+00:00"
 }

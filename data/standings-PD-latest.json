@@ -105,9 +105,9 @@
       "position": 10,
       "club": "RC Deportivo La Coruña",
       "crest": "https://crests.football-data.org/560.png",
-      "played": 1,
+      "played": 2,
       "goalDiff": 0,
-      "points": 1,
+      "points": 2,
       "avgGoalsFor": 1.0,
       "formIndex": 33,
       "formLabel": "➖ Irregular"
@@ -136,6 +136,17 @@
     },
     {
       "position": 13,
+      "club": "CA Osasuna",
+      "crest": "https://crests.football-data.org/79.png",
+      "played": 1,
+      "goalDiff": 0,
+      "points": 1,
+      "avgGoalsFor": 0.0,
+      "formIndex": 33,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 14,
       "club": "Rayo Vallecano de Madrid",
       "crest": "https://crests.football-data.org/87.png",
       "played": 2,
@@ -146,7 +157,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 14,
+      "position": 15,
       "club": "Real Racing Club de Santander",
       "crest": "https://crests.football-data.org/5335.png",
       "played": 2,
@@ -157,7 +168,29 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 15,
+      "position": 16,
+      "club": "Málaga CF",
+      "crest": "https://crests.football-data.org/84.png",
+      "played": 2,
+      "goalDiff": -2,
+      "points": 1,
+      "avgGoalsFor": 0.5,
+      "formIndex": 11,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 17,
+      "club": "Levante UD",
+      "crest": "https://crests.football-data.org/88.png",
+      "played": 2,
+      "goalDiff": -3,
+      "points": 1,
+      "avgGoalsFor": 0.0,
+      "formIndex": 11,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 18,
       "club": "Elche CF",
       "crest": "https://crests.football-data.org/285.png",
       "played": 2,
@@ -168,18 +201,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 16,
-      "club": "CA Osasuna",
-      "crest": "https://crests.football-data.org/79.png",
-      "played": 0,
-      "goalDiff": 0,
-      "points": 0,
-      "avgGoalsFor": 0,
-      "formIndex": null,
-      "formLabel": null
-    },
-    {
-      "position": 17,
+      "position": 19,
       "club": "Real Sociedad de Fútbol",
       "crest": "https://crests.football-data.org/92.png",
       "played": 1,
@@ -190,7 +212,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 18,
+      "position": 20,
       "club": "Athletic Club",
       "crest": "https://crests.football-data.org/77.png",
       "played": 1,
@@ -199,29 +221,7 @@
       "avgGoalsFor": 1.0,
       "formIndex": 0,
       "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 19,
-      "club": "Málaga CF",
-      "crest": "https://crests.football-data.org/84.png",
-      "played": 1,
-      "goalDiff": -2,
-      "points": 0,
-      "avgGoalsFor": 0.0,
-      "formIndex": 0,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 20,
-      "club": "Levante UD",
-      "crest": "https://crests.football-data.org/88.png",
-      "played": 1,
-      "goalDiff": -3,
-      "points": 0,
-      "avgGoalsFor": 0.0,
-      "formIndex": 0,
-      "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-24T08:00:23.147250+00:00"
+  "lastUpdated": "2026-08-25T07:49:47.430271+00:00"
 }

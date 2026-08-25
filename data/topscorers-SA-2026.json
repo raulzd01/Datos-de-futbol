@@ -3,6 +3,10 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Donyell Malen",
+      "goals": 3
+    },
+    {
       "name": "Hassane Kamara",
       "goals": 1
     },
@@ -37,11 +41,7 @@
     {
       "name": "Antonio Vergara",
       "goals": 1
-    },
-    {
-      "name": "Alessandro Romano",
-      "goals": 1
     }
   ],
-  "lastUpdated": "2026-08-24T08:01:38.038013+00:00"
+  "lastUpdated": "2026-08-25T07:51:04.802247+00:00"
 }
