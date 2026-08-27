@@ -3,6 +3,10 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Kylian Mbappé",
+      "goals": 3
+    },
+    {
       "name": "Mariano Díaz",
       "goals": 2
     },
@@ -37,11 +41,7 @@
     {
       "name": "Jon Guridi",
       "goals": 1
-    },
-    {
-      "name": "Peque",
-      "goals": 1
     }
   ],
-  "lastUpdated": "2026-08-26T07:51:43.761381+00:00"
+  "lastUpdated": "2026-08-27T18:11:32.297835+00:00"
 }
