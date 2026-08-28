@@ -150,11 +150,11 @@
       "away": "Manchester City FC",
       "homeCrest": "https://crests.football-data.org/354.png",
       "awayCrest": "https://crests.football-data.org/65.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "EN JUEGO"
     },
     {
       "id": 560552,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-08-27T18:11:54.328591+00:00"
+  "lastUpdated": "2026-08-28T19:22:03.612992+00:00"
 }

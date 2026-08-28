@@ -136,11 +136,11 @@
       "away": "Paris Saint-Germain FC",
       "homeCrest": "https://crests.football-data.org/521.png",
       "awayCrest": "https://crests.football-data.org/524.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "EN JUEGO"
     },
     {
       "id": 559704,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-27T18:12:52.400571+00:00"
+  "lastUpdated": "2026-08-28T19:23:07.004821+00:00"
 }

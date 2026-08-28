@@ -262,11 +262,11 @@
       "away": "CA Osasuna",
       "homeCrest": "https://crests.football-data.org/558.png",
       "awayCrest": "https://crests.football-data.org/79.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564630,
@@ -276,11 +276,11 @@
       "away": "Athletic Club",
       "homeCrest": "https://crests.football-data.org/81.png",
       "awayCrest": "https://crests.football-data.org/77.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564654,
@@ -290,11 +290,11 @@
       "away": "Elche CF",
       "homeCrest": "https://crests.football-data.org/5335.png",
       "awayCrest": "https://crests.football-data.org/285.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564648,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-27T18:11:25.065855+00:00"
+  "lastUpdated": "2026-08-28T19:21:33.196684+00:00"
 }

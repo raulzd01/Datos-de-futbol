@@ -3,7 +3,19 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Raphinha",
+      "goals": 3
+    },
+    {
+      "name": "Fermín López",
+      "goals": 3
+    },
+    {
       "name": "Kylian Mbappé",
+      "goals": 3
+    },
+    {
+      "name": "Yassir Zabiri",
       "goals": 3
     },
     {
@@ -19,14 +31,6 @@
       "goals": 2
     },
     {
-      "name": "Raphinha",
-      "goals": 2
-    },
-    {
-      "name": "Fermín López",
-      "goals": 2
-    },
-    {
       "name": "Nahuel Tenaglia",
       "goals": 1
     },
@@ -37,11 +41,7 @@
     {
       "name": "Álvaro García",
       "goals": 1
-    },
-    {
-      "name": "Jon Guridi",
-      "goals": 1
     }
   ],
-  "lastUpdated": "2026-08-27T18:11:32.297835+00:00"
+  "lastUpdated": "2026-08-28T19:21:40.536344+00:00"
 }
