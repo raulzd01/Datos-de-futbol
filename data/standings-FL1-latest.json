@@ -4,6 +4,17 @@
   "table": [
     {
       "position": 1,
+      "club": "Lille OSC",
+      "crest": "https://crests.football-data.org/521.png",
+      "played": 2,
+      "goalDiff": 2,
+      "points": 4,
+      "avgGoalsFor": 2.0,
+      "formIndex": 78,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
       "club": "Olympique de Marseille",
       "crest": "https://crests.football-data.org/516.png",
       "played": 1,
@@ -14,7 +25,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 2,
+      "position": 3,
       "club": "Racing Club de Lens",
       "crest": "https://crests.football-data.org/546.png",
       "played": 1,
@@ -25,20 +36,9 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 3,
+      "position": 4,
       "club": "Olympique Lyonnais",
       "crest": "https://crests.football-data.org/523.png",
-      "played": 1,
-      "goalDiff": 2,
-      "points": 3,
-      "avgGoalsFor": 2.0,
-      "formIndex": 100,
-      "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 4,
-      "club": "Lille OSC",
-      "crest": "https://crests.football-data.org/521.png",
       "played": 1,
       "goalDiff": 2,
       "points": 3,
@@ -59,6 +59,17 @@
     },
     {
       "position": 6,
+      "club": "Paris Saint-Germain FC",
+      "crest": "https://crests.football-data.org/524.png",
+      "played": 2,
+      "goalDiff": 0,
+      "points": 2,
+      "avgGoalsFor": 2.0,
+      "formIndex": 33,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 7,
       "club": "Le Mans FC",
       "crest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
       "played": 1,
@@ -69,7 +80,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 7,
+      "position": 8,
       "club": "Stade Brestois 29",
       "crest": "https://crests.football-data.org/512.png",
       "played": 1,
@@ -80,20 +91,9 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 8,
+      "position": 9,
       "club": "Stade Rennais FC 1901",
       "crest": "https://crests.football-data.org/529.png",
-      "played": 1,
-      "goalDiff": 0,
-      "points": 1,
-      "avgGoalsFor": 2.0,
-      "formIndex": 33,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 9,
-      "club": "Paris Saint-Germain FC",
-      "crest": "https://crests.football-data.org/524.png",
       "played": 1,
       "goalDiff": 0,
       "points": 1,
@@ -201,5 +201,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-28T19:22:59.216143+00:00"
+  "lastUpdated": "2026-08-29T13:07:21.432975+00:00"
 }

@@ -4,6 +4,17 @@
   "table": [
     {
       "position": 1,
+      "club": "Deportivo Alavés",
+      "crest": "https://crests.football-data.org/263.png",
+      "played": 3,
+      "goalDiff": 4,
+      "points": 7,
+      "avgGoalsFor": 1.67,
+      "formIndex": 78,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
       "club": "FC Barcelona",
       "crest": "https://crests.football-data.org/81.png",
       "played": 2,
@@ -14,7 +25,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 2,
+      "position": 3,
       "club": "Real Madrid CF",
       "crest": "https://crests.football-data.org/86.png",
       "played": 2,
@@ -25,7 +36,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 3,
+      "position": 4,
       "club": "Sevilla FC",
       "crest": "https://crests.football-data.org/559.png",
       "played": 2,
@@ -36,7 +47,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "Real Betis Balompié",
       "crest": "https://crests.football-data.org/90.png",
       "played": 2,
@@ -44,17 +55,6 @@
       "points": 6,
       "avgGoalsFor": 1.0,
       "formIndex": 100,
-      "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 5,
-      "club": "Deportivo Alavés",
-      "crest": "https://crests.football-data.org/263.png",
-      "played": 2,
-      "goalDiff": 3,
-      "points": 4,
-      "avgGoalsFor": 2.0,
-      "formIndex": 78,
       "formLabel": "🔥 En racha"
     },
     {
@@ -114,17 +114,6 @@
     },
     {
       "position": 11,
-      "club": "Villarreal CF",
-      "crest": "https://crests.football-data.org/94.png",
-      "played": 2,
-      "goalDiff": 0,
-      "points": 2,
-      "avgGoalsFor": 2.0,
-      "formIndex": 33,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 12,
       "club": "RC Deportivo La Coruña",
       "crest": "https://crests.football-data.org/560.png",
       "played": 2,
@@ -133,6 +122,17 @@
       "avgGoalsFor": 1.0,
       "formIndex": 33,
       "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 12,
+      "club": "Villarreal CF",
+      "crest": "https://crests.football-data.org/94.png",
+      "played": 3,
+      "goalDiff": -1,
+      "points": 2,
+      "avgGoalsFor": 1.33,
+      "formIndex": 28,
+      "formLabel": "❄️ Bajón"
     },
     {
       "position": 13,
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-28T19:21:25.221965+00:00"
+  "lastUpdated": "2026-08-29T13:05:51.358334+00:00"
 }

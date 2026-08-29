@@ -150,11 +150,11 @@
       "away": "Venezia FC",
       "homeCrest": "https://crests.football-data.org/98.png",
       "awayCrest": "https://crests.football-data.org/454.png",
-      "homeScore": 0,
+      "homeScore": 2,
       "awayScore": 0,
-      "homeWin": false,
+      "homeWin": true,
       "awayWin": false,
-      "status": "EN JUEGO"
+      "status": "FINALIZADO"
     },
     {
       "id": 558620,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-28T19:22:35.187232+00:00"
+  "lastUpdated": "2026-08-29T13:06:59.856153+00:00"
 }

@@ -150,11 +150,11 @@
       "away": "Manchester City FC",
       "homeCrest": "https://crests.football-data.org/354.png",
       "awayCrest": "https://crests.football-data.org/65.png",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 1,
+      "awayScore": 4,
       "homeWin": false,
-      "awayWin": false,
-      "status": "EN JUEGO"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 560552,
@@ -164,11 +164,11 @@
       "away": "Nottingham Forest FC",
       "homeCrest": "https://crests.football-data.org/64.png",
       "awayCrest": "https://crests.football-data.org/351.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "EN JUEGO"
     },
     {
       "id": 560560,
@@ -647,20 +647,6 @@
       "status": "TIMED"
     },
     {
-      "id": 560590,
-      "matchday": 5,
-      "date": "2026-09-19T14:00:00Z",
-      "home": "Manchester City FC",
-      "away": "Sunderland AFC",
-      "homeCrest": "https://crests.football-data.org/65.png",
-      "awayCrest": "https://crests.football-data.org/71.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
-    },
-    {
       "id": 560589,
       "matchday": 5,
       "date": "2026-09-19T16:30:00Z",
@@ -682,6 +668,20 @@
       "away": "Liverpool FC",
       "homeCrest": "https://crests.football-data.org/bournemouth.png",
       "awayCrest": "https://crests.football-data.org/64.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 560590,
+      "matchday": 5,
+      "date": "2026-09-20T13:00:00Z",
+      "home": "Manchester City FC",
+      "away": "Sunderland AFC",
+      "homeCrest": "https://crests.football-data.org/65.png",
+      "awayCrest": "https://crests.football-data.org/71.png",
       "homeScore": null,
       "awayScore": null,
       "homeWin": false,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-08-28T19:22:03.612992+00:00"
+  "lastUpdated": "2026-08-29T13:06:30.413947+00:00"
 }

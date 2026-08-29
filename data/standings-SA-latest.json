@@ -4,6 +4,17 @@
   "table": [
     {
       "position": 1,
+      "club": "AC Milan",
+      "crest": "https://crests.football-data.org/98.png",
+      "played": 2,
+      "goalDiff": 3,
+      "points": 6,
+      "avgGoalsFor": 2.0,
+      "formIndex": 100,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
       "club": "AS Roma",
       "crest": "https://crests.football-data.org/100.png",
       "played": 1,
@@ -14,7 +25,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 2,
+      "position": 3,
       "club": "FC Internazionale Milano",
       "crest": "https://crests.football-data.org/108.png",
       "played": 1,
@@ -25,7 +36,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 3,
+      "position": 4,
       "club": "SSC Napoli",
       "crest": "https://crests.football-data.org/113.png",
       "played": 1,
@@ -36,7 +47,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "US Lecce",
       "crest": "https://crests.football-data.org/5890.png",
       "played": 1,
@@ -47,20 +58,9 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 5,
+      "position": 6,
       "club": "Atalanta BC",
       "crest": "https://crests.football-data.org/102.png",
-      "played": 1,
-      "goalDiff": 1,
-      "points": 3,
-      "avgGoalsFor": 2.0,
-      "formIndex": 100,
-      "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 6,
-      "club": "AC Milan",
-      "crest": "https://crests.football-data.org/98.png",
       "played": 1,
       "goalDiff": 1,
       "points": 3,
@@ -191,23 +191,23 @@
     },
     {
       "position": 18,
-      "club": "Venezia FC",
-      "crest": "https://crests.football-data.org/454.png",
-      "played": 1,
-      "goalDiff": -2,
-      "points": 0,
-      "avgGoalsFor": 0.0,
-      "formIndex": 0,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 19,
       "club": "AC Monza",
       "crest": "https://crests.football-data.org/5911.png",
       "played": 1,
       "goalDiff": -3,
       "points": 0,
       "avgGoalsFor": 1.0,
+      "formIndex": 0,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 19,
+      "club": "Venezia FC",
+      "crest": "https://crests.football-data.org/454.png",
+      "played": 2,
+      "goalDiff": -4,
+      "points": 0,
+      "avgGoalsFor": 0.0,
       "formIndex": 0,
       "formLabel": "❄️ Bajón"
     },
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-08-28T19:22:27.557140+00:00"
+  "lastUpdated": "2026-08-29T13:06:52.111097+00:00"
 }
