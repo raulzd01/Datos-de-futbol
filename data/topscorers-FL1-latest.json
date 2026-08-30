@@ -3,15 +3,23 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Florian Thauvin",
+      "goals": 3
+    },
+    {
       "name": "Amine Gouiri",
       "goals": 2
     },
     {
-      "name": "Florian Thauvin",
+      "name": "Kamory Doumbia",
       "goals": 2
     },
     {
       "name": "Ferrán Torres",
+      "goals": 2
+    },
+    {
+      "name": "Gessime Yassine",
       "goals": 2
     },
     {
@@ -33,15 +41,7 @@
     {
       "name": "Daniel Namaso",
       "goals": 1
-    },
-    {
-      "name": "Pierre Ganiou",
-      "goals": 1
-    },
-    {
-      "name": "Lamine Sy",
-      "goals": 1
     }
   ],
-  "lastUpdated": "2026-08-29T13:07:36.280685+00:00"
+  "lastUpdated": "2026-08-30T12:44:33.459061+00:00"
 }

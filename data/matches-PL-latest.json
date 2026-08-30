@@ -164,11 +164,11 @@
       "away": "Nottingham Forest FC",
       "homeCrest": "https://crests.football-data.org/64.png",
       "awayCrest": "https://crests.football-data.org/351.png",
-      "homeScore": 1,
-      "awayScore": 1,
+      "homeScore": null,
+      "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "EN JUEGO"
+      "status": "TIMED"
     },
     {
       "id": 560560,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-08-29T13:06:30.413947+00:00"
+  "lastUpdated": "2026-08-30T12:43:29.803143+00:00"
 }

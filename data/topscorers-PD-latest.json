@@ -3,6 +3,14 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Roberto Fernández",
+      "goals": 3
+    },
+    {
+      "name": "Álex Baena",
+      "goals": 3
+    },
+    {
       "name": "Raphinha",
       "goals": 3
     },
@@ -23,25 +31,17 @@
       "goals": 2
     },
     {
-      "name": "Roberto Fernández",
-      "goals": 2
-    },
-    {
       "name": "Pierre-Emerick Aubameyang",
       "goals": 2
     },
     {
-      "name": "Nahuel Tenaglia",
-      "goals": 1
+      "name": "Rodrigo Riquelme",
+      "goals": 2
     },
     {
-      "name": "Mikel Rodríguez",
-      "goals": 1
-    },
-    {
-      "name": "Álvaro García",
-      "goals": 1
+      "name": "Brugui",
+      "goals": 2
     }
   ],
-  "lastUpdated": "2026-08-29T13:06:08.585998+00:00"
+  "lastUpdated": "2026-08-30T12:43:08.565652+00:00"
 }
