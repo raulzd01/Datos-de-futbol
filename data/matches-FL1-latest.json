@@ -150,11 +150,11 @@
       "away": "Racing Club de Lens",
       "homeCrest": "https://crests.football-data.org/576.png",
       "awayCrest": "https://crests.football-data.org/546.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559705,
@@ -164,11 +164,11 @@
       "away": "ES Troyes AC",
       "homeCrest": "https://crests.football-data.org/525.png",
       "awayCrest": "https://crests.football-data.org/531.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 559706,
@@ -178,11 +178,11 @@
       "away": "Le Havre AC",
       "homeCrest": "https://crests.football-data.org/523.png",
       "awayCrest": "https://crests.football-data.org/533.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559708,
@@ -192,11 +192,11 @@
       "away": "Angers SCO",
       "homeCrest": "https://crests.football-data.org/519.png",
       "awayCrest": "https://crests.football-data.org/532.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 559710,
@@ -206,11 +206,11 @@
       "away": "Toulouse FC",
       "homeCrest": "https://crests.football-data.org/512.png",
       "awayCrest": "https://crests.football-data.org/511.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559707,
@@ -220,11 +220,11 @@
       "away": "OGC Nice",
       "homeCrest": "https://crests.football-data.org/1045.png",
       "awayCrest": "https://crests.football-data.org/522.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559709,
@@ -234,11 +234,11 @@
       "away": "Le Mans FC",
       "homeCrest": "https://crests.football-data.org/529.png",
       "awayCrest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559703,
@@ -248,11 +248,11 @@
       "away": "Olympique de Marseille",
       "homeCrest": "https://crests.football-data.org/548.png",
       "awayCrest": "https://crests.football-data.org/516.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "EN JUEGO"
     },
     {
       "id": 559696,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-30T12:44:26.529259+00:00"
+  "lastUpdated": "2026-08-31T15:00:26.663706+00:00"
 }

@@ -164,11 +164,11 @@
       "away": "Torino FC",
       "homeCrest": "https://crests.football-data.org/471.png",
       "awayCrest": "https://crests.football-data.org/586.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558624,
@@ -178,11 +178,11 @@
       "away": "Udinese Calcio",
       "homeCrest": "https://crests.football-data.org/5911.png",
       "awayCrest": "https://crests.football-data.org/115.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 558627,
@@ -192,11 +192,11 @@
       "away": "Frosinone Calcio",
       "homeCrest": "https://crests.football-data.org/99.png",
       "awayCrest": "https://crests.football-data.org/470.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 558619,
@@ -206,11 +206,11 @@
       "away": "Parma Calcio 1913",
       "homeCrest": "https://crests.football-data.org/109.png",
       "awayCrest": "https://crests.football-data.org/112.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558626,
@@ -220,11 +220,11 @@
       "away": "Como 1907",
       "homeCrest": "https://crests.football-data.org/113.png",
       "awayCrest": "https://crests.football-data.org/7397.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 558622,
@@ -234,11 +234,11 @@
       "away": "Genoa CFC",
       "homeCrest": "https://crests.football-data.org/110.png",
       "awayCrest": "https://crests.football-data.org/107.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "EN JUEGO"
     },
     {
       "id": 558623,
@@ -248,11 +248,11 @@
       "away": "FC Internazionale Milano",
       "homeCrest": "https://crests.football-data.org/104.png",
       "awayCrest": "https://crests.football-data.org/108.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "EN JUEGO"
     },
     {
       "id": 558621,
@@ -397,7 +397,7 @@
     {
       "id": 558610,
       "matchday": 3,
-      "date": "2026-09-07T16:00:00Z",
+      "date": "2026-09-07T16:30:00Z",
       "home": "Cagliari Calcio",
       "away": "US Lecce",
       "homeCrest": "https://crests.football-data.org/104.png",
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-30T12:43:57.857906+00:00"
+  "lastUpdated": "2026-08-31T14:59:57.123512+00:00"
 }

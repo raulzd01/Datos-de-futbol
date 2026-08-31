@@ -11,20 +11,24 @@
       "goals": 2
     },
     {
+      "name": "Anastasios Douvikas",
+      "goals": 2
+    },
+    {
+      "name": "Hakan Çalhanoğlu",
+      "goals": 2
+    },
+    {
       "name": "Gustavo Varela",
+      "goals": 2
+    },
+    {
+      "name": "Davide Frattesi",
       "goals": 2
     },
     {
       "name": "Antonio Raimondo",
       "goals": 2
-    },
-    {
-      "name": "Anastasios Douvikas",
-      "goals": 1
-    },
-    {
-      "name": "Hakan Çalhanoğlu",
-      "goals": 1
     },
     {
       "name": "Piotr Zieliński",
@@ -37,11 +41,7 @@
     {
       "name": "Yann Aurel Bisseck",
       "goals": 1
-    },
-    {
-      "name": "Kevin De Bruyne",
-      "goals": 1
     }
   ],
-  "lastUpdated": "2026-08-30T12:44:04.943617+00:00"
+  "lastUpdated": "2026-08-31T15:00:05.274857+00:00"
 }

@@ -7,6 +7,14 @@
       "goals": 3
     },
     {
+      "name": "Louis Mafouta",
+      "goals": 3
+    },
+    {
+      "name": "Esteban Lepaul",
+      "goals": 3
+    },
+    {
       "name": "Amine Gouiri",
       "goals": 2
     },
@@ -23,25 +31,17 @@
       "goals": 2
     },
     {
+      "name": "Paris Brunner",
+      "goals": 2
+    },
+    {
       "name": "Keyliane Abdallah",
       "goals": 1
     },
     {
       "name": "Pierre Emile Højbjerg",
       "goals": 1
-    },
-    {
-      "name": "Franjo Ivanovic",
-      "goals": 1
-    },
-    {
-      "name": "Saud Abdulhamid",
-      "goals": 1
-    },
-    {
-      "name": "Daniel Namaso",
-      "goals": 1
     }
   ],
-  "lastUpdated": "2026-08-30T12:44:33.459061+00:00"
+  "lastUpdated": "2026-08-31T15:00:33.750291+00:00"
 }
