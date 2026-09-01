@@ -378,7 +378,7 @@
       "awayScore": 1,
       "homeWin": true,
       "awayWin": false,
-      "status": "EN JUEGO"
+      "status": "FINALIZADO"
     },
     {
       "id": 564652,
@@ -388,11 +388,11 @@
       "away": "Athletic Club",
       "homeCrest": "https://crests.football-data.org/558.png",
       "awayCrest": "https://crests.football-data.org/77.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564657,
@@ -402,11 +402,11 @@
       "away": "Getafe CF",
       "homeCrest": "https://crests.football-data.org/79.png",
       "awayCrest": "https://crests.football-data.org/82.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564650,
@@ -416,11 +416,11 @@
       "away": "Rayo Vallecano de Madrid",
       "homeCrest": "https://crests.football-data.org/81.png",
       "awayCrest": "https://crests.football-data.org/87.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 5,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564682,
@@ -577,23 +577,9 @@
       "status": "TIMED"
     },
     {
-      "id": 564668,
-      "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
-      "home": "Getafe CF",
-      "away": "RC Deportivo La Coruña",
-      "homeCrest": "https://crests.football-data.org/82.png",
-      "awayCrest": "https://crests.football-data.org/560.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "13/09 00:00"
-    },
-    {
       "id": 564669,
       "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
+      "date": "2026-09-11T19:00:00Z",
       "home": "Sevilla FC",
       "away": "Valencia CF",
       "homeCrest": "https://crests.football-data.org/559.png",
@@ -602,12 +588,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "13/09 00:00"
+      "status": "TIMED"
     },
     {
       "id": 564670,
       "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
+      "date": "2026-09-12T12:00:00Z",
       "home": "Real Racing Club de Santander",
       "away": "Deportivo Alavés",
       "homeCrest": "https://crests.football-data.org/5335.png",
@@ -616,40 +602,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "13/09 00:00"
-    },
-    {
-      "id": 564671,
-      "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
-      "home": "Villarreal CF",
-      "away": "Real Betis Balompié",
-      "homeCrest": "https://crests.football-data.org/94.png",
-      "awayCrest": "https://crests.football-data.org/90.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "13/09 00:00"
-    },
-    {
-      "id": 564672,
-      "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
-      "home": "RC Celta de Vigo",
-      "away": "Málaga CF",
-      "homeCrest": "https://crests.football-data.org/558.png",
-      "awayCrest": "https://crests.football-data.org/84.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "13/09 00:00"
+      "status": "TIMED"
     },
     {
       "id": 564673,
       "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
+      "date": "2026-09-12T14:15:00Z",
       "home": "CA Osasuna",
       "away": "RCD Espanyol de Barcelona",
       "homeCrest": "https://crests.football-data.org/79.png",
@@ -658,40 +616,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "13/09 00:00"
-    },
-    {
-      "id": 564674,
-      "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
-      "home": "Real Sociedad de Fútbol",
-      "away": "Club Atlético de Madrid",
-      "homeCrest": "https://crests.football-data.org/92.png",
-      "awayCrest": "https://crests.football-data.org/78.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "13/09 00:00"
-    },
-    {
-      "id": 564675,
-      "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
-      "home": "Levante UD",
-      "away": "FC Barcelona",
-      "homeCrest": "https://crests.football-data.org/88.png",
-      "awayCrest": "https://crests.football-data.org/81.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "13/09 00:00"
+      "status": "TIMED"
     },
     {
       "id": 564676,
       "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
+      "date": "2026-09-12T16:30:00Z",
       "home": "Athletic Club",
       "away": "Elche CF",
       "homeCrest": "https://crests.football-data.org/77.png",
@@ -700,12 +630,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "13/09 00:00"
+      "status": "TIMED"
     },
     {
       "id": 564677,
       "matchday": 5,
-      "date": "2026-09-13T00:00:00Z",
+      "date": "2026-09-12T19:00:00Z",
       "home": "Real Madrid CF",
       "away": "Rayo Vallecano de Madrid",
       "homeCrest": "https://crests.football-data.org/86.png",
@@ -714,12 +644,82 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "13/09 00:00"
+      "status": "TIMED"
+    },
+    {
+      "id": 564672,
+      "matchday": 5,
+      "date": "2026-09-13T12:00:00Z",
+      "home": "RC Celta de Vigo",
+      "away": "Málaga CF",
+      "homeCrest": "https://crests.football-data.org/558.png",
+      "awayCrest": "https://crests.football-data.org/84.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564675,
+      "matchday": 5,
+      "date": "2026-09-13T14:15:00Z",
+      "home": "Levante UD",
+      "away": "FC Barcelona",
+      "homeCrest": "https://crests.football-data.org/88.png",
+      "awayCrest": "https://crests.football-data.org/81.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564668,
+      "matchday": 5,
+      "date": "2026-09-13T16:30:00Z",
+      "home": "Getafe CF",
+      "away": "RC Deportivo La Coruña",
+      "homeCrest": "https://crests.football-data.org/82.png",
+      "awayCrest": "https://crests.football-data.org/560.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564674,
+      "matchday": 5,
+      "date": "2026-09-13T19:00:00Z",
+      "home": "Real Sociedad de Fútbol",
+      "away": "Club Atlético de Madrid",
+      "homeCrest": "https://crests.football-data.org/92.png",
+      "awayCrest": "https://crests.football-data.org/78.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564671,
+      "matchday": 5,
+      "date": "2026-09-14T19:00:00Z",
+      "home": "Villarreal CF",
+      "away": "Real Betis Balompié",
+      "homeCrest": "https://crests.football-data.org/94.png",
+      "awayCrest": "https://crests.football-data.org/90.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
     },
     {
       "id": 564678,
       "matchday": 6,
-      "date": "2026-09-16T00:00:00Z",
+      "date": "2026-09-15T17:00:00Z",
       "home": "Rayo Vallecano de Madrid",
       "away": "RCD Espanyol de Barcelona",
       "homeCrest": "https://crests.football-data.org/87.png",
@@ -728,26 +728,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "16/09 00:00"
-    },
-    {
-      "id": 564679,
-      "matchday": 6,
-      "date": "2026-09-16T00:00:00Z",
-      "home": "RC Deportivo La Coruña",
-      "away": "Sevilla FC",
-      "homeCrest": "https://crests.football-data.org/560.png",
-      "awayCrest": "https://crests.football-data.org/559.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "16/09 00:00"
+      "status": "TIMED"
     },
     {
       "id": 564680,
       "matchday": 6,
-      "date": "2026-09-16T00:00:00Z",
+      "date": "2026-09-15T18:00:00Z",
       "home": "Deportivo Alavés",
       "away": "Valencia CF",
       "homeCrest": "https://crests.football-data.org/263.png",
@@ -756,12 +742,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "16/09 00:00"
+      "status": "TIMED"
     },
     {
       "id": 564681,
       "matchday": 6,
-      "date": "2026-09-16T00:00:00Z",
+      "date": "2026-09-15T19:30:00Z",
       "home": "Elche CF",
       "away": "Real Madrid CF",
       "homeCrest": "https://crests.football-data.org/285.png",
@@ -770,26 +756,26 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "16/09 00:00"
+      "status": "TIMED"
     },
     {
-      "id": 564683,
+      "id": 564679,
       "matchday": 6,
-      "date": "2026-09-16T00:00:00Z",
-      "home": "Málaga CF",
-      "away": "Villarreal CF",
-      "homeCrest": "https://crests.football-data.org/84.png",
-      "awayCrest": "https://crests.football-data.org/94.png",
+      "date": "2026-09-16T17:00:00Z",
+      "home": "RC Deportivo La Coruña",
+      "away": "Sevilla FC",
+      "homeCrest": "https://crests.football-data.org/560.png",
+      "awayCrest": "https://crests.football-data.org/559.png",
       "homeScore": null,
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "16/09 00:00"
+      "status": "TIMED"
     },
     {
       "id": 564684,
       "matchday": 6,
-      "date": "2026-09-16T00:00:00Z",
+      "date": "2026-09-16T17:00:00Z",
       "home": "Club Atlético de Madrid",
       "away": "CA Osasuna",
       "homeCrest": "https://crests.football-data.org/78.png",
@@ -798,12 +784,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "16/09 00:00"
+      "status": "TIMED"
     },
     {
       "id": 564685,
       "matchday": 6,
-      "date": "2026-09-16T00:00:00Z",
+      "date": "2026-09-16T19:30:00Z",
       "home": "Levante UD",
       "away": "Athletic Club",
       "homeCrest": "https://crests.football-data.org/88.png",
@@ -812,26 +798,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "16/09 00:00"
-    },
-    {
-      "id": 564686,
-      "matchday": 6,
-      "date": "2026-09-16T00:00:00Z",
-      "home": "Real Betis Balompié",
-      "away": "Getafe CF",
-      "homeCrest": "https://crests.football-data.org/90.png",
-      "awayCrest": "https://crests.football-data.org/82.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "16/09 00:00"
+      "status": "TIMED"
     },
     {
       "id": 564687,
       "matchday": 6,
-      "date": "2026-09-16T00:00:00Z",
+      "date": "2026-09-16T19:30:00Z",
       "home": "FC Barcelona",
       "away": "Real Racing Club de Santander",
       "homeCrest": "https://crests.football-data.org/81.png",
@@ -840,21 +812,91 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "16/09 00:00"
+      "status": "TIMED"
     },
     {
-      "id": 564688,
-      "matchday": 7,
-      "date": "2026-09-20T00:00:00Z",
-      "home": "Club Atlético de Madrid",
-      "away": "Real Madrid CF",
-      "homeCrest": "https://crests.football-data.org/78.png",
-      "awayCrest": "https://crests.football-data.org/86.png",
+      "id": 564686,
+      "matchday": 6,
+      "date": "2026-09-17T17:00:00Z",
+      "home": "Real Betis Balompié",
+      "away": "Getafe CF",
+      "homeCrest": "https://crests.football-data.org/90.png",
+      "awayCrest": "https://crests.football-data.org/82.png",
       "homeScore": null,
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "20/09 00:00"
+      "status": "TIMED"
+    },
+    {
+      "id": 564683,
+      "matchday": 6,
+      "date": "2026-09-17T19:30:00Z",
+      "home": "Málaga CF",
+      "away": "Villarreal CF",
+      "homeCrest": "https://crests.football-data.org/84.png",
+      "awayCrest": "https://crests.football-data.org/94.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564693,
+      "matchday": 7,
+      "date": "2026-09-19T12:00:00Z",
+      "home": "CA Osasuna",
+      "away": "Rayo Vallecano de Madrid",
+      "homeCrest": "https://crests.football-data.org/79.png",
+      "awayCrest": "https://crests.football-data.org/87.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564691,
+      "matchday": 7,
+      "date": "2026-09-19T14:15:00Z",
+      "home": "Athletic Club",
+      "away": "Deportivo Alavés",
+      "homeCrest": "https://crests.football-data.org/77.png",
+      "awayCrest": "https://crests.football-data.org/263.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564694,
+      "matchday": 7,
+      "date": "2026-09-19T16:30:00Z",
+      "home": "RC Celta de Vigo",
+      "away": "Real Racing Club de Santander",
+      "homeCrest": "https://crests.football-data.org/558.png",
+      "awayCrest": "https://crests.football-data.org/5335.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564690,
+      "matchday": 7,
+      "date": "2026-09-19T19:00:00Z",
+      "home": "Sevilla FC",
+      "away": "FC Barcelona",
+      "homeCrest": "https://crests.football-data.org/559.png",
+      "awayCrest": "https://crests.football-data.org/81.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
     },
     {
       "id": 564689,
@@ -864,34 +906,6 @@
       "away": "Real Sociedad de Fútbol",
       "homeCrest": "https://crests.football-data.org/95.png",
       "awayCrest": "https://crests.football-data.org/92.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "20/09 00:00"
-    },
-    {
-      "id": 564690,
-      "matchday": 7,
-      "date": "2026-09-20T00:00:00Z",
-      "home": "Sevilla FC",
-      "away": "FC Barcelona",
-      "homeCrest": "https://crests.football-data.org/559.png",
-      "awayCrest": "https://crests.football-data.org/81.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "20/09 00:00"
-    },
-    {
-      "id": 564691,
-      "matchday": 7,
-      "date": "2026-09-20T00:00:00Z",
-      "home": "Athletic Club",
-      "away": "Deportivo Alavés",
-      "homeCrest": "https://crests.football-data.org/77.png",
-      "awayCrest": "https://crests.football-data.org/263.png",
       "homeScore": null,
       "awayScore": null,
       "homeWin": false,
@@ -913,65 +927,9 @@
       "status": "20/09 00:00"
     },
     {
-      "id": 564693,
-      "matchday": 7,
-      "date": "2026-09-20T00:00:00Z",
-      "home": "CA Osasuna",
-      "away": "Rayo Vallecano de Madrid",
-      "homeCrest": "https://crests.football-data.org/79.png",
-      "awayCrest": "https://crests.football-data.org/87.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "20/09 00:00"
-    },
-    {
-      "id": 564694,
-      "matchday": 7,
-      "date": "2026-09-20T00:00:00Z",
-      "home": "RC Celta de Vigo",
-      "away": "Real Racing Club de Santander",
-      "homeCrest": "https://crests.football-data.org/558.png",
-      "awayCrest": "https://crests.football-data.org/5335.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "20/09 00:00"
-    },
-    {
-      "id": 564695,
-      "matchday": 7,
-      "date": "2026-09-20T00:00:00Z",
-      "home": "RC Deportivo La Coruña",
-      "away": "Real Betis Balompié",
-      "homeCrest": "https://crests.football-data.org/560.png",
-      "awayCrest": "https://crests.football-data.org/90.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "20/09 00:00"
-    },
-    {
-      "id": 564696,
-      "matchday": 7,
-      "date": "2026-09-20T00:00:00Z",
-      "home": "Villarreal CF",
-      "away": "Levante UD",
-      "homeCrest": "https://crests.football-data.org/94.png",
-      "awayCrest": "https://crests.football-data.org/88.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "20/09 00:00"
-    },
-    {
       "id": 564697,
       "matchday": 7,
-      "date": "2026-09-20T00:00:00Z",
+      "date": "2026-09-20T12:00:00Z",
       "home": "Getafe CF",
       "away": "Málaga CF",
       "homeCrest": "https://crests.football-data.org/82.png",
@@ -980,7 +938,49 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "20/09 00:00"
+      "status": "TIMED"
+    },
+    {
+      "id": 564688,
+      "matchday": 7,
+      "date": "2026-09-20T14:15:00Z",
+      "home": "Club Atlético de Madrid",
+      "away": "Real Madrid CF",
+      "homeCrest": "https://crests.football-data.org/78.png",
+      "awayCrest": "https://crests.football-data.org/86.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564695,
+      "matchday": 7,
+      "date": "2026-09-20T16:30:00Z",
+      "home": "RC Deportivo La Coruña",
+      "away": "Real Betis Balompié",
+      "homeCrest": "https://crests.football-data.org/560.png",
+      "awayCrest": "https://crests.football-data.org/90.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 564696,
+      "matchday": 7,
+      "date": "2026-09-20T16:30:00Z",
+      "home": "Villarreal CF",
+      "away": "Levante UD",
+      "homeCrest": "https://crests.football-data.org/94.png",
+      "awayCrest": "https://crests.football-data.org/88.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
     },
     {
       "id": 564698,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-31T14:58:57.937802+00:00"
+  "lastUpdated": "2026-09-01T12:29:35.867993+00:00"
 }

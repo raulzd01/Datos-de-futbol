@@ -3,6 +3,10 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Raphinha",
+      "goals": 5
+    },
+    {
       "name": "Kylian Mbappé",
       "goals": 4
     },
@@ -19,7 +23,7 @@
       "goals": 3
     },
     {
-      "name": "Raphinha",
+      "name": "Sergio Camello",
       "goals": 3
     },
     {
@@ -37,11 +41,7 @@
     {
       "name": "Rodrigo Riquelme",
       "goals": 2
-    },
-    {
-      "name": "Jude Bellingham",
-      "goals": 2
     }
   ],
-  "lastUpdated": "2026-08-31T14:59:05.097418+00:00"
+  "lastUpdated": "2026-09-01T12:29:43.021146+00:00"
 }

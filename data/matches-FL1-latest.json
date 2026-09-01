@@ -248,11 +248,11 @@
       "away": "Olympique de Marseille",
       "homeCrest": "https://crests.football-data.org/548.png",
       "awayCrest": "https://crests.football-data.org/516.png",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 0,
       "homeWin": true,
       "awayWin": false,
-      "status": "EN JUEGO"
+      "status": "FINALIZADO"
     },
     {
       "id": 559696,
@@ -507,93 +507,9 @@
       "status": "TIMED"
     },
     {
-      "id": 559676,
-      "matchday": 5,
-      "date": "2026-09-19T00:00:00Z",
-      "home": "AJ Auxerre",
-      "away": "Stade Brestois 29",
-      "homeCrest": "https://crests.football-data.org/519.png",
-      "awayCrest": "https://crests.football-data.org/512.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "19/09 00:00"
-    },
-    {
-      "id": 559677,
-      "matchday": 5,
-      "date": "2026-09-19T00:00:00Z",
-      "home": "Le Mans FC",
-      "away": "FC Lorient",
-      "homeCrest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
-      "awayCrest": "https://crests.football-data.org/525.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "19/09 00:00"
-    },
-    {
-      "id": 559678,
-      "matchday": 5,
-      "date": "2026-09-19T00:00:00Z",
-      "home": "OGC Nice",
-      "away": "Lille OSC",
-      "homeCrest": "https://crests.football-data.org/522.png",
-      "awayCrest": "https://crests.football-data.org/521.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "19/09 00:00"
-    },
-    {
-      "id": 559679,
-      "matchday": 5,
-      "date": "2026-09-19T00:00:00Z",
-      "home": "Paris FC",
-      "away": "RC Strasbourg Alsace",
-      "homeCrest": "https://crests.football-data.org/1045.png",
-      "awayCrest": "https://crests.football-data.org/576.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "19/09 00:00"
-    },
-    {
-      "id": 559680,
-      "matchday": 5,
-      "date": "2026-09-19T00:00:00Z",
-      "home": "Toulouse FC",
-      "away": "Le Havre AC",
-      "homeCrest": "https://crests.football-data.org/511.png",
-      "awayCrest": "https://crests.football-data.org/533.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "19/09 00:00"
-    },
-    {
-      "id": 559681,
-      "matchday": 5,
-      "date": "2026-09-19T00:00:00Z",
-      "home": "Angers SCO",
-      "away": "ES Troyes AC",
-      "homeCrest": "https://crests.football-data.org/532.png",
-      "awayCrest": "https://crests.football-data.org/531.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "19/09 00:00"
-    },
-    {
       "id": 559682,
       "matchday": 5,
-      "date": "2026-09-19T00:00:00Z",
+      "date": "2026-09-18T18:45:00Z",
       "home": "AS Monaco FC",
       "away": "Racing Club de Lens",
       "homeCrest": "https://crests.football-data.org/548.png",
@@ -602,12 +518,68 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "19/09 00:00"
+      "status": "TIMED"
+    },
+    {
+      "id": 559679,
+      "matchday": 5,
+      "date": "2026-09-19T15:15:00Z",
+      "home": "Paris FC",
+      "away": "RC Strasbourg Alsace",
+      "homeCrest": "https://crests.football-data.org/1045.png",
+      "awayCrest": "https://crests.football-data.org/576.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 559677,
+      "matchday": 5,
+      "date": "2026-09-19T18:45:00Z",
+      "home": "Le Mans FC",
+      "away": "FC Lorient",
+      "homeCrest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
+      "awayCrest": "https://crests.football-data.org/525.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 559680,
+      "matchday": 5,
+      "date": "2026-09-19T18:45:00Z",
+      "home": "Toulouse FC",
+      "away": "Le Havre AC",
+      "homeCrest": "https://crests.football-data.org/511.png",
+      "awayCrest": "https://crests.football-data.org/533.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 559681,
+      "matchday": 5,
+      "date": "2026-09-19T18:45:00Z",
+      "home": "Angers SCO",
+      "away": "ES Troyes AC",
+      "homeCrest": "https://crests.football-data.org/532.png",
+      "awayCrest": "https://crests.football-data.org/531.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
     },
     {
       "id": 559683,
       "matchday": 5,
-      "date": "2026-09-19T00:00:00Z",
+      "date": "2026-09-19T18:45:00Z",
       "home": "Olympique Lyonnais",
       "away": "Stade Rennais FC 1901",
       "homeCrest": "https://crests.football-data.org/523.png",
@@ -616,7 +588,35 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "19/09 00:00"
+      "status": "TIMED"
+    },
+    {
+      "id": 559676,
+      "matchday": 5,
+      "date": "2026-09-20T13:00:00Z",
+      "home": "AJ Auxerre",
+      "away": "Stade Brestois 29",
+      "homeCrest": "https://crests.football-data.org/519.png",
+      "awayCrest": "https://crests.football-data.org/512.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
+    },
+    {
+      "id": 559678,
+      "matchday": 5,
+      "date": "2026-09-20T15:15:00Z",
+      "home": "OGC Nice",
+      "away": "Lille OSC",
+      "homeCrest": "https://crests.football-data.org/522.png",
+      "awayCrest": "https://crests.football-data.org/521.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "TIMED"
     },
     {
       "id": 559675,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-08-31T15:00:26.663706+00:00"
+  "lastUpdated": "2026-09-01T12:31:00.022618+00:00"
 }
