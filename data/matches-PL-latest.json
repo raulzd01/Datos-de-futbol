@@ -605,20 +605,6 @@
       "status": "TIMED"
     },
     {
-      "id": 560585,
-      "matchday": 5,
-      "date": "2026-09-19T14:00:00Z",
-      "home": "Leeds United FC",
-      "away": "Crystal Palace FC",
-      "homeCrest": "https://crests.football-data.org/341.png",
-      "awayCrest": "https://crests.football-data.org/354.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
-    },
-    {
       "id": 560586,
       "matchday": 5,
       "date": "2026-09-19T14:00:00Z",
@@ -675,6 +661,20 @@
       "status": "TIMED"
     },
     {
+      "id": 560585,
+      "matchday": 5,
+      "date": "2026-09-20T13:00:00Z",
+      "home": "Leeds United FC",
+      "away": "Crystal Palace FC",
+      "homeCrest": "https://crests.football-data.org/341.png",
+      "awayCrest": "https://crests.football-data.org/354.png",
+      "homeScore": null,
+      "awayScore": null,
+      "homeWin": false,
+      "awayWin": false,
+      "status": "2026-09-19 13:00:00Z"
+    },
+    {
       "id": 560590,
       "matchday": 5,
       "date": "2026-09-20T13:00:00Z",
@@ -686,7 +686,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "2026-09-19 13:00:00Z"
     },
     {
       "id": 560583,
@@ -1022,7 +1022,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "2026-10-24 13:00:00Z"
     },
     {
       "id": 560616,
@@ -1232,7 +1232,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "2026-11-01 14:00:00Z"
     },
     {
       "id": 560631,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-09-01T12:30:04.007250+00:00"
+  "lastUpdated": "2026-09-02T12:03:02.708134+00:00"
 }

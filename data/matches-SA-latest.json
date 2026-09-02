@@ -406,7 +406,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "2026-09-07 15:00:00Z"
     },
     {
       "id": 558617,
@@ -462,7 +462,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "2026-09-13 17:45:00Z"
     },
     {
       "id": 558607,
@@ -518,7 +518,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "2026-09-12 15:00:00Z"
     },
     {
       "id": 558602,
@@ -532,7 +532,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "2026-09-13 12:00:00Z"
     },
     {
       "id": 558603,
@@ -546,7 +546,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "2026-09-13 09:30:00Z"
     },
     {
       "id": 558601,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-01T12:30:32.115764+00:00"
+  "lastUpdated": "2026-09-02T12:03:31.480208+00:00"
 }
