@@ -406,7 +406,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "2026-09-07 15:00:00Z"
+      "status": "TIMED"
     },
     {
       "id": 558617,
@@ -462,7 +462,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "2026-09-13 17:45:00Z"
+      "status": "TIMED"
     },
     {
       "id": 558607,
@@ -518,7 +518,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "2026-09-12 15:00:00Z"
+      "status": "TIMED"
     },
     {
       "id": 558602,
@@ -532,7 +532,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "2026-09-13 12:00:00Z"
+      "status": "TIMED"
     },
     {
       "id": 558603,
@@ -546,7 +546,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "2026-09-13 09:30:00Z"
+      "status": "TIMED"
     },
     {
       "id": 558601,
@@ -845,7 +845,7 @@
     {
       "id": 558569,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "AC Milan",
       "away": "Atalanta BC",
       "homeCrest": "https://crests.football-data.org/98.png",
@@ -854,12 +854,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558570,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "Juventus FC",
       "away": "SS Lazio",
       "homeCrest": "https://crests.football-data.org/109.png",
@@ -868,12 +868,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558571,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "Bologna FC 1909",
       "away": "FC Internazionale Milano",
       "homeCrest": "https://crests.football-data.org/103.png",
@@ -882,12 +882,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558572,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "AS Roma",
       "away": "Genoa CFC",
       "homeCrest": "https://crests.football-data.org/100.png",
@@ -896,12 +896,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558573,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "Frosinone Calcio",
       "away": "US Sassuolo Calcio",
       "homeCrest": "https://crests.football-data.org/470.png",
@@ -910,12 +910,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558574,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "Udinese Calcio",
       "away": "US Lecce",
       "homeCrest": "https://crests.football-data.org/115.png",
@@ -924,12 +924,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558575,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "Venezia FC",
       "away": "SSC Napoli",
       "homeCrest": "https://crests.football-data.org/454.png",
@@ -938,12 +938,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558576,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "AC Monza",
       "away": "Cagliari Calcio",
       "homeCrest": "https://crests.football-data.org/5911.png",
@@ -952,12 +952,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558577,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "ACF Fiorentina",
       "away": "Como 1907",
       "homeCrest": "https://crests.football-data.org/99.png",
@@ -966,12 +966,12 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558578,
       "matchday": 7,
-      "date": "2026-10-18T00:00:00Z",
+      "date": "2026-10-17T00:00:00Z",
       "home": "Parma Calcio 1913",
       "away": "Torino FC",
       "homeCrest": "https://crests.football-data.org/112.png",
@@ -980,7 +980,7 @@
       "awayScore": null,
       "homeWin": false,
       "awayWin": false,
-      "status": "18/10 00:00"
+      "status": "17/10 00:00"
     },
     {
       "id": 558559,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-02T12:03:31.480208+00:00"
+  "lastUpdated": "2026-09-03T12:02:45.363261+00:00"
 }
