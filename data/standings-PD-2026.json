@@ -114,6 +114,17 @@
     },
     {
       "position": 11,
+      "club": "Real Sociedad de Fútbol",
+      "crest": "https://crests.football-data.org/92.png",
+      "played": 4,
+      "goalDiff": -3,
+      "points": 4,
+      "avgGoalsFor": 0.75,
+      "formIndex": 23,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 12,
       "club": "RCD Espanyol de Barcelona",
       "crest": "https://crests.football-data.org/80.png",
       "played": 3,
@@ -124,22 +135,11 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 12,
+      "position": 13,
       "club": "Athletic Club",
       "crest": "https://crests.football-data.org/77.png",
       "played": 3,
       "goalDiff": -2,
-      "points": 3,
-      "avgGoalsFor": 1.0,
-      "formIndex": 17,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 13,
-      "club": "Real Sociedad de Fútbol",
-      "crest": "https://crests.football-data.org/92.png",
-      "played": 3,
-      "goalDiff": -3,
       "points": 3,
       "avgGoalsFor": 1.0,
       "formIndex": 17,
@@ -169,19 +169,19 @@
     },
     {
       "position": 16,
-      "club": "Valencia CF",
-      "crest": "https://crests.football-data.org/95.png",
-      "played": 3,
+      "club": "RC Celta de Vigo",
+      "crest": "https://crests.football-data.org/558.png",
+      "played": 4,
       "goalDiff": -3,
-      "points": 1,
-      "avgGoalsFor": 0.33,
+      "points": 2,
+      "avgGoalsFor": 0.25,
       "formIndex": 17,
       "formLabel": "❄️ Bajón"
     },
     {
       "position": 17,
-      "club": "RC Celta de Vigo",
-      "crest": "https://crests.football-data.org/558.png",
+      "club": "Valencia CF",
+      "crest": "https://crests.football-data.org/95.png",
       "played": 3,
       "goalDiff": -3,
       "points": 1,
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-03T12:01:41.481752+00:00"
+  "lastUpdated": "2026-09-04T12:03:38.356082+00:00"
 }
