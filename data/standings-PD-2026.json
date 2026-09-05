@@ -17,15 +17,26 @@
       "position": 2,
       "club": "Real Madrid CF",
       "crest": "https://crests.football-data.org/86.png",
-      "played": 3,
-      "goalDiff": 8,
+      "played": 4,
+      "goalDiff": 7,
       "points": 9,
-      "avgGoalsFor": 3.33,
-      "formIndex": 100,
+      "avgGoalsFor": 2.5,
+      "formIndex": 90,
       "formLabel": "🔥 En racha"
     },
     {
       "position": 3,
+      "club": "Real Betis Balompié",
+      "crest": "https://crests.football-data.org/90.png",
+      "played": 4,
+      "goalDiff": 0,
+      "points": 9,
+      "avgGoalsFor": 1.25,
+      "formIndex": 80,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 4,
       "club": "Club Atlético de Madrid",
       "crest": "https://crests.football-data.org/78.png",
       "played": 3,
@@ -36,7 +47,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "Deportivo Alavés",
       "crest": "https://crests.football-data.org/263.png",
       "played": 3,
@@ -47,7 +58,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 5,
+      "position": 6,
       "club": "CA Osasuna",
       "crest": "https://crests.football-data.org/79.png",
       "played": 3,
@@ -58,24 +69,13 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 6,
+      "position": 7,
       "club": "Sevilla FC",
       "crest": "https://crests.football-data.org/559.png",
       "played": 3,
       "goalDiff": 1,
       "points": 6,
       "avgGoalsFor": 2.0,
-      "formIndex": 83,
-      "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 7,
-      "club": "Real Betis Balompié",
-      "crest": "https://crests.football-data.org/90.png",
-      "played": 3,
-      "goalDiff": -1,
-      "points": 6,
-      "avgGoalsFor": 1.33,
       "formIndex": 83,
       "formLabel": "🔥 En racha"
     },
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-04T12:03:38.356082+00:00"
+  "lastUpdated": "2026-09-05T11:12:45.447405+00:00"
 }

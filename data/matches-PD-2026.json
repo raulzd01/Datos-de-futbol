@@ -434,7 +434,7 @@
       "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "2026-09-03 18:00:00Z"
+      "status": "FINALIZADO"
     },
     {
       "id": 564667,
@@ -444,11 +444,11 @@
       "away": "Real Madrid CF",
       "homeCrest": "https://crests.football-data.org/90.png",
       "awayCrest": "https://crests.football-data.org/86.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "2026-09-04 18:00:00Z"
+      "status": "FINALIZADO"
     },
     {
       "id": 564663,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-04T12:03:45.965192+00:00"
+  "lastUpdated": "2026-09-05T11:12:53.541111+00:00"
 }

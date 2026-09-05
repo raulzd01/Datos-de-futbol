@@ -4,6 +4,28 @@
   "table": [
     {
       "position": 1,
+      "club": "AS Monaco FC",
+      "crest": "https://crests.football-data.org/548.png",
+      "played": 3,
+      "goalDiff": 4,
+      "points": 9,
+      "avgGoalsFor": 1.67,
+      "formIndex": 100,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
+      "club": "Olympique Lyonnais",
+      "crest": "https://crests.football-data.org/523.png",
+      "played": 3,
+      "goalDiff": 4,
+      "points": 7,
+      "avgGoalsFor": 2.0,
+      "formIndex": 78,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 3,
       "club": "Lille OSC",
       "crest": "https://crests.football-data.org/521.png",
       "played": 3,
@@ -14,18 +36,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 2,
-      "club": "AS Monaco FC",
-      "crest": "https://crests.football-data.org/548.png",
-      "played": 2,
-      "goalDiff": 3,
-      "points": 6,
-      "avgGoalsFor": 1.5,
-      "formIndex": 100,
-      "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 3,
+      "position": 4,
       "club": "Paris FC",
       "crest": "https://crests.football-data.org/1045.png",
       "played": 2,
@@ -34,17 +45,6 @@
       "avgGoalsFor": 1.5,
       "formIndex": 56,
       "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 4,
-      "club": "Olympique Lyonnais",
-      "crest": "https://crests.football-data.org/523.png",
-      "played": 2,
-      "goalDiff": 2,
-      "points": 4,
-      "avgGoalsFor": 1.5,
-      "formIndex": 78,
-      "formLabel": "🔥 En racha"
     },
     {
       "position": 5,
@@ -127,12 +127,12 @@
       "position": 12,
       "club": "Paris Saint-Germain FC",
       "crest": "https://crests.football-data.org/524.png",
-      "played": 2,
-      "goalDiff": 0,
+      "played": 3,
+      "goalDiff": -1,
       "points": 2,
-      "avgGoalsFor": 2.0,
-      "formIndex": 33,
-      "formLabel": "➖ Irregular"
+      "avgGoalsFor": 1.67,
+      "formIndex": 28,
+      "formLabel": "❄️ Bajón"
     },
     {
       "position": 13,
@@ -193,13 +193,13 @@
       "position": 18,
       "club": "AJ Auxerre",
       "crest": "https://crests.football-data.org/519.png",
-      "played": 2,
-      "goalDiff": -5,
+      "played": 3,
+      "goalDiff": -7,
       "points": 0,
-      "avgGoalsFor": 1.5,
+      "avgGoalsFor": 1.33,
       "formIndex": 0,
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-04T12:05:04.852887+00:00"
+  "lastUpdated": "2026-09-05T11:14:14.879627+00:00"
 }
