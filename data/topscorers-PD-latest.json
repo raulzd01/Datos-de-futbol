@@ -3,8 +3,16 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Sergio Camello",
+      "goals": 5
+    },
+    {
       "name": "Raphinha",
       "goals": 5
+    },
+    {
+      "name": "Pierre-Emerick Aubameyang",
+      "goals": 4
     },
     {
       "name": "Kylian Mbappé",
@@ -15,15 +23,7 @@
       "goals": 3
     },
     {
-      "name": "Pierre-Emerick Aubameyang",
-      "goals": 3
-    },
-    {
       "name": "Álex Baena",
-      "goals": 3
-    },
-    {
-      "name": "Sergio Camello",
       "goals": 3
     },
     {
@@ -39,9 +39,9 @@
       "goals": 2
     },
     {
-      "name": "Rodrigo Riquelme",
+      "name": "Nicolas Pépé",
       "goals": 2
     }
   ],
-  "lastUpdated": "2026-09-05T11:13:00.894341+00:00"
+  "lastUpdated": "2026-09-06T11:36:01.779537+00:00"
 }

@@ -304,11 +304,11 @@
       "away": "AFC Bournemouth",
       "homeCrest": "https://crests.football-data.org/67.png",
       "awayCrest": "https://crests.football-data.org/bournemouth.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560562,
@@ -318,11 +318,11 @@
       "away": "Tottenham Hotspur FC",
       "homeCrest": "https://crests.football-data.org/351.png",
       "awayCrest": "https://crests.football-data.org/73.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560563,
@@ -332,11 +332,11 @@
       "away": "Coventry City FC",
       "homeCrest": "https://crests.football-data.org/65.png",
       "awayCrest": "https://crests.football-data.org/1076.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560564,
@@ -346,11 +346,11 @@
       "away": "Leeds United FC",
       "homeCrest": "https://crests.football-data.org/397.png",
       "awayCrest": "https://crests.football-data.org/341.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560565,
@@ -360,11 +360,11 @@
       "away": "Sunderland AFC",
       "homeCrest": "https://crests.football-data.org/402.png",
       "awayCrest": "https://crests.football-data.org/71.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560568,
@@ -374,11 +374,11 @@
       "away": "Crystal Palace FC",
       "homeCrest": "https://crests.football-data.org/63.png",
       "awayCrest": "https://crests.football-data.org/354.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 560569,
@@ -388,11 +388,11 @@
       "away": "Aston Villa FC",
       "homeCrest": "https://crests.football-data.org/322.png",
       "awayCrest": "https://crests.football-data.org/58.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560567,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-09-05T11:13:23.276697+00:00"
+  "lastUpdated": "2026-09-06T11:36:23.798537+00:00"
 }

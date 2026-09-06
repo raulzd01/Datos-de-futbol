@@ -458,11 +458,11 @@
       "away": "Club Atlético de Madrid",
       "homeCrest": "https://crests.football-data.org/77.png",
       "awayCrest": "https://crests.football-data.org/78.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564660,
@@ -472,11 +472,11 @@
       "away": "Real Racing Club de Santander",
       "homeCrest": "https://crests.football-data.org/87.png",
       "awayCrest": "https://crests.football-data.org/5335.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564662,
@@ -486,11 +486,11 @@
       "away": "RC Deportivo La Coruña",
       "homeCrest": "https://crests.football-data.org/94.png",
       "awayCrest": "https://crests.football-data.org/560.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564659,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-05T11:12:53.541111+00:00"
+  "lastUpdated": "2026-09-06T11:35:53.793545+00:00"
 }

@@ -304,11 +304,11 @@
       "away": "Torino FC",
       "homeCrest": "https://crests.football-data.org/99.png",
       "awayCrest": "https://crests.football-data.org/586.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 558614,
@@ -318,11 +318,11 @@
       "away": "SSC Napoli",
       "homeCrest": "https://crests.football-data.org/108.png",
       "awayCrest": "https://crests.football-data.org/113.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558611,
@@ -332,11 +332,11 @@
       "away": "Atalanta BC",
       "homeCrest": "https://crests.football-data.org/100.png",
       "awayCrest": "https://crests.football-data.org/102.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558612,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-05T11:13:53.122769+00:00"
+  "lastUpdated": "2026-09-06T11:36:52.870320+00:00"
 }

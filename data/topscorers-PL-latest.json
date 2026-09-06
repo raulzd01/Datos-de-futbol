@@ -3,6 +3,10 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Erling Haaland",
+      "goals": 3
+    },
+    {
       "name": "Alexander Isak",
       "goals": 3
     },
@@ -12,6 +16,14 @@
     },
     {
       "name": "Bukayo Saka",
+      "goals": 2
+    },
+    {
+      "name": "Vitaly Janelt",
+      "goals": 2
+    },
+    {
+      "name": "Marcus Tavernier",
       "goals": 2
     },
     {
@@ -27,21 +39,9 @@
       "goals": 2
     },
     {
-      "name": "Cole Palmer",
+      "name": "Joshua King",
       "goals": 2
-    },
-    {
-      "name": "Erling Haaland",
-      "goals": 2
-    },
-    {
-      "name": "Rayan Cherki",
-      "goals": 2
-    },
-    {
-      "name": "Kai Havertz",
-      "goals": 1
     }
   ],
-  "lastUpdated": "2026-09-05T11:13:30.863388+00:00"
+  "lastUpdated": "2026-09-06T11:36:31.020157+00:00"
 }
