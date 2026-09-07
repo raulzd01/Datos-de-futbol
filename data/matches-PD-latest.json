@@ -500,11 +500,11 @@
       "away": "FC Barcelona",
       "homeCrest": "https://crests.football-data.org/95.png",
       "awayCrest": "https://crests.football-data.org/81.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564664,
@@ -514,11 +514,11 @@
       "away": "CA Osasuna",
       "homeCrest": "https://crests.football-data.org/263.png",
       "awayCrest": "https://crests.football-data.org/79.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 5,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564666,
@@ -528,11 +528,11 @@
       "away": "Levante UD",
       "homeCrest": "https://crests.football-data.org/84.png",
       "awayCrest": "https://crests.football-data.org/88.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564661,
@@ -542,11 +542,11 @@
       "away": "Sevilla FC",
       "homeCrest": "https://crests.football-data.org/80.png",
       "awayCrest": "https://crests.football-data.org/559.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564665,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-06T11:35:53.793545+00:00"
+  "lastUpdated": "2026-09-07T13:25:42.194258+00:00"
 }

@@ -15,7 +15,15 @@
       "goals": 3
     },
     {
+      "name": "Kai Havertz",
+      "goals": 2
+    },
+    {
       "name": "Bukayo Saka",
+      "goals": 2
+    },
+    {
+      "name": "Martin Ødegaard",
       "goals": 2
     },
     {
@@ -33,15 +41,7 @@
     {
       "name": "Anthony Elanga",
       "goals": 2
-    },
-    {
-      "name": "João Pedro",
-      "goals": 2
-    },
-    {
-      "name": "Joshua King",
-      "goals": 2
     }
   ],
-  "lastUpdated": "2026-09-06T11:36:31.020157+00:00"
+  "lastUpdated": "2026-09-07T13:26:19.331345+00:00"
 }

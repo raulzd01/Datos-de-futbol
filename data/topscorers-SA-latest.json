@@ -7,6 +7,10 @@
       "goals": 5
     },
     {
+      "name": "Antonio Raimondo",
+      "goals": 4
+    },
+    {
       "name": "Hassane Kamara",
       "goals": 2
     },
@@ -23,6 +27,10 @@
       "goals": 2
     },
     {
+      "name": "Alphadjo Cisse",
+      "goals": 2
+    },
+    {
       "name": "Che Adams",
       "goals": 2
     },
@@ -31,17 +39,9 @@
       "goals": 2
     },
     {
-      "name": "Antonio Raimondo",
-      "goals": 2
-    },
-    {
       "name": "Martin Baturina",
-      "goals": 2
-    },
-    {
-      "name": "Rasmus Højlund",
       "goals": 2
     }
   ],
-  "lastUpdated": "2026-09-06T11:37:00.263731+00:00"
+  "lastUpdated": "2026-09-07T13:26:48.694717+00:00"
 }

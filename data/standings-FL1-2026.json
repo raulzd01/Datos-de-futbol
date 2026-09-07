@@ -15,6 +15,17 @@
     },
     {
       "position": 2,
+      "club": "Paris FC",
+      "crest": "https://crests.football-data.org/1045.png",
+      "played": 3,
+      "goalDiff": 4,
+      "points": 7,
+      "avgGoalsFor": 2.0,
+      "formIndex": 67,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 3,
       "club": "Olympique Lyonnais",
       "crest": "https://crests.football-data.org/523.png",
       "played": 3,
@@ -25,7 +36,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 3,
+      "position": 4,
       "club": "Lille OSC",
       "crest": "https://crests.football-data.org/521.png",
       "played": 3,
@@ -36,7 +47,29 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 4,
+      "position": 5,
+      "club": "Stade Rennais FC 1901",
+      "crest": "https://crests.football-data.org/529.png",
+      "played": 3,
+      "goalDiff": 2,
+      "points": 7,
+      "avgGoalsFor": 2.33,
+      "formIndex": 67,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 6,
+      "club": "RC Strasbourg Alsace",
+      "crest": "https://crests.football-data.org/576.png",
+      "played": 3,
+      "goalDiff": 1,
+      "points": 6,
+      "avgGoalsFor": 2.67,
+      "formIndex": 50,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 7,
       "club": "Stade Brestois 29",
       "crest": "https://crests.football-data.org/512.png",
       "played": 3,
@@ -44,39 +77,6 @@
       "points": 5,
       "avgGoalsFor": 2.0,
       "formIndex": 44,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 5,
-      "club": "Paris FC",
-      "crest": "https://crests.football-data.org/1045.png",
-      "played": 2,
-      "goalDiff": 3,
-      "points": 4,
-      "avgGoalsFor": 1.5,
-      "formIndex": 56,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 6,
-      "club": "Stade Rennais FC 1901",
-      "crest": "https://crests.football-data.org/529.png",
-      "played": 2,
-      "goalDiff": 1,
-      "points": 4,
-      "avgGoalsFor": 2.5,
-      "formIndex": 56,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 7,
-      "club": "ES Troyes AC",
-      "crest": "https://crests.football-data.org/531.png",
-      "played": 2,
-      "goalDiff": 1,
-      "points": 4,
-      "avgGoalsFor": 1.0,
-      "formIndex": 56,
       "formLabel": "➖ Irregular"
     },
     {
@@ -92,17 +92,28 @@
     },
     {
       "position": 9,
-      "club": "Olympique de Marseille",
-      "crest": "https://crests.football-data.org/516.png",
-      "played": 2,
-      "goalDiff": 2,
-      "points": 3,
-      "avgGoalsFor": 2.0,
-      "formIndex": 67,
+      "club": "ES Troyes AC",
+      "crest": "https://crests.football-data.org/531.png",
+      "played": 3,
+      "goalDiff": -3,
+      "points": 4,
+      "avgGoalsFor": 1.33,
+      "formIndex": 50,
       "formLabel": "➖ Irregular"
     },
     {
       "position": 10,
+      "club": "Olympique de Marseille",
+      "crest": "https://crests.football-data.org/516.png",
+      "played": 3,
+      "goalDiff": 1,
+      "points": 3,
+      "avgGoalsFor": 2.0,
+      "formIndex": 50,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 11,
       "club": "Racing Club de Lens",
       "crest": "https://crests.football-data.org/546.png",
       "played": 3,
@@ -113,24 +124,13 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 11,
+      "position": 12,
       "club": "Angers SCO",
       "crest": "https://crests.football-data.org/532.png",
-      "played": 2,
-      "goalDiff": 0,
+      "played": 3,
+      "goalDiff": -1,
       "points": 3,
-      "avgGoalsFor": 1.5,
-      "formIndex": 33,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 12,
-      "club": "RC Strasbourg Alsace",
-      "crest": "https://crests.football-data.org/576.png",
-      "played": 2,
-      "goalDiff": -3,
-      "points": 3,
-      "avgGoalsFor": 1.0,
+      "avgGoalsFor": 1.33,
       "formIndex": 33,
       "formLabel": "➖ Irregular"
     },
@@ -201,5 +201,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-06T11:37:14.278030+00:00"
+  "lastUpdated": "2026-09-07T13:27:02.642427+00:00"
 }

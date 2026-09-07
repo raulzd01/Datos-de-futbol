@@ -402,11 +402,11 @@
       "away": "Manchester United FC",
       "homeCrest": "https://crests.football-data.org/62.png",
       "awayCrest": "https://crests.football-data.org/66.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560570,
@@ -416,11 +416,11 @@
       "away": "Chelsea FC",
       "homeCrest": "https://crests.football-data.org/57.png",
       "awayCrest": "https://crests.football-data.org/61.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560572,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-09-06T11:36:23.798537+00:00"
+  "lastUpdated": "2026-09-07T13:26:12.127065+00:00"
 }

@@ -346,11 +346,11 @@
       "away": "AC Monza",
       "homeCrest": "https://crests.football-data.org/112.png",
       "awayCrest": "https://crests.football-data.org/5911.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558615,
@@ -360,11 +360,11 @@
       "away": "Venezia FC",
       "homeCrest": "https://crests.football-data.org/470.png",
       "awayCrest": "https://crests.football-data.org/454.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558613,
@@ -374,11 +374,11 @@
       "away": "US Sassuolo Calcio",
       "homeCrest": "https://crests.football-data.org/103.png",
       "awayCrest": "https://crests.football-data.org/471.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558618,
@@ -388,11 +388,11 @@
       "away": "AC Milan",
       "homeCrest": "https://crests.football-data.org/109.png",
       "awayCrest": "https://crests.football-data.org/98.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558610,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-06T11:36:52.870320+00:00"
+  "lastUpdated": "2026-09-07T13:26:41.532057+00:00"
 }
