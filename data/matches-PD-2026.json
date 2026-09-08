@@ -556,11 +556,11 @@
       "away": "RC Celta de Vigo",
       "homeCrest": "https://crests.football-data.org/82.png",
       "awayCrest": "https://crests.football-data.org/558.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564658,
@@ -570,11 +570,11 @@
       "away": "Real Sociedad de Fútbol",
       "homeCrest": "https://crests.football-data.org/285.png",
       "awayCrest": "https://crests.football-data.org/92.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564669,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-07T13:25:42.194258+00:00"
+  "lastUpdated": "2026-09-08T12:04:17.005580+00:00"
 }

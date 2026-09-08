@@ -26,6 +26,17 @@
     },
     {
       "position": 3,
+      "club": "SS Lazio",
+      "crest": "https://crests.football-data.org/110.png",
+      "played": 3,
+      "goalDiff": 3,
+      "points": 9,
+      "avgGoalsFor": 1.33,
+      "formIndex": 100,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 4,
       "club": "Como 1907",
       "crest": "https://crests.football-data.org/7397.png",
       "played": 3,
@@ -36,7 +47,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "AC Milan",
       "crest": "https://crests.football-data.org/98.png",
       "played": 3,
@@ -47,7 +58,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 5,
+      "position": 6,
       "club": "Juventus FC",
       "crest": "https://crests.football-data.org/109.png",
       "played": 3,
@@ -58,7 +69,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 6,
+      "position": 7,
       "club": "Frosinone Calcio",
       "crest": "https://crests.football-data.org/470.png",
       "played": 3,
@@ -67,17 +78,6 @@
       "avgGoalsFor": 2.0,
       "formIndex": 50,
       "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 7,
-      "club": "SS Lazio",
-      "crest": "https://crests.football-data.org/110.png",
-      "played": 2,
-      "goalDiff": 2,
-      "points": 6,
-      "avgGoalsFor": 1.0,
-      "formIndex": 100,
-      "formLabel": "🔥 En racha"
     },
     {
       "position": 8,
@@ -92,17 +92,28 @@
     },
     {
       "position": 9,
-      "club": "Udinese Calcio",
-      "crest": "https://crests.football-data.org/115.png",
-      "played": 2,
+      "club": "Cagliari Calcio",
+      "crest": "https://crests.football-data.org/104.png",
+      "played": 3,
       "goalDiff": 1,
-      "points": 4,
-      "avgGoalsFor": 2.0,
-      "formIndex": 56,
+      "points": 6,
+      "avgGoalsFor": 0.67,
+      "formIndex": 67,
       "formLabel": "➖ Irregular"
     },
     {
       "position": 10,
+      "club": "Udinese Calcio",
+      "crest": "https://crests.football-data.org/115.png",
+      "played": 3,
+      "goalDiff": 0,
+      "points": 4,
+      "avgGoalsFor": 1.67,
+      "formIndex": 50,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 11,
       "club": "US Sassuolo Calcio",
       "crest": "https://crests.football-data.org/471.png",
       "played": 3,
@@ -113,7 +124,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 11,
+      "position": 12,
       "club": "SSC Napoli",
       "crest": "https://crests.football-data.org/113.png",
       "played": 3,
@@ -121,17 +132,6 @@
       "points": 3,
       "avgGoalsFor": 1.67,
       "formIndex": 50,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 12,
-      "club": "Cagliari Calcio",
-      "crest": "https://crests.football-data.org/104.png",
-      "played": 2,
-      "goalDiff": 0,
-      "points": 3,
-      "avgGoalsFor": 0.5,
-      "formIndex": 67,
       "formLabel": "➖ Irregular"
     },
     {
@@ -149,11 +149,11 @@
       "position": 14,
       "club": "US Lecce",
       "crest": "https://crests.football-data.org/5890.png",
-      "played": 2,
-      "goalDiff": -2,
+      "played": 3,
+      "goalDiff": -3,
       "points": 3,
-      "avgGoalsFor": 1.0,
-      "formIndex": 67,
+      "avgGoalsFor": 0.67,
+      "formIndex": 50,
       "formLabel": "➖ Irregular"
     },
     {
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-07T13:26:33.733295+00:00"
+  "lastUpdated": "2026-09-08T12:05:07.355391+00:00"
 }
