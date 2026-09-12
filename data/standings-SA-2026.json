@@ -158,6 +158,17 @@
     },
     {
       "position": 15,
+      "club": "ACF Fiorentina",
+      "crest": "https://crests.football-data.org/99.png",
+      "played": 4,
+      "goalDiff": -6,
+      "points": 3,
+      "avgGoalsFor": 1.25,
+      "formIndex": 10,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 16,
       "club": "Bologna FC 1909",
       "crest": "https://crests.football-data.org/103.png",
       "played": 3,
@@ -168,7 +179,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 16,
+      "position": 17,
       "club": "Parma Calcio 1913",
       "crest": "https://crests.football-data.org/112.png",
       "played": 3,
@@ -179,7 +190,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 17,
+      "position": 18,
       "club": "AC Monza",
       "crest": "https://crests.football-data.org/5911.png",
       "played": 3,
@@ -187,17 +198,6 @@
       "points": 1,
       "avgGoalsFor": 1.33,
       "formIndex": 6,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 18,
-      "club": "Venezia FC",
-      "crest": "https://crests.football-data.org/454.png",
-      "played": 3,
-      "goalDiff": -5,
-      "points": 0,
-      "avgGoalsFor": 0.67,
-      "formIndex": 0,
       "formLabel": "❄️ Bajón"
     },
     {
@@ -213,15 +213,15 @@
     },
     {
       "position": 20,
-      "club": "ACF Fiorentina",
-      "crest": "https://crests.football-data.org/99.png",
-      "played": 3,
-      "goalDiff": -8,
+      "club": "Venezia FC",
+      "crest": "https://crests.football-data.org/454.png",
+      "played": 4,
+      "goalDiff": -7,
       "points": 0,
-      "avgGoalsFor": 0.33,
+      "avgGoalsFor": 1.0,
       "formIndex": 0,
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-11T12:08:38.649203+00:00"
+  "lastUpdated": "2026-09-12T11:34:12.955322+00:00"
 }

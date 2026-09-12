@@ -584,11 +584,11 @@
       "away": "Valencia CF",
       "homeCrest": "https://crests.football-data.org/559.png",
       "awayCrest": "https://crests.football-data.org/95.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564670,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-11T12:07:49.229850+00:00"
+  "lastUpdated": "2026-09-12T11:33:21.315576+00:00"
 }

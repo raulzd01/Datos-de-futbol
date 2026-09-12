@@ -4,6 +4,17 @@
   "table": [
     {
       "position": 1,
+      "club": "Stade Rennais FC 1901",
+      "crest": "https://crests.football-data.org/529.png",
+      "played": 4,
+      "goalDiff": 3,
+      "points": 10,
+      "avgGoalsFor": 2.0,
+      "formIndex": 73,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
       "club": "AS Monaco FC",
       "crest": "https://crests.football-data.org/548.png",
       "played": 3,
@@ -14,7 +25,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 2,
+      "position": 3,
       "club": "Paris FC",
       "crest": "https://crests.football-data.org/1045.png",
       "played": 3,
@@ -25,7 +36,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 3,
+      "position": 4,
       "club": "Olympique Lyonnais",
       "crest": "https://crests.football-data.org/523.png",
       "played": 3,
@@ -36,7 +47,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "Lille OSC",
       "crest": "https://crests.football-data.org/521.png",
       "played": 3,
@@ -45,17 +56,6 @@
       "avgGoalsFor": 1.67,
       "formIndex": 78,
       "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 5,
-      "club": "Stade Rennais FC 1901",
-      "crest": "https://crests.football-data.org/529.png",
-      "played": 3,
-      "goalDiff": 2,
-      "points": 7,
-      "avgGoalsFor": 2.33,
-      "formIndex": 67,
-      "formLabel": "➖ Irregular"
     },
     {
       "position": 6,
@@ -103,8 +103,8 @@
     },
     {
       "position": 10,
-      "club": "Olympique de Marseille",
-      "crest": "https://crests.football-data.org/516.png",
+      "club": "Racing Club de Lens",
+      "crest": "https://crests.football-data.org/546.png",
       "played": 3,
       "goalDiff": 1,
       "points": 3,
@@ -114,13 +114,13 @@
     },
     {
       "position": 11,
-      "club": "Racing Club de Lens",
-      "crest": "https://crests.football-data.org/546.png",
-      "played": 3,
-      "goalDiff": 1,
+      "club": "Olympique de Marseille",
+      "crest": "https://crests.football-data.org/516.png",
+      "played": 4,
+      "goalDiff": 0,
       "points": 3,
-      "avgGoalsFor": 2.0,
-      "formIndex": 50,
+      "avgGoalsFor": 1.5,
+      "formIndex": 40,
       "formLabel": "➖ Irregular"
     },
     {
@@ -201,5 +201,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-11T12:09:06.982398+00:00"
+  "lastUpdated": "2026-09-12T11:34:41.132567+00:00"
 }

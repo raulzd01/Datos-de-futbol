@@ -26,6 +26,17 @@
     },
     {
       "position": 3,
+      "club": "Sevilla FC",
+      "crest": "https://crests.football-data.org/559.png",
+      "played": 5,
+      "goalDiff": 2,
+      "points": 10,
+      "avgGoalsFor": 1.6,
+      "formIndex": 71,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 4,
       "club": "Real Madrid CF",
       "crest": "https://crests.football-data.org/86.png",
       "played": 4,
@@ -36,7 +47,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "Real Betis Balompié",
       "crest": "https://crests.football-data.org/90.png",
       "played": 4,
@@ -47,7 +58,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 5,
+      "position": 6,
       "club": "RC Deportivo La Coruña",
       "crest": "https://crests.football-data.org/560.png",
       "played": 4,
@@ -56,17 +67,6 @@
       "avgGoalsFor": 2.0,
       "formIndex": 53,
       "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 6,
-      "club": "Sevilla FC",
-      "crest": "https://crests.football-data.org/559.png",
-      "played": 4,
-      "goalDiff": 1,
-      "points": 7,
-      "avgGoalsFor": 1.75,
-      "formIndex": 73,
-      "formLabel": "🔥 En racha"
     },
     {
       "position": 7,
@@ -215,13 +215,13 @@
       "position": 20,
       "club": "Valencia CF",
       "crest": "https://crests.football-data.org/95.png",
-      "played": 4,
-      "goalDiff": -8,
+      "played": 5,
+      "goalDiff": -9,
       "points": 1,
-      "avgGoalsFor": 0.25,
-      "formIndex": 13,
+      "avgGoalsFor": 0.2,
+      "formIndex": 11,
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-11T12:07:41.801878+00:00"
+  "lastUpdated": "2026-09-12T11:33:13.900443+00:00"
 }

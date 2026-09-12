@@ -388,11 +388,11 @@
       "away": "Olympique de Marseille",
       "homeCrest": "https://crests.football-data.org/529.png",
       "awayCrest": "https://crests.football-data.org/516.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559687,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-11T12:09:14.315093+00:00"
+  "lastUpdated": "2026-09-12T11:34:48.450493+00:00"
 }
