@@ -598,11 +598,11 @@
       "away": "Deportivo Alavés",
       "homeCrest": "https://crests.football-data.org/5335.png",
       "awayCrest": "https://crests.football-data.org/263.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564673,
@@ -612,11 +612,11 @@
       "away": "RCD Espanyol de Barcelona",
       "homeCrest": "https://crests.football-data.org/79.png",
       "awayCrest": "https://crests.football-data.org/80.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564676,
@@ -626,11 +626,11 @@
       "away": "Elche CF",
       "homeCrest": "https://crests.football-data.org/77.png",
       "awayCrest": "https://crests.football-data.org/285.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564677,
@@ -640,11 +640,11 @@
       "away": "Rayo Vallecano de Madrid",
       "homeCrest": "https://crests.football-data.org/86.png",
       "awayCrest": "https://crests.football-data.org/87.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 4,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564672,
@@ -654,11 +654,11 @@
       "away": "Málaga CF",
       "homeCrest": "https://crests.football-data.org/558.png",
       "awayCrest": "https://crests.football-data.org/84.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "EN JUEGO"
     },
     {
       "id": 564675,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-12T11:33:21.315576+00:00"
+  "lastUpdated": "2026-09-13T12:39:08.100108+00:00"
 }

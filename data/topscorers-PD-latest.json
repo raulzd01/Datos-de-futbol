@@ -3,11 +3,23 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Sergio Camello",
+      "goals": 6
+    },
+    {
       "name": "Raphinha",
       "goals": 6
     },
     {
-      "name": "Sergio Camello",
+      "name": "Kylian Mbappé",
+      "goals": 6
+    },
+    {
+      "name": "Roberto Fernández",
+      "goals": 5
+    },
+    {
+      "name": "Yassir Zabiri",
       "goals": 5
     },
     {
@@ -16,10 +28,6 @@
     },
     {
       "name": "Fermín López",
-      "goals": 4
-    },
-    {
-      "name": "Kylian Mbappé",
       "goals": 4
     },
     {
@@ -33,15 +41,7 @@
     {
       "name": "Lamine Yamal",
       "goals": 4
-    },
-    {
-      "name": "Mariano Díaz",
-      "goals": 3
-    },
-    {
-      "name": "Roberto Fernández",
-      "goals": 3
     }
   ],
-  "lastUpdated": "2026-09-12T11:33:28.457556+00:00"
+  "lastUpdated": "2026-09-13T12:39:15.503996+00:00"
 }

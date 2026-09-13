@@ -3,11 +3,31 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Bukayo Saka",
+      "goals": 3
+    },
+    {
+      "name": "Marcus Tavernier",
+      "goals": 3
+    },
+    {
+      "name": "João Pedro",
+      "goals": 3
+    },
+    {
+      "name": "Morgan Rogers",
+      "goals": 3
+    },
+    {
       "name": "Erling Haaland",
       "goals": 3
     },
     {
       "name": "Alexander Isak",
+      "goals": 3
+    },
+    {
+      "name": "Kevin Schade",
       "goals": 3
     },
     {
@@ -19,29 +39,9 @@
       "goals": 2
     },
     {
-      "name": "Bukayo Saka",
-      "goals": 2
-    },
-    {
       "name": "Martin Ødegaard",
-      "goals": 2
-    },
-    {
-      "name": "Vitaly Janelt",
-      "goals": 2
-    },
-    {
-      "name": "Marcus Tavernier",
-      "goals": 2
-    },
-    {
-      "name": "Jack Hinshelwood",
-      "goals": 2
-    },
-    {
-      "name": "Anthony Elanga",
       "goals": 2
     }
   ],
-  "lastUpdated": "2026-09-12T11:33:56.815300+00:00"
+  "lastUpdated": "2026-09-13T12:39:44.169078+00:00"
 }

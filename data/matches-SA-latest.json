@@ -444,11 +444,11 @@
       "away": "Frosinone Calcio",
       "homeCrest": "https://crests.football-data.org/107.png",
       "awayCrest": "https://crests.football-data.org/470.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558600,
@@ -458,11 +458,11 @@
       "away": "AC Milan",
       "homeCrest": "https://crests.football-data.org/110.png",
       "awayCrest": "https://crests.football-data.org/98.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558607,
@@ -472,11 +472,11 @@
       "away": "Cagliari Calcio",
       "homeCrest": "https://crests.football-data.org/102.png",
       "awayCrest": "https://crests.football-data.org/104.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 558605,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-12T11:34:20.299760+00:00"
+  "lastUpdated": "2026-09-13T12:40:05.270812+00:00"
 }
