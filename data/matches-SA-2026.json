@@ -486,11 +486,11 @@
       "away": "AC Monza",
       "homeCrest": "https://crests.football-data.org/5890.png",
       "awayCrest": "https://crests.football-data.org/5911.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558599,
@@ -500,11 +500,11 @@
       "away": "Bologna FC 1909",
       "homeCrest": "https://crests.football-data.org/113.png",
       "awayCrest": "https://crests.football-data.org/103.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558608,
@@ -514,11 +514,11 @@
       "away": "Juventus FC",
       "homeCrest": "https://crests.football-data.org/471.png",
       "awayCrest": "https://crests.football-data.org/109.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558602,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-13T12:40:05.270812+00:00"
+  "lastUpdated": "2026-09-14T13:50:00.103161+00:00"
 }

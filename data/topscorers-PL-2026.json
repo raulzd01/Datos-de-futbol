@@ -3,6 +3,10 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Erling Haaland",
+      "goals": 4
+    },
+    {
       "name": "Bukayo Saka",
       "goals": 3
     },
@@ -16,10 +20,6 @@
     },
     {
       "name": "Morgan Rogers",
-      "goals": 3
-    },
-    {
-      "name": "Erling Haaland",
       "goals": 3
     },
     {
@@ -43,5 +43,5 @@
       "goals": 2
     }
   ],
-  "lastUpdated": "2026-09-13T12:39:44.169078+00:00"
+  "lastUpdated": "2026-09-14T13:49:38.162844+00:00"
 }

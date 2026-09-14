@@ -472,11 +472,11 @@
       "away": "ES Troyes AC",
       "homeCrest": "https://crests.football-data.org/521.png",
       "awayCrest": "https://crests.football-data.org/531.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559686,
@@ -486,11 +486,11 @@
       "away": "Racing Club de Lens",
       "homeCrest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
       "awayCrest": "https://crests.football-data.org/546.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559691,
@@ -500,11 +500,11 @@
       "away": "Paris Saint-Germain FC",
       "homeCrest": "https://crests.football-data.org/512.png",
       "awayCrest": "https://crests.football-data.org/524.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 559682,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-13T12:40:33.969457+00:00"
+  "lastUpdated": "2026-09-14T13:50:29.600978+00:00"
 }

@@ -528,11 +528,11 @@
       "away": "Brighton & Hove Albion FC",
       "homeCrest": "https://crests.football-data.org/1076.png",
       "awayCrest": "https://crests.football-data.org/397.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 5,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 560580,
@@ -542,11 +542,11 @@
       "away": "Manchester City FC",
       "homeCrest": "https://crests.football-data.org/66.png",
       "awayCrest": "https://crests.football-data.org/65.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 560579,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-09-13T12:39:36.779564+00:00"
+  "lastUpdated": "2026-09-14T13:49:30.905970+00:00"
 }

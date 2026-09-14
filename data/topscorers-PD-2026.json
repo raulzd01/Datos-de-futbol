@@ -15,16 +15,20 @@
       "goals": 6
     },
     {
+      "name": "Lamine Yamal",
+      "goals": 6
+    },
+    {
       "name": "Roberto Fernández",
+      "goals": 5
+    },
+    {
+      "name": "Pierre-Emerick Aubameyang",
       "goals": 5
     },
     {
       "name": "Yassir Zabiri",
       "goals": 5
-    },
-    {
-      "name": "Pierre-Emerick Aubameyang",
-      "goals": 4
     },
     {
       "name": "Fermín López",
@@ -37,11 +41,7 @@
     {
       "name": "Lucas Boyé",
       "goals": 4
-    },
-    {
-      "name": "Lamine Yamal",
-      "goals": 4
     }
   ],
-  "lastUpdated": "2026-09-13T12:39:15.503996+00:00"
+  "lastUpdated": "2026-09-14T13:49:08.901101+00:00"
 }

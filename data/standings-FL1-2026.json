@@ -4,6 +4,17 @@
   "table": [
     {
       "position": 1,
+      "club": "Lille OSC",
+      "crest": "https://crests.football-data.org/521.png",
+      "played": 4,
+      "goalDiff": 5,
+      "points": 10,
+      "avgGoalsFor": 1.75,
+      "formIndex": 80,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
       "club": "AS Monaco FC",
       "crest": "https://crests.football-data.org/548.png",
       "played": 4,
@@ -14,7 +25,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 2,
+      "position": 3,
       "club": "Stade Rennais FC 1901",
       "crest": "https://crests.football-data.org/529.png",
       "played": 4,
@@ -25,7 +36,7 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 3,
+      "position": 4,
       "club": "Paris FC",
       "crest": "https://crests.football-data.org/1045.png",
       "played": 4,
@@ -36,7 +47,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 4,
+      "position": 5,
       "club": "Olympique Lyonnais",
       "crest": "https://crests.football-data.org/523.png",
       "played": 4,
@@ -44,17 +55,6 @@
       "points": 8,
       "avgGoalsFor": 1.5,
       "formIndex": 73,
-      "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 5,
-      "club": "Lille OSC",
-      "crest": "https://crests.football-data.org/521.png",
-      "played": 3,
-      "goalDiff": 3,
-      "points": 7,
-      "avgGoalsFor": 1.67,
-      "formIndex": 78,
       "formLabel": "🔥 En racha"
     },
     {
@@ -72,15 +72,26 @@
       "position": 7,
       "club": "Stade Brestois 29",
       "crest": "https://crests.football-data.org/512.png",
-      "played": 3,
-      "goalDiff": 1,
+      "played": 4,
+      "goalDiff": 0,
       "points": 5,
-      "avgGoalsFor": 2.0,
-      "formIndex": 44,
+      "avgGoalsFor": 1.5,
+      "formIndex": 43,
       "formLabel": "➖ Irregular"
     },
     {
       "position": 8,
+      "club": "Paris Saint-Germain FC",
+      "crest": "https://crests.football-data.org/524.png",
+      "played": 4,
+      "goalDiff": 0,
+      "points": 5,
+      "avgGoalsFor": 1.5,
+      "formIndex": 33,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 9,
       "club": "FC Lorient",
       "crest": "https://crests.football-data.org/525.png",
       "played": 4,
@@ -91,7 +102,18 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 9,
+      "position": 10,
+      "club": "Racing Club de Lens",
+      "crest": "https://crests.football-data.org/546.png",
+      "played": 4,
+      "goalDiff": 1,
+      "points": 4,
+      "avgGoalsFor": 2.0,
+      "formIndex": 43,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 11,
       "club": "Angers SCO",
       "crest": "https://crests.football-data.org/532.png",
       "played": 4,
@@ -102,29 +124,18 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 10,
+      "position": 12,
       "club": "ES Troyes AC",
       "crest": "https://crests.football-data.org/531.png",
-      "played": 3,
-      "goalDiff": -3,
+      "played": 4,
+      "goalDiff": -5,
       "points": 4,
-      "avgGoalsFor": 1.33,
-      "formIndex": 50,
+      "avgGoalsFor": 1.0,
+      "formIndex": 43,
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 11,
-      "club": "Racing Club de Lens",
-      "crest": "https://crests.football-data.org/546.png",
-      "played": 3,
-      "goalDiff": 1,
-      "points": 3,
-      "avgGoalsFor": 2.0,
-      "formIndex": 50,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 12,
+      "position": 13,
       "club": "Olympique de Marseille",
       "crest": "https://crests.football-data.org/516.png",
       "played": 4,
@@ -135,7 +146,18 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 13,
+      "position": 14,
+      "club": "Le Mans FC",
+      "crest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
+      "played": 4,
+      "goalDiff": -1,
+      "points": 3,
+      "avgGoalsFor": 1.75,
+      "formIndex": 23,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 15,
       "club": "AJ Auxerre",
       "crest": "https://crests.football-data.org/519.png",
       "played": 4,
@@ -143,28 +165,6 @@
       "points": 3,
       "avgGoalsFor": 1.25,
       "formIndex": 10,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 14,
-      "club": "Le Mans FC",
-      "crest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
-      "played": 3,
-      "goalDiff": -1,
-      "points": 2,
-      "avgGoalsFor": 1.67,
-      "formIndex": 22,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 15,
-      "club": "Paris Saint-Germain FC",
-      "crest": "https://crests.football-data.org/524.png",
-      "played": 3,
-      "goalDiff": -1,
-      "points": 2,
-      "avgGoalsFor": 1.67,
-      "formIndex": 28,
       "formLabel": "❄️ Bajón"
     },
     {
@@ -201,5 +201,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-13T12:40:26.412500+00:00"
+  "lastUpdated": "2026-09-14T13:50:21.861100+00:00"
 }

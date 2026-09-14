@@ -83,15 +83,37 @@
       "position": 8,
       "club": "Juventus FC",
       "crest": "https://crests.football-data.org/109.png",
-      "played": 3,
-      "goalDiff": 3,
+      "played": 4,
+      "goalDiff": 2,
       "points": 7,
-      "avgGoalsFor": 1.33,
-      "formIndex": 89,
+      "avgGoalsFor": 1.5,
+      "formIndex": 77,
       "formLabel": "🔥 En racha"
     },
     {
       "position": 9,
+      "club": "US Sassuolo Calcio",
+      "crest": "https://crests.football-data.org/471.png",
+      "played": 4,
+      "goalDiff": 1,
+      "points": 7,
+      "avgGoalsFor": 2.0,
+      "formIndex": 47,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 10,
+      "club": "SSC Napoli",
+      "crest": "https://crests.football-data.org/113.png",
+      "played": 4,
+      "goalDiff": 1,
+      "points": 6,
+      "avgGoalsFor": 1.5,
+      "formIndex": 50,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 11,
       "club": "Atalanta BC",
       "crest": "https://crests.football-data.org/102.png",
       "played": 4,
@@ -102,7 +124,18 @@
       "formLabel": "🔥 En racha"
     },
     {
-      "position": 10,
+      "position": 12,
+      "club": "US Lecce",
+      "crest": "https://crests.football-data.org/5890.png",
+      "played": 4,
+      "goalDiff": -2,
+      "points": 6,
+      "avgGoalsFor": 1.25,
+      "formIndex": 50,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 13,
       "club": "Udinese Calcio",
       "crest": "https://crests.football-data.org/115.png",
       "played": 3,
@@ -113,29 +146,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 11,
-      "club": "US Sassuolo Calcio",
-      "crest": "https://crests.football-data.org/471.png",
-      "played": 3,
-      "goalDiff": 0,
-      "points": 4,
-      "avgGoalsFor": 1.67,
-      "formIndex": 39,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 12,
-      "club": "SSC Napoli",
-      "crest": "https://crests.football-data.org/113.png",
-      "played": 3,
-      "goalDiff": 0,
-      "points": 3,
-      "avgGoalsFor": 1.67,
-      "formIndex": 50,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 13,
+      "position": 14,
       "club": "Torino FC",
       "crest": "https://crests.football-data.org/586.png",
       "played": 3,
@@ -144,17 +155,6 @@
       "avgGoalsFor": 1.33,
       "formIndex": 17,
       "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 14,
-      "club": "US Lecce",
-      "crest": "https://crests.football-data.org/5890.png",
-      "played": 3,
-      "goalDiff": -3,
-      "points": 3,
-      "avgGoalsFor": 0.67,
-      "formIndex": 50,
-      "formLabel": "➖ Irregular"
     },
     {
       "position": 15,
@@ -171,11 +171,11 @@
       "position": 16,
       "club": "Bologna FC 1909",
       "crest": "https://crests.football-data.org/103.png",
-      "played": 3,
-      "goalDiff": -2,
+      "played": 4,
+      "goalDiff": -3,
       "points": 1,
-      "avgGoalsFor": 0.67,
-      "formIndex": 6,
+      "avgGoalsFor": 0.5,
+      "formIndex": 7,
       "formLabel": "❄️ Bajón"
     },
     {
@@ -193,11 +193,11 @@
       "position": 18,
       "club": "AC Monza",
       "crest": "https://crests.football-data.org/5911.png",
-      "played": 3,
-      "goalDiff": -4,
+      "played": 4,
+      "goalDiff": -5,
       "points": 1,
-      "avgGoalsFor": 1.33,
-      "formIndex": 6,
+      "avgGoalsFor": 1.5,
+      "formIndex": 7,
       "formLabel": "❄️ Bajón"
     },
     {
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-13T12:39:57.857774+00:00"
+  "lastUpdated": "2026-09-14T13:49:52.230402+00:00"
 }
