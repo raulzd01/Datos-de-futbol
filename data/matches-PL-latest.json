@@ -556,11 +556,11 @@
       "away": "Newcastle United FC",
       "homeCrest": "https://crests.football-data.org/341.png",
       "awayCrest": "https://crests.football-data.org/67.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 4,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560591,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-09-14T13:49:30.905970+00:00"
+  "lastUpdated": "2026-09-15T12:35:18.746461+00:00"
 }

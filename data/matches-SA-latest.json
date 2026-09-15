@@ -528,11 +528,11 @@
       "away": "Parma Calcio 1913",
       "homeCrest": "https://crests.football-data.org/7397.png",
       "awayCrest": "https://crests.football-data.org/112.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558603,
@@ -542,11 +542,11 @@
       "away": "AS Roma",
       "homeCrest": "https://crests.football-data.org/586.png",
       "awayCrest": "https://crests.football-data.org/100.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 2,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 558601,
@@ -556,11 +556,11 @@
       "away": "Udinese Calcio",
       "homeCrest": "https://crests.football-data.org/108.png",
       "awayCrest": "https://crests.football-data.org/115.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 5,
+      "awayScore": 3,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558596,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-14T13:50:00.103161+00:00"
+  "lastUpdated": "2026-09-15T12:35:47.048734+00:00"
 }
