@@ -724,11 +724,11 @@
       "away": "RCD Espanyol de Barcelona",
       "homeCrest": "https://crests.football-data.org/87.png",
       "awayCrest": "https://crests.football-data.org/80.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 564680,
@@ -738,11 +738,11 @@
       "away": "Valencia CF",
       "homeCrest": "https://crests.football-data.org/263.png",
       "awayCrest": "https://crests.football-data.org/95.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564681,
@@ -752,11 +752,11 @@
       "away": "Real Madrid CF",
       "homeCrest": "https://crests.football-data.org/285.png",
       "awayCrest": "https://crests.football-data.org/86.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 564679,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-15T12:34:49.936967+00:00"
+  "lastUpdated": "2026-09-16T12:31:36.275067+00:00"
 }

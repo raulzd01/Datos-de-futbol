@@ -3,6 +3,14 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Kylian Mbappé",
+      "goals": 7
+    },
+    {
+      "name": "Roberto Fernández",
+      "goals": 6
+    },
+    {
       "name": "Sergio Camello",
       "goals": 6
     },
@@ -11,16 +19,8 @@
       "goals": 6
     },
     {
-      "name": "Kylian Mbappé",
-      "goals": 6
-    },
-    {
       "name": "Lamine Yamal",
       "goals": 6
-    },
-    {
-      "name": "Roberto Fernández",
-      "goals": 5
     },
     {
       "name": "Pierre-Emerick Aubameyang",
@@ -43,5 +43,5 @@
       "goals": 4
     }
   ],
-  "lastUpdated": "2026-09-15T12:34:57.244969+00:00"
+  "lastUpdated": "2026-09-16T12:31:43.542545+00:00"
 }
