@@ -3,7 +3,15 @@
   "season": 2026,
   "scorers": [
     {
+      "name": "Raphinha",
+      "goals": 9
+    },
+    {
       "name": "Kylian Mbappé",
+      "goals": 7
+    },
+    {
+      "name": "Lamine Yamal",
       "goals": 7
     },
     {
@@ -15,11 +23,7 @@
       "goals": 6
     },
     {
-      "name": "Raphinha",
-      "goals": 6
-    },
-    {
-      "name": "Lamine Yamal",
+      "name": "Yassir Zabiri",
       "goals": 6
     },
     {
@@ -27,8 +31,8 @@
       "goals": 5
     },
     {
-      "name": "Yassir Zabiri",
-      "goals": 5
+      "name": "Álex Baena",
+      "goals": 4
     },
     {
       "name": "Fermín López",
@@ -37,11 +41,7 @@
     {
       "name": "Ante Budimir",
       "goals": 4
-    },
-    {
-      "name": "Lucas Boyé",
-      "goals": 4
     }
   ],
-  "lastUpdated": "2026-09-16T12:31:43.542545+00:00"
+  "lastUpdated": "2026-09-17T12:31:57.254763+00:00"
 }
