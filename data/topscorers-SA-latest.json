@@ -7,11 +7,19 @@
       "goals": 6
     },
     {
+      "name": "Gustavo Varela",
+      "goals": 4
+    },
+    {
       "name": "Antonio Raimondo",
       "goals": 4
     },
     {
       "name": "Davide Frattesi",
+      "goals": 3
+    },
+    {
+      "name": "Vasilije Adzic",
       "goals": 3
     },
     {
@@ -31,17 +39,9 @@
       "goals": 2
     },
     {
-      "name": "Gustavo Varela",
-      "goals": 2
-    },
-    {
       "name": "Francesco Esposito",
-      "goals": 2
-    },
-    {
-      "name": "Tiago Gabriel",
       "goals": 2
     }
   ],
-  "lastUpdated": "2026-09-18T12:11:10.542355+00:00"
+  "lastUpdated": "2026-09-19T11:53:34.870217+00:00"
 }

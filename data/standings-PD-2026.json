@@ -81,17 +81,6 @@
     },
     {
       "position": 8,
-      "club": "RCD Espanyol de Barcelona",
-      "crest": "https://crests.football-data.org/80.png",
-      "played": 6,
-      "goalDiff": 2,
-      "points": 7,
-      "avgGoalsFor": 1.5,
-      "formIndex": 20,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 9,
       "club": "Athletic Club",
       "crest": "https://crests.football-data.org/77.png",
       "played": 5,
@@ -100,6 +89,17 @@
       "avgGoalsFor": 1.4,
       "formIndex": 36,
       "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 9,
+      "club": "RCD Espanyol de Barcelona",
+      "crest": "https://crests.football-data.org/80.png",
+      "played": 7,
+      "goalDiff": 0,
+      "points": 7,
+      "avgGoalsFor": 1.43,
+      "formIndex": 29,
+      "formLabel": "❄️ Bajón"
     },
     {
       "position": 10,
@@ -180,6 +180,17 @@
     },
     {
       "position": 17,
+      "club": "Elche CF",
+      "crest": "https://crests.football-data.org/285.png",
+      "played": 7,
+      "goalDiff": -6,
+      "points": 5,
+      "avgGoalsFor": 1.57,
+      "formIndex": 13,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 18,
       "club": "RC Celta de Vigo",
       "crest": "https://crests.football-data.org/558.png",
       "played": 6,
@@ -190,7 +201,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 18,
+      "position": 19,
       "club": "Valencia CF",
       "crest": "https://crests.football-data.org/95.png",
       "played": 6,
@@ -201,7 +212,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 19,
+      "position": 20,
       "club": "Málaga CF",
       "crest": "https://crests.football-data.org/84.png",
       "played": 6,
@@ -210,18 +221,7 @@
       "avgGoalsFor": 0.5,
       "formIndex": 22,
       "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 20,
-      "club": "Elche CF",
-      "crest": "https://crests.football-data.org/285.png",
-      "played": 6,
-      "goalDiff": -8,
-      "points": 2,
-      "avgGoalsFor": 1.33,
-      "formIndex": 4,
-      "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-18T12:09:58.220759+00:00"
+  "lastUpdated": "2026-09-19T11:52:21.566990+00:00"
 }

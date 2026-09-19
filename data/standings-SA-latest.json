@@ -94,10 +94,10 @@
       "position": 9,
       "club": "US Sassuolo Calcio",
       "crest": "https://crests.football-data.org/471.png",
-      "played": 4,
-      "goalDiff": 1,
+      "played": 5,
+      "goalDiff": 0,
       "points": 7,
-      "avgGoalsFor": 2.0,
+      "avgGoalsFor": 1.8,
       "formIndex": 47,
       "formLabel": "➖ Irregular"
     },
@@ -147,6 +147,17 @@
     },
     {
       "position": 14,
+      "club": "AC Monza",
+      "crest": "https://crests.football-data.org/5911.png",
+      "played": 5,
+      "goalDiff": -4,
+      "points": 4,
+      "avgGoalsFor": 1.6,
+      "formIndex": 13,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 15,
       "club": "Torino FC",
       "crest": "https://crests.football-data.org/586.png",
       "played": 4,
@@ -157,7 +168,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 15,
+      "position": 16,
       "club": "ACF Fiorentina",
       "crest": "https://crests.football-data.org/99.png",
       "played": 4,
@@ -168,7 +179,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 16,
+      "position": 17,
       "club": "Bologna FC 1909",
       "crest": "https://crests.football-data.org/103.png",
       "played": 4,
@@ -179,24 +190,13 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 17,
+      "position": 18,
       "club": "Parma Calcio 1913",
       "crest": "https://crests.football-data.org/112.png",
       "played": 4,
       "goalDiff": -4,
       "points": 1,
       "avgGoalsFor": 0.5,
-      "formIndex": 7,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 18,
-      "club": "AC Monza",
-      "crest": "https://crests.football-data.org/5911.png",
-      "played": 4,
-      "goalDiff": -5,
-      "points": 1,
-      "avgGoalsFor": 1.5,
       "formIndex": 7,
       "formLabel": "❄️ Bajón"
     },
@@ -223,5 +223,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-18T12:10:55.739575+00:00"
+  "lastUpdated": "2026-09-19T11:53:19.903809+00:00"
 }

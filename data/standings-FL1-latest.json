@@ -4,6 +4,17 @@
   "table": [
     {
       "position": 1,
+      "club": "AS Monaco FC",
+      "crest": "https://crests.football-data.org/548.png",
+      "played": 5,
+      "goalDiff": 5,
+      "points": 13,
+      "avgGoalsFor": 1.6,
+      "formIndex": 91,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 2,
       "club": "Lille OSC",
       "crest": "https://crests.football-data.org/521.png",
       "played": 4,
@@ -11,17 +22,6 @@
       "points": 10,
       "avgGoalsFor": 1.75,
       "formIndex": 80,
-      "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 2,
-      "club": "AS Monaco FC",
-      "crest": "https://crests.football-data.org/548.png",
-      "played": 4,
-      "goalDiff": 4,
-      "points": 10,
-      "avgGoalsFor": 1.5,
-      "formIndex": 93,
       "formLabel": "🔥 En racha"
     },
     {
@@ -105,11 +105,11 @@
       "position": 10,
       "club": "Racing Club de Lens",
       "crest": "https://crests.football-data.org/546.png",
-      "played": 4,
-      "goalDiff": 1,
+      "played": 5,
+      "goalDiff": 0,
       "points": 4,
-      "avgGoalsFor": 2.0,
-      "formIndex": 43,
+      "avgGoalsFor": 1.8,
+      "formIndex": 38,
       "formLabel": "➖ Irregular"
     },
     {
@@ -201,5 +201,5 @@
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-18T12:11:24.441701+00:00"
+  "lastUpdated": "2026-09-19T11:53:48.855529+00:00"
 }

@@ -514,11 +514,11 @@
       "away": "Racing Club de Lens",
       "homeCrest": "https://crests.football-data.org/548.png",
       "awayCrest": "https://crests.football-data.org/546.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559679,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-18T12:11:31.934176+00:00"
+  "lastUpdated": "2026-09-19T11:53:56.495996+00:00"
 }

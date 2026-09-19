@@ -570,11 +570,11 @@
       "away": "Chelsea FC",
       "homeCrest": "https://crests.football-data.org/402.png",
       "awayCrest": "https://crests.football-data.org/61.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560587,
@@ -584,11 +584,11 @@
       "away": "Aston Villa FC",
       "homeCrest": "https://crests.football-data.org/73.png",
       "awayCrest": "https://crests.football-data.org/58.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "homeWin": false,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "EN JUEGO"
     },
     {
       "id": 560584,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-09-18T12:10:34.652422+00:00"
+  "lastUpdated": "2026-09-19T11:52:58.757015+00:00"
 }

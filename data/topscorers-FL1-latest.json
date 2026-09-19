@@ -15,6 +15,10 @@
       "goals": 4
     },
     {
+      "name": "Paris Brunner",
+      "goals": 4
+    },
+    {
       "name": "Florian Thauvin",
       "goals": 3
     },
@@ -31,10 +35,6 @@
       "goals": 3
     },
     {
-      "name": "Paris Brunner",
-      "goals": 3
-    },
-    {
       "name": "Franjo Ivanovic",
       "goals": 2
     },
@@ -43,5 +43,5 @@
       "goals": 2
     }
   ],
-  "lastUpdated": "2026-09-18T12:11:39.073516+00:00"
+  "lastUpdated": "2026-09-19T11:54:04.242730+00:00"
 }
