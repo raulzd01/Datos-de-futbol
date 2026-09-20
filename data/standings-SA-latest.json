@@ -6,26 +6,48 @@
       "position": 1,
       "club": "AS Roma",
       "crest": "https://crests.football-data.org/100.png",
-      "played": 4,
+      "played": 5,
       "goalDiff": 11,
-      "points": 12,
-      "avgGoalsFor": 3.0,
-      "formIndex": 100,
+      "points": 13,
+      "avgGoalsFor": 2.8,
+      "formIndex": 96,
       "formLabel": "🔥 En racha"
     },
     {
       "position": 2,
       "club": "FC Internazionale Milano",
       "crest": "https://crests.football-data.org/108.png",
-      "played": 4,
+      "played": 5,
       "goalDiff": 7,
-      "points": 12,
-      "avgGoalsFor": 3.25,
-      "formIndex": 100,
+      "points": 13,
+      "avgGoalsFor": 3.0,
+      "formIndex": 96,
       "formLabel": "🔥 En racha"
     },
     {
       "position": 3,
+      "club": "SS Lazio",
+      "crest": "https://crests.football-data.org/110.png",
+      "played": 5,
+      "goalDiff": 5,
+      "points": 13,
+      "avgGoalsFor": 1.6,
+      "formIndex": 91,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 4,
+      "club": "Cagliari Calcio",
+      "crest": "https://crests.football-data.org/104.png",
+      "played": 5,
+      "goalDiff": 3,
+      "points": 12,
+      "avgGoalsFor": 1.0,
+      "formIndex": 73,
+      "formLabel": "🔥 En racha"
+    },
+    {
+      "position": 5,
       "club": "Como 1907",
       "crest": "https://crests.football-data.org/7397.png",
       "played": 4,
@@ -33,28 +55,6 @@
       "points": 10,
       "avgGoalsFor": 2.25,
       "formIndex": 73,
-      "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 4,
-      "club": "SS Lazio",
-      "crest": "https://crests.football-data.org/110.png",
-      "played": 4,
-      "goalDiff": 3,
-      "points": 10,
-      "avgGoalsFor": 1.5,
-      "formIndex": 93,
-      "formLabel": "🔥 En racha"
-    },
-    {
-      "position": 5,
-      "club": "Cagliari Calcio",
-      "crest": "https://crests.football-data.org/104.png",
-      "played": 4,
-      "goalDiff": 2,
-      "points": 9,
-      "avgGoalsFor": 1.0,
-      "formIndex": 70,
       "formLabel": "🔥 En racha"
     },
     {
@@ -138,15 +138,26 @@
       "position": 13,
       "club": "Udinese Calcio",
       "crest": "https://crests.football-data.org/115.png",
-      "played": 4,
-      "goalDiff": -2,
+      "played": 5,
+      "goalDiff": -3,
       "points": 4,
-      "avgGoalsFor": 2.0,
-      "formIndex": 43,
+      "avgGoalsFor": 1.6,
+      "formIndex": 38,
       "formLabel": "➖ Irregular"
     },
     {
       "position": 14,
+      "club": "Torino FC",
+      "crest": "https://crests.football-data.org/586.png",
+      "played": 5,
+      "goalDiff": -3,
+      "points": 4,
+      "avgGoalsFor": 1.0,
+      "formIndex": 22,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 15,
       "club": "AC Monza",
       "crest": "https://crests.football-data.org/5911.png",
       "played": 5,
@@ -154,17 +165,6 @@
       "points": 4,
       "avgGoalsFor": 1.6,
       "formIndex": 13,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 15,
-      "club": "Torino FC",
-      "crest": "https://crests.football-data.org/586.png",
-      "played": 4,
-      "goalDiff": -3,
-      "points": 3,
-      "avgGoalsFor": 1.0,
-      "formIndex": 20,
       "formLabel": "❄️ Bajón"
     },
     {
@@ -182,11 +182,11 @@
       "position": 17,
       "club": "Bologna FC 1909",
       "crest": "https://crests.football-data.org/103.png",
-      "played": 4,
+      "played": 5,
       "goalDiff": -3,
-      "points": 1,
-      "avgGoalsFor": 0.5,
-      "formIndex": 7,
+      "points": 2,
+      "avgGoalsFor": 0.6,
+      "formIndex": 9,
       "formLabel": "❄️ Bajón"
     },
     {
@@ -215,13 +215,13 @@
       "position": 20,
       "club": "Venezia FC",
       "crest": "https://crests.football-data.org/454.png",
-      "played": 4,
-      "goalDiff": -7,
+      "played": 5,
+      "goalDiff": -9,
       "points": 0,
-      "avgGoalsFor": 1.0,
+      "avgGoalsFor": 0.8,
       "formIndex": 0,
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-19T11:53:19.903809+00:00"
+  "lastUpdated": "2026-09-20T12:11:45.365489+00:00"
 }

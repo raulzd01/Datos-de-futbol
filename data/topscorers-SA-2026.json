@@ -15,11 +15,19 @@
       "goals": 4
     },
     {
+      "name": "Lautaro Martínez",
+      "goals": 4
+    },
+    {
       "name": "Davide Frattesi",
       "goals": 3
     },
     {
       "name": "Vasilije Adzic",
+      "goals": 3
+    },
+    {
+      "name": "Daniel Maldini",
       "goals": 3
     },
     {
@@ -33,15 +41,7 @@
     {
       "name": "Anastasios Douvikas",
       "goals": 2
-    },
-    {
-      "name": "Hakan Çalhanoğlu",
-      "goals": 2
-    },
-    {
-      "name": "Francesco Esposito",
-      "goals": 2
     }
   ],
-  "lastUpdated": "2026-09-19T11:53:34.870217+00:00"
+  "lastUpdated": "2026-09-20T12:12:00.703036+00:00"
 }

@@ -584,11 +584,11 @@
       "away": "Aston Villa FC",
       "homeCrest": "https://crests.football-data.org/73.png",
       "awayCrest": "https://crests.football-data.org/58.png",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 2,
+      "awayScore": 3,
       "homeWin": false,
-      "awayWin": false,
-      "status": "EN JUEGO"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 560584,
@@ -598,11 +598,11 @@
       "away": "Ipswich Town FC",
       "homeCrest": "https://crests.football-data.org/62.png",
       "awayCrest": "https://crests.football-data.org/349.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560586,
@@ -612,11 +612,11 @@
       "away": "Arsenal FC",
       "homeCrest": "https://crests.football-data.org/397.png",
       "awayCrest": "https://crests.football-data.org/57.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560588,
@@ -626,11 +626,11 @@
       "away": "Hull City AFC",
       "homeCrest": "https://crests.football-data.org/67.png",
       "awayCrest": "https://crests.football-data.org/322.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 560589,
@@ -640,11 +640,11 @@
       "away": "Coventry City FC",
       "homeCrest": "https://crests.football-data.org/351.png",
       "awayCrest": "https://crests.football-data.org/1076.png",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "homeWin": false,
-      "awayWin": false,
-      "status": "TIMED"
+      "awayWin": true,
+      "status": "FINALIZADO"
     },
     {
       "id": 560582,
@@ -5323,5 +5323,5 @@
       "status": "TIMED"
     }
   ],
-  "lastUpdated": "2026-09-19T11:52:58.757015+00:00"
+  "lastUpdated": "2026-09-20T12:11:24.522017+00:00"
 }

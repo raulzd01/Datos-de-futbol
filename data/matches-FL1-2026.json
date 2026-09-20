@@ -528,11 +528,11 @@
       "away": "RC Strasbourg Alsace",
       "homeCrest": "https://crests.football-data.org/1045.png",
       "awayCrest": "https://crests.football-data.org/576.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559677,
@@ -542,11 +542,11 @@
       "away": "FC Lorient",
       "homeCrest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
       "awayCrest": "https://crests.football-data.org/525.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559680,
@@ -556,11 +556,11 @@
       "away": "Le Havre AC",
       "homeCrest": "https://crests.football-data.org/511.png",
       "awayCrest": "https://crests.football-data.org/533.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 2,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559681,
@@ -570,11 +570,11 @@
       "away": "ES Troyes AC",
       "homeCrest": "https://crests.football-data.org/532.png",
       "awayCrest": "https://crests.football-data.org/531.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559683,
@@ -584,11 +584,11 @@
       "away": "Stade Rennais FC 1901",
       "homeCrest": "https://crests.football-data.org/523.png",
       "awayCrest": "https://crests.football-data.org/529.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 4,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 559676,
@@ -4287,5 +4287,5 @@
       "status": "29/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-19T11:53:56.495996+00:00"
+  "lastUpdated": "2026-09-20T12:12:21.823383+00:00"
 }
