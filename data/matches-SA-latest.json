@@ -644,7 +644,7 @@
       "awayScore": 1,
       "homeWin": false,
       "awayWin": false,
-      "status": "EN JUEGO"
+      "status": "FINALIZADO"
     },
     {
       "id": 558592,
@@ -654,11 +654,11 @@
       "away": "Como 1907",
       "homeCrest": "https://crests.football-data.org/470.png",
       "awayCrest": "https://crests.football-data.org/7397.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558590,
@@ -668,11 +668,11 @@
       "away": "Genoa CFC",
       "homeCrest": "https://crests.football-data.org/112.png",
       "awayCrest": "https://crests.football-data.org/107.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558595,
@@ -682,11 +682,11 @@
       "away": "Atalanta BC",
       "homeCrest": "https://crests.football-data.org/109.png",
       "awayCrest": "https://crests.football-data.org/102.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558597,
@@ -696,11 +696,11 @@
       "away": "US Lecce",
       "homeCrest": "https://crests.football-data.org/98.png",
       "awayCrest": "https://crests.football-data.org/5890.png",
-      "homeScore": null,
-      "awayScore": null,
-      "homeWin": false,
+      "homeScore": 3,
+      "awayScore": 0,
+      "homeWin": true,
       "awayWin": false,
-      "status": "TIMED"
+      "status": "FINALIZADO"
     },
     {
       "id": 558588,
@@ -5323,5 +5323,5 @@
       "status": "30/05 00:00"
     }
   ],
-  "lastUpdated": "2026-09-20T12:11:52.653790+00:00"
+  "lastUpdated": "2026-09-21T13:51:02.499488+00:00"
 }

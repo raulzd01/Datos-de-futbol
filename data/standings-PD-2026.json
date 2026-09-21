@@ -15,35 +15,35 @@
     },
     {
       "position": 2,
-      "club": "Real Madrid CF",
-      "crest": "https://crests.football-data.org/86.png",
-      "played": 6,
-      "goalDiff": 11,
-      "points": 15,
-      "avgGoalsFor": 2.83,
-      "formIndex": 80,
+      "club": "Club Atlético de Madrid",
+      "crest": "https://crests.football-data.org/78.png",
+      "played": 7,
+      "goalDiff": 9,
+      "points": 16,
+      "avgGoalsFor": 2.29,
+      "formIndex": 73,
       "formLabel": "🔥 En racha"
     },
     {
       "position": 3,
       "club": "Real Betis Balompié",
       "crest": "https://crests.football-data.org/90.png",
-      "played": 6,
+      "played": 7,
       "goalDiff": 2,
-      "points": 15,
-      "avgGoalsFor": 1.33,
-      "formIndex": 73,
-      "formLabel": "🔥 En racha"
+      "points": 16,
+      "avgGoalsFor": 1.29,
+      "formIndex": 62,
+      "formLabel": "➖ Irregular"
     },
     {
       "position": 4,
-      "club": "Club Atlético de Madrid",
-      "crest": "https://crests.football-data.org/78.png",
-      "played": 6,
-      "goalDiff": 8,
-      "points": 13,
-      "avgGoalsFor": 2.33,
-      "formIndex": 58,
+      "club": "Real Madrid CF",
+      "crest": "https://crests.football-data.org/86.png",
+      "played": 7,
+      "goalDiff": 10,
+      "points": 15,
+      "avgGoalsFor": 2.57,
+      "formIndex": 67,
       "formLabel": "➖ Irregular"
     },
     {
@@ -72,15 +72,37 @@
       "position": 7,
       "club": "RC Deportivo La Coruña",
       "crest": "https://crests.football-data.org/560.png",
-      "played": 6,
+      "played": 7,
       "goalDiff": 2,
-      "points": 9,
-      "avgGoalsFor": 1.5,
-      "formIndex": 62,
+      "points": 10,
+      "avgGoalsFor": 1.43,
+      "formIndex": 69,
       "formLabel": "➖ Irregular"
     },
     {
       "position": 8,
+      "club": "Real Sociedad de Fútbol",
+      "crest": "https://crests.football-data.org/92.png",
+      "played": 7,
+      "goalDiff": -4,
+      "points": 10,
+      "avgGoalsFor": 1.29,
+      "formIndex": 69,
+      "formLabel": "➖ Irregular"
+    },
+    {
+      "position": 9,
+      "club": "Villarreal CF",
+      "crest": "https://crests.football-data.org/94.png",
+      "played": 7,
+      "goalDiff": 1,
+      "points": 8,
+      "avgGoalsFor": 1.86,
+      "formIndex": 20,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 10,
       "club": "Athletic Club",
       "crest": "https://crests.football-data.org/77.png",
       "played": 6,
@@ -91,7 +113,18 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 9,
+      "position": 11,
+      "club": "Getafe CF",
+      "crest": "https://crests.football-data.org/82.png",
+      "played": 7,
+      "goalDiff": -3,
+      "points": 8,
+      "avgGoalsFor": 0.57,
+      "formIndex": 22,
+      "formLabel": "❄️ Bajón"
+    },
+    {
+      "position": 12,
       "club": "Rayo Vallecano de Madrid",
       "crest": "https://crests.football-data.org/87.png",
       "played": 7,
@@ -102,7 +135,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 10,
+      "position": 13,
       "club": "CA Osasuna",
       "crest": "https://crests.football-data.org/79.png",
       "played": 7,
@@ -113,7 +146,7 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 11,
+      "position": 14,
       "club": "RC Celta de Vigo",
       "crest": "https://crests.football-data.org/558.png",
       "played": 7,
@@ -124,7 +157,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 12,
+      "position": 15,
       "club": "RCD Espanyol de Barcelona",
       "crest": "https://crests.football-data.org/80.png",
       "played": 7,
@@ -135,18 +168,7 @@
       "formLabel": "❄️ Bajón"
     },
     {
-      "position": 13,
-      "club": "Real Sociedad de Fútbol",
-      "crest": "https://crests.football-data.org/92.png",
-      "played": 6,
-      "goalDiff": -5,
-      "points": 7,
-      "avgGoalsFor": 1.0,
-      "formIndex": 47,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 14,
+      "position": 16,
       "club": "Real Racing Club de Santander",
       "crest": "https://crests.football-data.org/5335.png",
       "played": 7,
@@ -157,35 +179,13 @@
       "formLabel": "➖ Irregular"
     },
     {
-      "position": 15,
-      "club": "Villarreal CF",
-      "crest": "https://crests.football-data.org/94.png",
-      "played": 6,
-      "goalDiff": -1,
-      "points": 5,
-      "avgGoalsFor": 1.67,
-      "formIndex": 18,
-      "formLabel": "❄️ Bajón"
-    },
-    {
-      "position": 16,
+      "position": 17,
       "club": "Levante UD",
       "crest": "https://crests.football-data.org/88.png",
-      "played": 5,
-      "goalDiff": -2,
-      "points": 5,
-      "avgGoalsFor": 1.4,
-      "formIndex": 33,
-      "formLabel": "➖ Irregular"
-    },
-    {
-      "position": 17,
-      "club": "Getafe CF",
-      "crest": "https://crests.football-data.org/82.png",
       "played": 6,
       "goalDiff": -4,
       "points": 5,
-      "avgGoalsFor": 0.5,
+      "avgGoalsFor": 1.33,
       "formIndex": 44,
       "formLabel": "➖ Irregular"
     },
@@ -204,24 +204,24 @@
       "position": 19,
       "club": "Valencia CF",
       "crest": "https://crests.football-data.org/95.png",
-      "played": 6,
-      "goalDiff": -8,
+      "played": 7,
+      "goalDiff": -9,
       "points": 4,
-      "avgGoalsFor": 0.33,
-      "formIndex": 7,
+      "avgGoalsFor": 0.57,
+      "formIndex": 13,
       "formLabel": "❄️ Bajón"
     },
     {
       "position": 20,
       "club": "Málaga CF",
       "crest": "https://crests.football-data.org/84.png",
-      "played": 6,
-      "goalDiff": -8,
+      "played": 7,
+      "goalDiff": -9,
       "points": 3,
-      "avgGoalsFor": 0.5,
-      "formIndex": 22,
+      "avgGoalsFor": 0.43,
+      "formIndex": 16,
       "formLabel": "❄️ Bajón"
     }
   ],
-  "lastUpdated": "2026-09-20T12:10:47.531583+00:00"
+  "lastUpdated": "2026-09-21T13:49:54.404681+00:00"
 }
